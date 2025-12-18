@@ -65,13 +65,6 @@ uint16_t LastQMaxUpdataValue;
 
  
 uint8_t f_chg_dsg_confirmed = 0 ;
-// uint8_t f_calc_init_dynamic_res ;
-// uint8_t chg_dsg_confirmed_count ;
-// uint16_t calc_Res_k_Init_voltage ;
-// uint16_t calc_Res_k_Init_voltage1 ;
-// uint16_t calc_Res_k_Init_voltage2 ;
-// uint16_t calc_Res_k_Init_voltage3 ;
-// uint16_t calc_Res_k_Init_voltage4 ;
 
 uint16_t qmax_CEDV_temp;
   uint8_t f_cp_l_last_CEDV ;
@@ -108,24 +101,14 @@ uint16_t CBstatus;
 
 uint8_t b_aidx;
 uint16_t k_CEDV = 1000 ;
-// uint16_t k_CEDV1 = 1000 ;
-// uint16_t k_CEDV2 = 1000 ;
-// uint16_t k_CEDV3 = 1000 ;
-// uint16_t k_CEDV4 = 1000 ;
+
 
 
 uint16_t calc_Res_k_InitSOC ;
 uint16_t calc_static_k_InitRes ;
-// uint16_t calc_static_k_InitRes1 ;
-// uint16_t calc_static_k_InitRes2 ;
-// uint16_t calc_static_k_InitRes3 ;
-// uint16_t calc_static_k_InitRes4 ;
+
 uint16_t  calc_k_initRES ;
 uint16_t calc_Res_k_EndRes;
-
-
-/*    Calc_k_CEDV     */
-// uint16_t voltage_last_5_times[4];
 
 // uint8_t i_j_CEDV = 0 ; 
 uint8_t f_discharge_CEDV_last ;
@@ -147,7 +130,7 @@ int32_t Record_lrc_w_CEDV_fcc_show ;
 int32_t  Record_lrc_w_CEDV_fcc_show_last ; 
 int32_t Record_lrc_w_CEDV ;
 
-uint16_t t_com0f_CEDV_show ;
+
 uint16_t t_com0f_CEDV;
 int32_t dsg_CEDV_Record_lrc_w_update_k ;
 uint8_t SOC_CEDV ;
@@ -162,7 +145,6 @@ uint8_t calc_RES_soc_chabiao;
 
 
 uint8_t calc_RES_soc_jisuan;
-uint16_t fcc_use_qmax  ;
 // uint32_t qmax_chu_fcc = 10000 ;
 
 
@@ -477,8 +459,7 @@ void AlarmWarning_Check(void)
         BatteryStatus(FD) = OFF;
     }
 
-    // if (t_com0fCap <= _RemainingCapacityAlarm)
-    if (t_com0f_CEDV_show <= _RemainingCapacityAlarm)
+    if (t_com0f <= _RemainingCapacityAlarm)
     {
         if (BatteryStatus(DSG))
         {
@@ -498,403 +479,187 @@ void AlarmWarning_Check(void)
         BatteryStatus(RTA) = OFF;
     }
 }
-void QMaxUpdateReset(void)
-{
-    // f_Qmax_start = OFF;
-    // f_Qmax_end = OFF;
-    // at_endqmax_cnt = 0;
-    // at_startqmax_cnt = 0;
-    // QmaxCapcity_Calc = 0;
-}
 
-void QMaxUpdateJudge(uint8_t InitSOC, uint8_t EndSOC, int16_t *QamxCell)
-{
-//    uint8_t dropSoc;
-//    if ((InitSOC < D_Qmax_SOC_low_limit || InitSOC > D_Qmax_SOC_high_limit) && (EndSOC < D_Qmax_SOC_low_limit || EndSOC > D_Qmax_SOC_high_limit))
-//    {
-//        dropSoc = ABS(InitSOC - EndSOC);
-//        if (dropSoc > D_Qmax_update_min_delta_SOC)
-//        {
-//            *QamxCell = (int16_t)(QmaxCapcity_Calc / 144 / dropSoc);
-//            f_ltreq = ON;
-//            f_QmaxUpFsh = ON;
-//             t_com0c = 1 ;
-//        }
-//        else
-//        {
-//            QMaxUpdateReset();
-//        }
-//    }
-//    else
-//    {
-//        QMaxUpdateReset();
-//    }
-}
 
-void QMax_Calc(void)
-{
-    // uint8_t aidx = 0;
-    // int8_t dropSoc;
-
-    // if (Ts_max >= D_Qmax_Temp_Low_limit && Ts_max <= D_Qmax_Temp_High_limit && _CycleCount > D_Qmax_Cycle_limit)
-    // {
-    //     if (f_relax)
-    //     {
-    //         if (!f_Qmax_start)
-    //         {
-    //             at_startqmax_cnt++;
-    //             if (at_startqmax_cnt >= 72000)
-    //             {
-    //                 for (aidx = 0; (aidx < 19) && (V_min > OCV_SOC[aidx + 1]); aidx++)
-    //                     ;
-    //                 PackQamxInitSOC = (char)aidx * 5 + (short)((short)(V_min - OCV_SOC[aidx]) * 5) / (short)(OCV_SOC[aidx + 1] - OCV_SOC[aidx]);
-    //                 for (aidx = 0; (aidx < 19) && (_DAStatus1.CellVoltage1 > OCV_SOC[aidx + 1]); aidx++)
-    //                     ;
-    //                 Qamx1InitSOC = (char)aidx * 5 + (short)((short)(_DAStatus1.CellVoltage1 - OCV_SOC[aidx]) * 5) / (short)(OCV_SOC[aidx + 1] - OCV_SOC[aidx]);
-    //                 for (aidx = 0; (aidx < 19) && (_DAStatus1.CellVoltage2 > OCV_SOC[aidx + 1]); aidx++)
-    //                     ;
-    //                 Qamx2InitSOC = (char)aidx * 5 + (short)((short)(_DAStatus1.CellVoltage2 - OCV_SOC[aidx]) * 5) / (short)(OCV_SOC[aidx + 1] - OCV_SOC[aidx]);
-    //                 for (aidx = 0; (aidx < 19) && (_DAStatus1.CellVoltage3 > OCV_SOC[aidx + 1]); aidx++)
-    //                     ;
-    //                 Qamx3InitSOC = (char)aidx * 5 + (short)((short)(_DAStatus1.CellVoltage3 - OCV_SOC[aidx]) * 5) / (short)(OCV_SOC[aidx + 1] - OCV_SOC[aidx]);
-    //                 for (aidx = 0; (aidx < 19) && (_DAStatus1.CellVoltage4 > OCV_SOC[aidx + 1]); aidx++)
-    //                     ;
-    //                 Qamx4InitSOC = (char)aidx * 5 + (short)((short)(_DAStatus1.CellVoltage4 - OCV_SOC[aidx]) * 5) / (short)(OCV_SOC[aidx + 1] - OCV_SOC[aidx]);
-    //                 f_Qmax_start = ON;
-    //                 f_Qmax_end = OFF;
-    //                 at_endqmax_cnt = 0;
-    //                 at_startqmax_cnt = 0;
-    //             }
-    //         }
-    //         else
-    //         {
-    //             at_endqmax_cnt++;
-    //             if (at_endqmax_cnt >= 72000)
-    //             {
-    //                 for (aidx = 0; (aidx < 19) && (V_min > OCV_SOC[aidx + 1]); aidx++)
-    //                     ;
-    //                 PackQamxEndSOC = (char)aidx * 5 + (short)((short)(V_min - OCV_SOC[aidx]) * 5) / (short)(OCV_SOC[aidx + 1] - OCV_SOC[aidx]);
-    //                 for (aidx = 0; (aidx < 19) && (_DAStatus1.CellVoltage1 > OCV_SOC[aidx + 1]); aidx++)
-    //                     ;
-    //                 Qamx1EndSOC = (char)aidx * 5 + (short)((short)(_DAStatus1.CellVoltage1 - OCV_SOC[aidx]) * 5) / (short)(OCV_SOC[aidx + 1] - OCV_SOC[aidx]);
-    //                 for (aidx = 0; (aidx < 19) && (_DAStatus1.CellVoltage2 > OCV_SOC[aidx + 1]); aidx++)
-    //                     ;
-    //                 Qamx2EndSOC = (char)aidx * 5 + (short)((short)(_DAStatus1.CellVoltage2 - OCV_SOC[aidx]) * 5) / (short)(OCV_SOC[aidx + 1] - OCV_SOC[aidx]);
-    //                 for (aidx = 0; (aidx < 19) && (_DAStatus1.CellVoltage3 > OCV_SOC[aidx + 1]); aidx++)
-    //                     ;
-    //                 Qamx3EndSOC = (char)aidx * 5 + (short)((short)(_DAStatus1.CellVoltage3 - OCV_SOC[aidx]) * 5) / (short)(OCV_SOC[aidx + 1] - OCV_SOC[aidx]);
-    //                 for (aidx = 0; (aidx < 19) && (_DAStatus1.CellVoltage4 > OCV_SOC[aidx + 1]); aidx++)
-    //                     ;
-    //                 Qamx4EndSOC = (char)aidx * 5 + (short)((short)(_DAStatus1.CellVoltage4 - OCV_SOC[aidx]) * 5) / (short)(OCV_SOC[aidx + 1] - OCV_SOC[aidx]);
-
-    //                 f_Qmax_end = ON;
-    //                 f_Qmax_start = OFF;
-    //                 at_endqmax_cnt = 0;
-    //                 at_startqmax_cnt = 0;
-    //                 QmaxCapcity_Calc = 0;
-    //             }
-    //         }
-
-    //         if (f_Qmax_end)
-    //         {
-    //             QMaxUpdateJudge(PackQamxInitSOC, PackQamxEndSOC, &g_QamxPack);
-    //             QMaxUpdateJudge(Qamx1InitSOC, Qamx1EndSOC, &_GaugeStatus3.QMax0);
-    //             QMaxUpdateJudge(Qamx2InitSOC, Qamx2EndSOC, &_GaugeStatus3.QMax1);
-    //             QMaxUpdateJudge(Qamx3InitSOC, Qamx3EndSOC, &_GaugeStatus3.QMax2);
-    //             QMaxUpdateJudge(Qamx4InitSOC, Qamx4EndSOC, &_GaugeStatus3.QMax3);
-    //             if (f_QmaxUpFsh)
-    //             {
-    //                 f_QmaxUpFsh = OFF;
-    //                 QmaxUpdataCnt++;
-    //                 LastQMaxUpdataCycle = _CycleCount;
-    //                 LastQMaxUpdataValue = g_QamxPack;
-    //                 QMaxUpdateReset();
-    //             }
-    //         }
-    //     }
-    //     else
-    //     {
-    //         if (I_abs >= (long)D_Qmax_C_rate_low_limit * D_Design_Capacity_mAh / 10 && I_abs <= (long)D_Qmax_C_rate_high_limit * D_Design_Capacity_mAh / 10 && f_Qmax_start == ON) // 0.1C
-    //         {
-    //             if (D_Control_flag_1_Qmax_update_DSG)
-    //             {
-    //                 if (f_charge)
-    //                 {
-    //                     f_Qmax_start = OFF;
-    //                     f_Qmax_end = OFF;
-    //                     at_startqmax_cnt = 0;
-    //                     QmaxCapcity_Calc = 0;
-    //                 }
-    //                 else
-    //                 {
-    //                     QmaxCapcity_Calc += I_abs;
-    //                 }
-    //             }
-
-    //             if (D_Control_flag_1_Qmax_update_CHG)
-    //             {
-    //                 if (f_discharge)
-    //                 {
-    //                     f_Qmax_start = OFF;
-    //                     f_Qmax_end = OFF;
-    //                     at_startqmax_cnt = 0;
-    //                     QmaxCapcity_Calc = 0;
-    //                 }
-    //                 else
-    //                 {
-    //                     QmaxCapcity_Calc += I_abs;
-    //                 }
-    //             }
-    //         }
-    //         else
-    //         {
-    //             f_Qmax_end = OFF;
-    //             at_startqmax_cnt = 0;
-    //         }
-    //         at_endqmax_cnt = 0;
-    //     }
-    // }
-    // else
-    // {
-    //     QMaxUpdateReset();
-    // }
-}
 
 
 
 /* calculate k , only in discharge */
 
- void Calc_b_aidx(void)
+void Calc_b_aidx(void)
+{
+    uint8_t aidx_c;
+    uint8_t awork1, awork2, awork3, awork4;
+    uint16_t twork1, twork2;
+    uint16_t tinreg;
+    int32_t ccwork;
+    int32_t dcwork;
+    uint16_t beilv_temp;
+    static uint16_t awork3_last;
+    static uint8_t f_charge_last_b_aidx;
+    static uint8_t f_relax_last_b_aidx;
+    static uint32_t Count_3200_b_aidx = 1;
+    ;
+
+    // Calc [C]x100 from current   current beilv .
+    twork1 = (uint16_t)((long)I_abs * 100 / D_Design_Capacity_mAh); // 1234 6169 0.2
+
+    beilv_temp = twork1;
+    if (twork1 <= D_RA_CRATE_TBL[1]) // <= C-rate2 ?
     {
-          uint8_t aidx_c;
-        uint8_t awork1, awork2, awork3, awork4;
-        uint16_t twork1, twork2;
-        uint16_t tinreg;
-        int32_t ccwork;
-        int32_t dcwork;
-         uint16_t beilv_temp ;
-         static uint16_t awork3_last ;
-         static uint8_t  f_charge_last_b_aidx  ;
-        static uint8_t  f_relax_last_b_aidx ;
-       static uint32_t Count_3200_b_aidx =1; ;
-
-        // Calc [C]x100 from current   current beilv .
-        twork1 = (uint16_t)((long)I_abs * 100 / D_Design_Capacity_mAh);  // 1234 6169 0.2
-
-        beilv_temp = twork1 ;
-
-        // - Make [C]index -
-        // linear interporation: y = (y2-y1)*(x-x1)/(x2-x1) + y1
-        //						   = y1 - (y1-y2)*(x-x1)/(x2-x1)
-        // awork1: x-x1
-        // awork2: x2-x1
-        if (twork1 <=  D_RA_CRATE_TBL[1]) // <= C-rate2 ?
+        aidx_c = 0;                      // Table index = 0
+        if (twork1 <= D_RA_CRATE_TBL[0]) // <= C-rate1 ?
         {
-            aidx_c = 0;                     // Table index = 0
-            if (twork1 <=  D_RA_CRATE_TBL[0]) // <= C-rate1 ?
-            {
-                awork1 = 0; // SetC-rate1
-            }
-            else
-            { // > C-rate1
-                // Calculate value index
-                awork1 = (uint8_t)(twork1 -  D_RA_CRATE_TBL[0]);   // 1234 - 0.1 = 1233
-
-            }
-            // Data area is within C-rate1 to C-rate2
-            awork2 =  D_RA_CRATE_TBL[1] -  D_RA_CRATE_TBL[0];   //50
+            awork1 = 0; // SetC-rate1
         }
-        else // > C-rate2 ?  di 2 ge C2            D_CRATE_TBL[1]
-        {                                 // > C-rate2
-            // if (twork1 <= D_CRATE_TBL[2]) // <= C-rate3 ?
-            // {
-                aidx_c= 3; // Table index = 5
-                // Calculate value index
-                //  awork1 = (uint8_t)(twork1 - D_CRATE_TBL[1]);
-                // Data area is within C-rate2 to C-rate3
-                awork2 =  D_RA_CRATE_TBL[2] -  D_RA_CRATE_TBL[1];
-                //  awork1 = awork2;
-             
-               awork1 = (uint8_t)(twork1 -  D_RA_CRATE_TBL[1]);
-              //   awork1 = (uint8_t)(twork1 - D_CRATE_TBL[0]);  wrong . 
-
-                if(twork1 >=  D_RA_CRATE_TBL[2])
-                {
-                    awork1 = awork2 ;
-                }
-
-            // }
-            // else
-            // {
-            //     aidx = 10; // Table index = 5
-            //                // Calculate value index
-            //     // awork1 = (uint8_t)(twork1 - D_CRATE_TBL[2]);
-            //     // Data area is within C-rate2 to C-rate3
-            //     awork2 = D_CRATE_TBL[3] - D_CRATE_TBL[2];
-            //     awork1 = awork2;
-            // }
+        else
+        { 
+            awork1 = (uint8_t)(twork1 - D_RA_CRATE_TBL[0]); // 1234 - 0.1 = 1233
         }
+        // Data area is within C-rate1 to C-rate2
+        awork2 = D_RA_CRATE_TBL[1] - D_RA_CRATE_TBL[0]; // 50
+    }
+    else           
+    {             
+        aidx_c = 3; // Table index = 5
+        awork2 = D_RA_CRATE_TBL[2] - D_RA_CRATE_TBL[1];
+        awork1 = (uint8_t)(twork1 - D_RA_CRATE_TBL[1]);
 
-        // - Make Temperature index -
-        //  5   25   40 
-        awork3 = Ts_max - D_RA_TRATE_TBL[0]; // Make the value of T-rate1 base
-        if (Ts_max >= D_RA_TRATE_TBL[1])     // >= T-rate2 ?  >= 40 ?
+        if (twork1 >= D_RA_CRATE_TBL[2])
         {
-            aidx_c++; // Increment table index
-            awork4 =  D_RA_TRATE_TBL[2] -  D_RA_TRATE_TBL[1];
-            if (Ts_max >= D_RA_TRATE_TBL[2]) // >= T-rate3 ?   
-            {
-                awork3 = awork4; // Value index is max value
-            }
-            else
-            {                                     // T-rate2 <= Temp. < T-rate3
-                awork3 = Ts_max - D_RA_TRATE_TBL[1]; // Calculate value index
-            }
+            awork1 = awork2;
         }
-        else  //   <40               >5   awork3 = Ts_max - D_TRATE_TBL[0];
-        {     // < T-rate2
-            // Data area is within T-rate1 to T-rate2
-            awork4 =  D_RA_TRATE_TBL[1] -  D_RA_TRATE_TBL[0]; // 40 - 5
-
-            if (Ts_max <= D_RA_TRATE_TBL[0]) // <= T-rate1 ?   temp <5
-            {
-                awork3 = 0; // Value index = 0
-            }
-            else //  >5
-            {
-                if ((f_discharge == 1) && (f_relax == 0))
-                {
-                    Count_3200_b_aidx++;
-                    if (Count_3200_b_aidx >= 3200)
-                    {
-                        Count_3200_b_aidx = 3200;
-                    }
-                    t_com10_out =  2000  ;
-                    if ((Ts_max >= 5) && (Ts_max <= 15))
-                    { t_com10_out =  3000  ;
-                        if ((beilv_temp > 20) && (beilv_temp < 50)) //  800s - 5 degree
-                        {t_com10_out =  4000  ;
-                            // cnt_b_aidx++ ;   // 1 second come into 4 times
-                            // 800 seconds add
-                            //     5   15  25  40
-                            // 0.2 1   1   1    1
-                            // 0.5  7   5   3    3
-                            // 1   16  12  10 10
-                            //  awork3 -= Count_3200_b_aidx*5/3200 *beilv/50 ;5/3200 = 1/640 ;
-                            if (awork3 > Count_3200_b_aidx / 640 * beilv_temp / 50)
-                            {
-                                awork3 -= Count_3200_b_aidx / 640 * beilv_temp / 50;
-                                t_com10_out =  5000  ;
-                            }
-                            else
-                            {
-                                t_com10_out =  5001;
-                                awork3 = 0;
-                            }
-                        }
-                        else if (beilv_temp >= 50) //  800s - 12 degree
-                        {                          // if (awork3 > Count_3200_b_aidx * 12/ 3200 * beilv / 100)
-                            if (awork3 > Count_3200_b_aidx * 3 / 800 * beilv_temp/ 100)
-                            {
-                                 t_com10_out =  5002;
-                                awork3 -= Count_3200_b_aidx * 3 / 800 * beilv_temp / 100;
-                            }
-                            else
-                            {
-                                t_com10_out =  5003;
-                                awork3 = 0;
-                            }
-                        }
-                    }
-                    else
-                    {
-                        if ((beilv_temp > 20) && (beilv_temp < 50)) //  800s - 5 degree
-                        {
-                          
-                            // cnt_b_aidx++ ;   // 1 second come into 4 times
-                            // 800 seconds add
-                            //     5   15  25  40
-                            // 0.2 1   1   1    1
-                            // 0.5  7   5   3    3
-                            // 1   16  12  10 10
-                            //  awork3 -= Count_3200_b_aidx*10/3200 *beilv/50 ;10/3200 = 1/640 ;
-                            if (awork3 > Count_3200_b_aidx / 320 * (beilv_temp - 20) / 100)
-                            {  t_com10_out =  6001;
-                                awork3 -= Count_3200_b_aidx / 320 * (beilv_temp - 20) / 100;
-                            }
-                            else
-                            {
-                                t_com10_out =  6002;
-                                awork3 = 0;
-                            }
-                        }
-                        else if (beilv_temp > 50)
-                        {
-                            if (awork3 > Count_3200_b_aidx / 320 * (beilv_temp - 10) / 100)
-                            {
-                                 t_com10_out =  7002;
-                                awork3 -= Count_3200_b_aidx / 320 * (beilv_temp - 10) / 100;
-                            }
-                            else
-                            {
-                                awork3 = 0;
-                                    t_com10_out =  7003;
-                            }
-                        }
-                    }
-                }
-                else if(f_charge == 1 )
-                {
-                    t_com10_out =  777;
-                    Count_3200_b_aidx = 0;
-                }
-            }
-            // else if(Ts_max <= 15)  // temp   > 5    <=10 
-            // {
-            //     awork3 =awork3/2  ;  // Ts_max - D_TRATE_TBL[0]
-            // }else if(Ts_max >= 25 )
-            // {   
-                // if((f_discharge == 1)&&(f_relax == 0))  //fangdian not jingzhi
-                // {
-                //     t_com10_out =  awork3_last+2000  ;
-                //     if(beilv_temp >30)  //  fangdian not flex  current rate >0.08
-                //     {
-                //         // cnt_b_aidx++ ;   // 1 second come into 4 times 
-                //         if((f_charge_last_b_aidx == 1)||(f_relax_last_b_aidx == 1))   // the first time to fangdian 
-                //         {
-                //             awork3_last = awork3 ;  
-                //             t_com10_out =  awork3_last ;
-                //         }else
-                //         {
-                //             awork3  = awork3_last ;  
-                //             t_com10_out =  awork3_last+5000  ;
-                //         }
-                //     }
-                //     t_com10_out =  awork3_last+6000  ;
-                // }
-                //  t_com10_out =  awork3_last +7000  ;
-
-            // }
-        }
-              t_com10_out =  awork3_last +8000  ;
-
-
-        b_aidx = aidx_c;
-        awork1_CEDV = awork1 ;
-        awork2_CEDV = awork2 ;
-        awork3_CEDV = awork3 ;
-        awork4_CEDV = awork4 ;
-
-
-        twork1_out = twork1 ;
-        twork2_out = twork2 ; 
-
-        f_relax_last_b_aidx =f_relax ;
-        f_charge_last_b_aidx = f_charge ;
-        
-
     }
 
+    // - Make Temperature index -
+    //  5   25   40
+    awork3 = Ts_max - D_RA_TRATE_TBL[0]; // Make the value of T-rate1 base
+    if (Ts_max >= D_RA_TRATE_TBL[1])     // >= T-rate2 ?  >= 40 ?
+    {
+        aidx_c++; // Increment table index
+        awork4 = D_RA_TRATE_TBL[2] - D_RA_TRATE_TBL[1];
+        if (Ts_max >= D_RA_TRATE_TBL[2]) // >= T-rate3 ?
+        {
+            awork3 = awork4; // Value index is max value
+        }
+        else
+        {                                        // T-rate2 <= Temp. < T-rate3
+            awork3 = Ts_max - D_RA_TRATE_TBL[1]; // Calculate value index
+        }
+    }
+    else //   <40               >5   awork3 = Ts_max - D_TRATE_TBL[0];
+    {    // < T-rate2
+        // Data area is within T-rate1 to T-rate2
+        awork4 = D_RA_TRATE_TBL[1] - D_RA_TRATE_TBL[0]; // 40 - 5
+
+        if (Ts_max <= D_RA_TRATE_TBL[0]) // <= T-rate1 ?   temp <5
+        {
+            awork3 = 0; // Value index = 0
+        }
+        else //  >5
+        {
+            if ((f_discharge == 1) && (f_relax == 0))
+            {
+                Count_3200_b_aidx++;
+                if (Count_3200_b_aidx >= 3200)
+                {
+                    Count_3200_b_aidx = 3200;
+                }
+                if ((Ts_max >= 5) && (Ts_max <= 15))
+                {
+                  
+                    if ((beilv_temp > 20) && (beilv_temp < 50)) //  800s - 5 degree
+                    {
+                        // cnt_b_aidx++ ;   // 1 second come into 4 times
+                        // 800 seconds add
+                        //     5   15  25  40
+                        // 0.2 1   1   1    1
+                        // 0.5  7   5   3    3
+                        // 1   16  12  10 10
+                        //  awork3 -= Count_3200_b_aidx*5/3200 *beilv/50 ;5/3200 = 1/640 ;
+                        if (awork3 > Count_3200_b_aidx / 640 * beilv_temp / 50)
+                        {
+                            awork3 -= Count_3200_b_aidx / 640 * beilv_temp / 50;
+                            
+                        }
+                        else
+                        {
+                            
+                            awork3 = 0;
+                        }
+                    }
+                    else if (beilv_temp >= 50) //  800s - 12 degree
+                    {                          // if (awork3 > Count_3200_b_aidx * 12/ 3200 * beilv / 100)
+                        if (awork3 > Count_3200_b_aidx * 3 / 800 * beilv_temp / 100)
+                        {
+                           
+                            awork3 -= Count_3200_b_aidx * 3 / 800 * beilv_temp / 100;
+                        }
+                        else
+                        {
+                            
+                            awork3 = 0;
+                        }
+                    }
+                }
+                else
+                {
+                    if ((beilv_temp > 20) && (beilv_temp < 50)) //  800s - 5 degree
+                    {
+
+                        // cnt_b_aidx++ ;   // 1 second come into 4 times
+                        // 800 seconds add
+                        //     5   15  25  40
+                        // 0.2 1   1   1    1
+                        // 0.5  7   5   3    3
+                        // 1   16  12  10 10
+                        //  awork3 -= Count_3200_b_aidx*10/3200 *beilv/50 ;10/3200 = 1/640 ;
+                        if (awork3 > Count_3200_b_aidx / 320 * (beilv_temp - 20) / 100)
+                        {
+                         
+                            awork3 -= Count_3200_b_aidx / 320 * (beilv_temp - 20) / 100;
+                        }
+                        else
+                        {
+                    
+                            awork3 = 0;
+                        }
+                    }
+                    else if (beilv_temp > 50)
+                    {
+                        if (awork3 > Count_3200_b_aidx / 320 * (beilv_temp - 10) / 100)
+                        {
+                        
+                            awork3 -= Count_3200_b_aidx / 320 * (beilv_temp - 10) / 100;
+                        }
+                        else
+                        {
+                            awork3 = 0;
+                        
+                        }
+                    }
+                }
+            }
+            else if (f_charge == 1)
+            {
+                
+                Count_3200_b_aidx = 0;
+            }
+        }
+    }
+
+    b_aidx = aidx_c;
+    awork1_CEDV = awork1;
+    awork2_CEDV = awork2;
+    awork3_CEDV = awork3;
+    awork4_CEDV = awork4;
+
+    twork1_out = twork1;
+    twork2_out = twork2;
+
+    f_relax_last_b_aidx = f_relax;
+    f_charge_last_b_aidx = f_charge;
+}
 
 void Calc_soc_to_res(uint8_t b_aidx, uint8_t b_soc_to_res_index)
 {
@@ -921,9 +686,6 @@ void Calc_soc_to_res(uint8_t b_aidx, uint8_t b_soc_to_res_index)
 
 
 
-    //  to do
-    // 检测  match Res
-
     twork1 = Res_Temp_CEDV_Inner[b_aidx] -
              (uint16_t)((((long)Res_Temp_CEDV_Inner[b_aidx] - Res_Temp_CEDV_Inner[b_aidx + 3]) * awork1/awork2));
 
@@ -936,67 +698,31 @@ void Calc_soc_to_res(uint8_t b_aidx, uint8_t b_soc_to_res_index)
     // Res_Temp_CEDV_Inner_turn = twork1 + (uint16_t)((((long)twork2 - twork1) * awork3 / awork4)); // discharge Q
     Res_Temp_CEDV_Inner_temp = twork1 + (uint16_t)((((long)twork2 - twork1) * awork3 / awork4)); // discharge Q
 
-
-
-    // // To do : 
-    // // log k 
-    // // log current 
-
-    //  // t_com88_out = b_aidx;
-    // // t_com89_out = awork1;
-    // // t_com8a_out = awork2;
-    // // t_com8b_out = awork3;
-    // // t_com8c_out = awork4;
-
-    
-
-  
-    // // t_com95_out = Res_Temp_CEDV_Inner[5];
-    // // t_com96_out = Res_Temp_CEDV_Inner[6];
-    // // t_com97_out = Res_Temp_CEDV_Inner[7];
-    // // t_com98_out = Res_Temp_CEDV_Inner[8];
-
-    // t_com8f_out = Res_Temp_CEDV_Inner_temp ;  // log r 
     
 }
 
 void Calc_k_CEDV(void) // use leiji style
 {
 
-
     uint16_t V_OCV;
     uint32_t qmax_CEDV_u32;
     static uint16_t cnt3600_relax; // when realx state , 3600 hours .
-    //static uint16_t vol_calc[4];
-    //static uint8_t cnt_vol_calc = 0;
+    // static uint16_t vol_calc[4];
+    // static uint8_t cnt_vol_calc = 0;
     static uint8_t f_start_calc_k = 0;
-  //   uint8_t index_SOC_OCV ;
+    //   uint8_t index_SOC_OCV ;
 
- static uint8_t k_CEDV_average_cnt = 0;
-static uint32_t k_CEDV_total = 0;
-static uint32_t k_CEDV_average_last = 0;
+    static uint8_t k_CEDV_average_cnt = 0;
+    static uint32_t k_CEDV_total = 0;
+    static uint32_t k_CEDV_average_last = 0;
 
-
-    if ( f_charge)  // can not use on realx 
+    if (f_charge) // can not use on realx
     {
         k_CEDV_total = 0; // at most 102
         k_CEDV_average_cnt = 0;
         k_CEDV_average = 1000;
         k_CEDV_average_last = 1000;
     }
-
-    // if (cnt_vol_calc <= 3)
-    // {
-    //     vol_calc[cnt_vol_calc] = V_min;
-    //     cnt_vol_calc++;
-    // }
-    // else
-    // {
-    //     cnt_vol_calc = 0;
-    //     vol_calc[0] = V_min;
-    // }
-    // t_com8e_out = f_relax_cal_k_CEDV_last;
-    // SOC_CEDV  ;
     if (f_relax)
     {
         cnt3600_relax++;
@@ -1042,56 +768,40 @@ static uint32_t k_CEDV_average_last = 0;
     {
         if ((f_discharge == 1) && (f_relax == 0)) // fangdian
         {
-            qmax_CEDV_u32 = qmax_CEDV;
+            qmax_CEDV_u32 = t_com10;
             if (dsg_CEDV_Record_lrc_w_update_k == 0) // calc_k leiji qmax * 0.01
             {
-         
-                if (f_relax_cal_k_CEDV_last)
-                {
-                    //  t_com90_out = 2;
-                }
-                else
+
+                if (!f_relax_cal_k_CEDV_last)
                 {
                     calc_RES_soc_chabiao = SOC_CEDV;
-                    // t_com96_out = calc_RES_soc_chabiao;
                     Calc_b_aidx();
                     Calc_soc_to_res(b_aidx, calc_RES_soc_chabiao); //
                     calc_k_res_chabiao = Res_Temp_CEDV_Inner_temp;
                 }
             }
 
-            // t_coma0_out = calc_k_res_chabiao;
             dsg_CEDV_Record_lrc_w_update_k += I_abs;
-            if (dsg_CEDV_Record_lrc_w_update_k >= qmax_CEDV_u32 * 144) // if(dsg_CEDV_Record_lrc_w /14400 >= qmax_CEDV/100)
+            if (dsg_CEDV_Record_lrc_w_update_k >= qmax_CEDV_u32 * 144) // 
             {
                 dsg_CEDV_Record_lrc_w_update_k = 0;
-                //  chabiao
-
 
                 calc_RES_soc_chabiao = SOC_CEDV;
 
-                // t_com96_out = calc_RES_soc_chabiao;
                 Calc_b_aidx();
                 Calc_soc_to_res(b_aidx, calc_RES_soc_chabiao); //
-
-                // Calc_soc_to_res(b_aidx, index_SOC_OCV); //
-
-                // for(index_SOC_OCV = 0 ; index_SOC_OCV <102;index_SOC_OCV++)
-                // {
-                // }
-                
                 calc_k_res_chabiao = Res_Temp_CEDV_Inner_temp;
 
                 t_com92_out = calc_k_res_chabiao;
                 // chabiao neizu .
 
-               // t_com98_out = 1;
+                // t_com98_out = 1;
                 // jisuan neizu
                 //  calc_k_res() ;
                 calc_RES_soc_jisuan = SOC_CEDV;
-               // t_com97_out = calc_RES_soc_jisuan;
+                // t_com97_out = calc_RES_soc_jisuan;
 
-                V_OCV = SOC_OCV_103_TBL[SOC_CEDV];    //4360  -  4208 = 152 
+                V_OCV = SOC_OCV_103_TBL[SOC_CEDV]; // 4360  -  4208 = 152
                 t_com8c_out = V_OCV;
 
                 if (I_abs != 0)
@@ -1116,37 +826,28 @@ static uint32_t k_CEDV_average_last = 0;
                     k_CEDV = 1012;
                 }
 
-                if(k_CEDV<500)
+                if (k_CEDV < 500)
                 {
-                    k_CEDV=500;
+                    k_CEDV = 500;
                 }
                 // calc average k_CEDV when discharge and voltage <= V_cpl
 
-                k_CEDV_average_cnt++ ; 
+                k_CEDV_average_cnt++;
 
-                if(k_CEDV_average_cnt>=102)
+                if (k_CEDV_average_cnt >= 102)
                 {
-                    k_CEDV_average_cnt = 102 ;
+                    k_CEDV_average_cnt = 102;
                 }
-                k_CEDV_total+= k_CEDV ;
+                k_CEDV_total += k_CEDV;
 
-                k_CEDV_average =  k_CEDV_total/k_CEDV_average_cnt ;
+                k_CEDV_average = k_CEDV_total / k_CEDV_average_cnt;
 
-
-                if(V_min < tcpl_v)
+                if (V_min < tcpl_v)
                 {
-                    k_CEDV_average = k_CEDV_average_last ;
+                    k_CEDV_average = k_CEDV_average_last;
                 }
 
-                k_CEDV_average_last = k_CEDV_average; 
-
-
-
-
-
-
-
-
+                k_CEDV_average_last = k_CEDV_average;
             }
             else
             {
@@ -1190,23 +891,8 @@ uint16_t QMaxUpdateJudge_CEDV(uint8_t InitSOC, uint8_t EndSOC)
     // CEDV_soc_range = QmaxCapcity_Calc*5/72/t_com18 ; // soc differece  / Design capa *1000 
     dropSoc = ABS(InitSOC - EndSOC); 
     t_com90_out =  dropSoc  ;
-    //    if (dropSoc > D_Qmax_update_min_delta_SOC)
-    //  if (CEDV_soc_range >=350 )
-    //    {
-    // (QmaxCapcity_Calc/(3600*4)) leiji 
-    //  fcc_CEDV_Ture = (QmaxCapcity_Calc/(3600*4))/(dropSoc/100) ;  // (dropSoc/100)  = soc / 100 
-    // qmax_CEDV = QmaxCapcity_Calc/144/dropSoc ;   // (dropSoc/100)  = soc / 100 
-    // qmax_CEDV = QmaxCapcity_Calc*100/144/dropSoc/100 ;   // (dropSoc/100)  = soc / 100 
-    // qmax_CEDV_temp = QmaxCapcity_Calc*25/36/dropSoc/100 ;   // (dropSoc/100)  = soc / 100        
-    // qmax_CEDV_temp = QmaxCapcity_Calc*1/36/dropSoc/4 ;   // (dropSoc/100)  = soc / 100 
     t_com94_out =  QmaxCapcity_Calc/14400  ;  
     qmax_CEDV_temp = QmaxCapcity_Calc/dropSoc/144 ;   // (dropSoc/100)  = soc / 100   
-    
-
-    // 6350
-    // 6355
-    // t_com31_out = qmax_CEDV_temp ;
-
 
     return qmax_CEDV_temp  ;
 }
@@ -1261,7 +947,7 @@ void QMax_Calc_CEDV(void)
                 }
             }
             t_com8d_out = SOC_CEDV;
-            Record_lrc_w_CEDV =  (uint32_t)qmax_CEDV*SOC_CEDV*144+(uint32_t)qmax_CEDV*SOC_CEDV*71/50; // capcity + capcity /100 ;
+            Record_lrc_w_CEDV =  (uint32_t)t_com10*SOC_CEDV*144+(uint32_t)t_com10*SOC_CEDV*71/50; // capcity + capcity /100 ;
         }
     }
     else
@@ -1326,7 +1012,7 @@ void QMax_Calc_CEDV(void)
                             SOC_CEDV =  PackQamxInitSOC ;   // f_relax time sufficient time , update SOC .
                             t_com8d_out  =  SOC_CEDV  ;
                           //  t_com99_out = aidxq1;
-                            Record_lrc_w_CEDV =  (uint32_t)qmax_CEDV*SOC_CEDV*144+(uint32_t)qmax_CEDV*SOC_CEDV*71/50; // capcity + capcity /100 ;
+                            Record_lrc_w_CEDV =  (uint32_t)t_com10*SOC_CEDV*144+(uint32_t)t_com10*SOC_CEDV*71/50; // capcity + capcity /100 ;
 
                             // t_com9a_out = PackQamxInitSOC;
                             for (aidxq1 = 0; (aidxq1 < 102) && (_DAStatus1.CellVoltage1 > SOC_OCV_103_TBL[aidxq1]); aidxq1++)
@@ -1416,10 +1102,10 @@ void QMax_Calc_CEDV(void)
                                         PackQamxEndSOC = aidxq1;
                                     }
                                 }
-                            
-                            SOC_CEDV =  PackQamxEndSOC ;   // f_relax time sufficient time , update SOC .
-                           t_com8d_out  =  SOC_CEDV  ;  // this should in front of    Record_lrc_w_CEDV = 
-                           Record_lrc_w_CEDV =  (uint32_t)qmax_CEDV*SOC_CEDV*144+(uint32_t)qmax_CEDV*SOC_CEDV*71/50; // capcity + capcity /100 ;
+
+                                SOC_CEDV = PackQamxEndSOC;                                                                       // f_relax time sufficient time , update SOC .
+                                t_com8d_out = SOC_CEDV;                                                                          // this should in front of    Record_lrc_w_CEDV =
+                                Record_lrc_w_CEDV = (uint32_t)t_com10 * SOC_CEDV * 144 + (uint32_t)t_com10 * SOC_CEDV * 71 / 50; // capcity + capcity /100 ;
 
                                 f_Qmax_end = ON; // t_com84_out  =  f_Qmax_end  ;
                                 f_Qmax_start = OFF;
@@ -1448,19 +1134,15 @@ void QMax_Calc_CEDV(void)
                     if (CEDV_soc_range >= 55)
                     {
 
-                        qmax_CEDV = QMaxUpdateJudge_CEDV(PackQamxInitSOC, PackQamxEndSOC);
+                        t_com10 = QMaxUpdateJudge_CEDV(PackQamxInitSOC, PackQamxEndSOC);
 
-                        Record_lrc_w_CEDV = (uint32_t)qmax_CEDV * SOC_CEDV * 144 + (uint32_t)qmax_CEDV * SOC_CEDV * 71 / 50; // capcity + capcity /100 ;
+                        Record_lrc_w_CEDV = (uint32_t)t_com10 * SOC_CEDV * 144 + (uint32_t)t_com10 * SOC_CEDV * 71 / 50; // capcity + capcity /100 ;
 
-                        Record_lrc_w_CEDV_fcc_show = (int32_t)(((long)qmax_CEDV * 144) * SOC_CEDV_show);
+                        Record_lrc_w_CEDV_fcc_show = (int32_t)(((long)t_com10 * 144) * SOC_CEDV_show);
                         Record_lrc_w_CEDV_fcc_show_last = Record_lrc_w_CEDV_fcc_show;
-                        // Record_lrc_w_CEDV  =  (int32_t)(((long)qmax_CEDV * 144)*SOC_CEDV_show);
-                        t_com0f_CEDV_show = (Record_lrc_w_CEDV_fcc_show / (60 * 60 * 4));
-                        SOC_CEDV_show = (uint16_t)((((long)t_com0f_CEDV_show * 2000) / qmax_CEDV + 10) / 2) / 10;
+                        t_com0f = (Record_lrc_w_CEDV_fcc_show / (60 * 60 * 4));
+                        SOC_CEDV_show = (uint16_t)((((long)t_com0f * 2000) / t_com10 + 10) / 2) / 10;
                         t_com0d  = SOC_CEDV_show;
-
-                        fcc_use_qmax = qmax_CEDV;
-                        t_com10Cap = qmax_CEDV;
                         t_com32_out = fcc_CEDV_Ture;
 
                         // QMaxUpdateReset_CEDV();
@@ -1617,46 +1299,24 @@ void Calc_FCC_CEDV(void)  // read four , % -1.5 0 1 2 3 4 ....101 res  , calc on
 
            
             judge_greater_than_0_add_k =  SOC_OCV_103_TBL[soc_to_res_index] \
-            - (uint16_t)((long)I_abs * Res_Temp_CEDV_Inner_turn_new/10000) - D_Discharge_0_voltage ;  //  D_0PVOLT  staitc      
-      
-           
-            // if (judge_greater_than_0 < 0)
-            // {
-            //     // t_com4d_out =10000+judge_greater_than_0  ;
-            //     // t_coma1_out = 1  ;
-            // }
-            // else
-            // {
-            //     // t_com4d_out = judge_greater_than_0  ;
-            //     // t_coma1_out = 0  ;
-            // }
+            - (uint16_t)((long)I_abs * Res_Temp_CEDV_Inner_turn_new/10000) - D_Discharge_0_voltage ;  //  D_0PVOLT  staitc
 
-           // if (judge_greater_than_0 >= 0)
-           if (judge_greater_than_0_add_k >= 0)
+            // if (judge_greater_than_0 >= 0)
+            if (judge_greater_than_0_add_k >= 0)
             {
-               // t_com4c_out = D_Design_Capacity_mAh;
-             //   t_com4d_out = Res_Temp_CEDV_Inner[6];  
-             //  t_com97_out =  SOC_OCV_103_TBL[soc_to_res_index]  ;
-              //  t_com98_out =  Ts_max ;
-               t_com93_out =  soc_to_res_index ;
-              //  t_com95_out   =  I_abs  ; 
-               // t_com96_out = Res_Temp_CEDV_Inner_turn  ;
+                t_com93_out = soc_to_res_index;
                 t_com1f_out = Res_Temp_CEDV_Inner_turn_new;
-            //    t_com8f_out = Res_Temp_CEDV_Inner_temp; // log r
-                
-               Res_Temp_CEDV_Inner_out = Res_Temp_CEDV_Inner_turn;
-               fcc_CEDV_Ture = (uint16_t)(long)qmax_CEDV * (102 - soc_to_res_index) / 102;
+                Res_Temp_CEDV_Inner_out = Res_Temp_CEDV_Inner_turn;
+                fcc_CEDV_Ture = (uint16_t)(long)t_com10 * (102 - soc_to_res_index) / 102;
 
-                if(f_fulchg_fuldsg)
-                { 
-                   fcc_CEDV_Ture =  ful_dsg_cap_FCC ;
+                if (f_fulchg_fuldsg)
+                {
+                    fcc_CEDV_Ture = ful_dsg_cap_FCC;
                 }
-                fcc_CEDV_Ture = fcc_CEDV_Ture>=D_FCCMAXLIMIT?D_FCCMAXLIMIT:fcc_CEDV_Ture;
-                fcc_CEDV_Ture = fcc_CEDV_Ture<=D_FCCMINLIMIT?D_FCCMINLIMIT:fcc_CEDV_Ture;
-               t_com32_out = fcc_CEDV_Ture;
-               t_com10Cap = qmax_CEDV;
-              // t_com8b_out = fcc_use_qmax;
-               break;
+                fcc_CEDV_Ture = fcc_CEDV_Ture >= D_FCCMAXLIMIT ? D_FCCMAXLIMIT : fcc_CEDV_Ture;
+                fcc_CEDV_Ture = fcc_CEDV_Ture <= D_FCCMINLIMIT ? D_FCCMINLIMIT : fcc_CEDV_Ture;
+                t_com32_out = fcc_CEDV_Ture;
+                break;
             }
         }
     }else   // not dsg , for ful chg ful dsg 
@@ -1674,23 +1334,22 @@ void Make_RC_CEDV(void)
 	tworka = (uint16_t)(Record_lrc_w_CEDV_fcc_show/(60*60*4));			// RC = RC_W / (60min*60sec*4)
    
     // if( twork > fcc_CEDV_Ture  )						// RC > FCC ?
-    if (tworka >= qmax_CEDV)
+    if (tworka >= t_com10)
     {
 
-        t_com0f_CEDV_show = fcc_use_qmax; // RC = FCC
+        t_com0f= t_com10; // RC = FCC
     }
     else
     {
-        t_com0f_CEDV_show = tworka;
+        t_com0f= tworka;
     }
 
-    t_com0fCap = t_com0f_CEDV_show;
 
     twork2 = (uint16_t)(Record_lrc_w_CEDV / (60*60*4));   // CEDV at most = 102 .
-   //  if (twork2 >= qmax_CEDV+qmax_CEDV/50-1 )  // cause soc_CEDV index : less than 102 , can reach 101 .
-  if (twork2 >= qmax_CEDV )  // cause soc_CEDV index : less than 102 , can reach 101 .
+   //  if (twork2 >= t_com10+t_com10/50-1 )  // cause soc_CEDV index : less than 102 , can reach 101 .
+  if (twork2 >= t_com10 )  // cause soc_CEDV index : less than 102 , can reach 101 .
     {
-        t_com0f_CEDV = qmax_CEDV;
+        t_com0f_CEDV = t_com10;
     }
     else
     {
@@ -1713,7 +1372,7 @@ void Calc_fulchg_dsg_cap(void)
     {
         I_abs_ful = I_abs + I_abs / 130;
         ful_dsg_cap_dsg += I_abs_ful;
-        // t_com8f_out = ful_dsg_cap_dsg/14400;
+    
     }
 
     if ((f_charge) || (V_min <= D_0PVOLT))
@@ -1802,7 +1461,7 @@ void Chg_Pinghua_CEDV(void)
         {
             f_pinghua_work_CE=1;
             rc_cap=D_PINGHUA_CAP_LOW- (Current()-D_PINGHUA_CHGCUR_LOW)*(ABS(D_PINGHUA_CAP_LOW-D_PINGHUA_CAP_HIGH))/(D_PINGHUA_CHGCUR_HIGH-D_PINGHUA_CHGCUR_LOW);
-            chg_smooth_cur_CE =(qmax_CEDV-t_com0f_CEDV_show)/rc_cap;
+            chg_smooth_cur_CE =(t_com10-t_com0f)/rc_cap;
         }
         else
         {
@@ -1813,73 +1472,6 @@ void Chg_Pinghua_CEDV(void)
 
 
 
-void chg_pinghua_CEDV(void)
-{
-	// if (f_charge == ON)
-	// {
-	// 	if (V_max >(t_com15/4-D_PINGHUA_CHGVOL_THRESH )  && (Current()>=D_PINGHUA_CHGCUR_LOW &&Current()<=D_PINGHUA_CHGCUR_HIGH))
-	// 	{
-    //         t_com9a_out = 1 ;
-	// 		if (f_pinghua_conditon_CE == 0)
-	// 		{
-
-    //              t_com9a_out =2 ;
-	// 			temp_Cur_CE = Current();
-	// 			f_pinghua_conditon_CE = 1;
-	// 			pinghua_soc_start_CE = SOC_CEDV_show;
-
-	// 		}
-	// 		//if (f_pinghua_conditon_CE == 1 && buchang_con_cnt < D_PINGHUA_TIME) // must have this , or the next circle will not come in .
-	// 		if (f_pinghua_conditon_CE == 1 && buchang_con_cnt_CE < D_PINGHUA_TIME) // must have this , or the next circle will not come in .
-	// 		{
-
-    //             t_com9a_out =3 ;
-	// 			buchang_con_cnt_CE++; // condition reach  + 1
-	// 		}
-	// 		// if (f_pinghua_work_CE == 0 && f_pinghua_conditon_CE == 1 && buchang_con_cnt == 40 && (temp_Cur - t_com0a >= D_PINGHUA_CUR_RANGE ))
-	// 		if (f_pinghua_work_CE == 0 && f_pinghua_conditon_CE == 1 && buchang_con_cnt_CE >= 40 && (temp_Cur_CE - Current() >= D_PINGHUA_CUR_RANGE))
-	// 		// use conditon == 1 , in case come into again when condition reach
-	// 		{
-    //              t_com9b_out =1 ;
-	// 			// about  100-t_com2c) * FCC /39
-	// 			f_pinghua_work_CE = 1;
-	// 		}
-	// 		if (SOC_CEDV_show < 100 && f_pinghua_work_CE == 1) // 
-	// 		{
-    //              t_com9b_out =2 ;
-	// 			// chg_smooth_cur = (uint32_t)(100 - pinghua_soc_start) * t_com0f/D_CHG_PINGHUA_FACTOR; // chg_buchang_value = (100-t_com2c) * FCC /100 *3600 /1400;
-	// 			// 	  // can not use 100 -t_com2c , it will make the real less .   cur = cap / t .
-	// 			chg_smooth_cur_CE = (uint32_t)(100 - pinghua_soc_start_CE) * t_com10/D_PINGHUA_CAP_TIME*36;
-
-    //             //  0.03* fcc *3600 
-	// 		}
-	// 		else
-	// 		{
-	// 			f_pinghua_work_CE = 0; // control rsoc = 100  // use this control outer function ,can not delete
-	// 		}
-	// 	}
-	// 	else
-	// 	{
-
-    //         t_com9a_out =3 ;
-    //         t_com9b_out =3 ;
-	// 		f_pinghua_conditon_CE = 0;
-	// 		f_pinghua_work_CE = 0;
-	// 		buchang_con_cnt_CE = 0;
-	// 	}
-	// }
-	// else
-	// {
-
-    //     t_com9a_out =4 ;
-    //     t_com9b_out =4 ;
-	// 	f_pinghua_conditon_CE = 0;
-	// 	f_pinghua_work_CE = 0;
-	// 	buchang_con_cnt_CE = 0;
-	// }
-}
-
-
 
 void Calc_HoseiRC_CEDV(uint32_t	lrc)
 {
@@ -1887,21 +1479,20 @@ void Calc_HoseiRC_CEDV(uint32_t	lrc)
 
     static uint16_t  dis_fac_cpl_CEDV ;
     uint32_t soc_temp_CE;
-//  uint16_t dis_fac_cpl;
 
-     // t_com10_out =  dis_fac_cpl_CEDV ;
-	if( f_cp_l == ON )							// CP_L not detected ?
-	{									// CP_L detected ?
-		if( f_cp_l_last_CEDV == OFF)  // to do clear 0 .  / can come here , must means this time cpl ON . 
-		{
+
+    if (f_cp_l == ON)               
+    {                                
+        if (f_cp_l_last_CEDV == OFF)
+        {
             if (0 != D_CP_L)
             {
-                soc_temp_CE = SOC_CEDV_show ;
-                dis_fac_cpl_CEDV = soc_temp_CE * 1000 /(D_CP_L*10) ;
+                soc_temp_CE = SOC_CEDV_show;
+                dis_fac_cpl_CEDV = soc_temp_CE * 1000 / (D_CP_L * 10);
             }
             else
             {
-               dis_fac_cpl_CEDV = 100;
+                dis_fac_cpl_CEDV = 100;
             }
             if (SOC_CEDV_show >= D_CP_L)
             {
@@ -1920,153 +1511,9 @@ void Calc_HoseiRC_CEDV(uint32_t	lrc)
             }
         }
 
-		Record_lrc_w_CEDV_fcc_show -= dis_fac_cpl_CEDV*cur_qmax_chu_fcc/100;   // muti 
-        Record_lrc_w_CEDV -= I_abs ;
-
-		// t_com39_out = Record_lrc_w /3600/4 ;
-
-	
-		// 使用 除余的方式？
-
-		// if (SOC_CEDV_show != 0)
-		// {
-		// 	if (Record_lrc_w <= t_com10 * 80)
-		// 	{
-		// 		Record_lrc_w = t_com10 * 80; // Set 0
-		// 	}
-		// 	if (lrc_w_last <= t_com10 * 80)
-		// 	{
-		// 		lrc_w_last = t_com10 * 80; // 40 is right number ,since t_com10*36/3600 ,maybe rsoc == 0 ;
-		// 	}
-		// }else
-		// {
-		// 	Record_lrc_w = 0 ;
-		// 	lrc_w_last  = 0 ; 
-		// }
-
-		// if (V_min> D_0PVOLT) // D_0PVOLT =t_com33
-		// {
-		// 	if (SOC_CEDV_show != 0)
-		// 	{
-		// 		if (Record_lrc_w <= t_com10*80)
-		// 		{
-		// 			Record_lrc_w = t_com10 *80; // Set 0
-		// 		}
-		// 		if (lrc_w_last <= t_com10 * 80)
-		// 		{
-		// 			lrc_w_last = t_com10 * 80; // 40 is right number ,since t_com10*36/3600 ,maybe rsoc == 0 ;
-		// 		}
-		// 	}else  // SOC_CEDV_show soc == 0 ; 
-		// 	{
-		// 		if (!f_charge)
-		// 		{
-		// 			Record_lrc_w = 0;
-		// 			lrc_w_last = 0;
-		// 		}
-		// 	}
-		// }
-		// else 
-		// {
-
-		// 	if (SOC_CEDV_show == 0)
-		// 	{
-		// 		if (!f_charge)
-		// 		{
-		// 			Record_lrc_w = 0;
-		// 			lrc_w_last = 0;
-		// 		}
-		// 	}
-
-		// 	if (Record_lrc_w <= 0)
-		// 	{
-		// 		Record_lrc_w = 0; // Set 0
-		// 	}
-		// 	if(lrc_w_last  <= 0)
-		// 	{
-		// 		lrc_w_last = 0; // 40 is right number ,since t_com10*36/3600 ,maybe rsoc == 0 ;
-		// 	}
-		// }
-
-
-
-		// if ((V_min <= D_0PVOLT + 20) && (SOC_CEDV_show > 2))
-		// {
-		// 	//  Count_13s_rsoc_2 =  0 ;
-		// 	Count_13s_rsoc_2++ ;
-		// 	if (Count_13s_rsoc_2 >= D_Discharge_0_voltage_Delay*4 )
-		// 	{
-		// 		Count_13s_rsoc_2 = 0;	
-		// 		Record_lrc_w = t_com10 * 288; // rc  
-		// 		lrc_w_last = Record_lrc_w;
-		// 	}
-		// }else
-		// {
-
-		// 	Count_13s_rsoc_2 =  0 ;
-		// }
-
-
-	
-		// if ((V_min <= D_0PVOLT + 10) && (SOC_CEDV_show > 1))
-		// {
-		// 	Count_13s_rsoc_1++ ;
-		// 	if (Count_13s_rsoc_1 >= D_Discharge_0_voltage_Delay*4 )
-		// 	{
-		// 		Count_13s_rsoc_1 = 0;				  // Clear the counte
-		// 		Record_lrc_w = t_com10 * 144; // rc  
-		// 		lrc_w_last = Record_lrc_w;
-		// 	}
-
-		// }else
-		// {
-		// 	Count_13s_rsoc_1 =  0 ;
-		// }
-
-	// 	if (V_min > D_0PVOLT) // D_0PVOLT  D_Discharge_0_voltage
-	// 	{ 
-	// 		if (SOC_CEDV_show != 0)
-	// 		{
-	// 			if (Record_lrc_w <= t_com10 * 80)
-	// 			{
-	// 				Record_lrc_w = t_com10 *80; // Set 0
-	// 			}
-	// 			if (lrc_w_last <= t_com10 * 80)
-	// 			{
-	// 				lrc_w_last = t_com10 * 80; // 40 is right number ,since t_com10*36/3600 ,maybe rsoc == 0 ;
-	// 			}
-	// 		}
-	// 		else  //  (V_min > D_0PVOLT)  && soc == 0 
-	// 		{
-	// 			if (!f_charge)
-	// 			{
-	// 				Record_lrc_w = 0;
-	// 				lrc_w_last = 0;
-	// 			}
-	// 		}
-	// 	}
-	// 	else //  V_min <= D_0PVOLT 
-	// 	{
-	// 		if(SOC_CEDV_show==0 )
-	// 		{
-	// 			if (!f_charge)
-	// 			{
-	// 				Record_lrc_w = 0;
-	// 				lrc_w_last = 0;
-	// 			}
-	// 		}
-	// 	}
-	// }
-
-	// if (Record_lrc_w <= 0)
-	// {
-	// 	Record_lrc_w = 0; // Set 0
-	// }
-	// if (lrc_w_last <= 0)
-	// {
-	// 	lrc_w_last = 0; // 40 is right number ,since t_com10*36/3600 ,maybe rsoc == 0 ;
-	// }
-    
-}
+        Record_lrc_w_CEDV_fcc_show -= dis_fac_cpl_CEDV * cur_qmax_chu_fcc / 100; // muti
+        Record_lrc_w_CEDV -= I_abs;
+    }
 }
 
 void Calc_RC_CEDV(void)
@@ -2113,7 +1560,7 @@ void Calc_RC_CEDV(void)
 
     if (0 != fcc_CEDV_Ture)
     {
-        qmax_chu_fcc = qmax_CEDV * 10000 / fcc_CEDV_Ture;
+        qmax_chu_fcc = t_com10 * 10000 / fcc_CEDV_Ture;
     }
     else
     {
@@ -2161,13 +1608,8 @@ void Calc_RC_CEDV(void)
             {
                 VoltagetoRSOCcount_CEDV = D_Discharge_0_voltage_Delay * 4;
                 Record_lrc_w_CEDV_fcc_show = 0; // Correction capacity = 0
-                // lrccr_w = 0;					// Charge relearn capacity = 0
-                //			f_gs_fd = ON; //20230918
-                t_com0f_CEDV_show = 0; // RC[mAh] = 0
-                                       //  t_com0f_CEDV = 0 ;
-                t_com0fCap = t_com0f_CEDV_show;
+                t_com0f = 0; // RC[mAh] = 0
                 SOC_CEDV_show = 0;
-                //   SOC_CEDV = 0 ;  soc right bubian .
                 return;
             }
         }
@@ -2233,28 +1675,28 @@ void Calc_RC_CEDV(void)
         }
     }
 
-    if (Record_lrc_w_CEDV_fcc_show >= qmax_CEDV * 14400) // this is show for out
+    if (Record_lrc_w_CEDV_fcc_show >= t_com10 * 14400) // this is show for out
     {
-        Record_lrc_w_CEDV_fcc_show = qmax_CEDV * 14400;
+        Record_lrc_w_CEDV_fcc_show = t_com10 * 14400;
     }
 
-    //  if (Record_lrc_w_CEDV >= qmax_CEDV * 14400+ qmax_CEDV * 286 + )  // qmax * 101.99
+    //  if (Record_lrc_w_CEDV >= t_com10 * 14400+ t_com10 * 286 + )  // qmax * 101.99
     //
-    if (Record_lrc_w_CEDV >= qmax_CEDV * 14686) // qmax * 101.99
+    if (Record_lrc_w_CEDV >= t_com10 * 14686) // qmax * 101.99
     {
-        Record_lrc_w_CEDV = qmax_CEDV * 14686;
+        Record_lrc_w_CEDV = t_com10 * 14686;
     }
 
     // no need more than  (V_min > D_0PVOLT)
     if (SOC_CEDV_show != 0)
     {
-        if (Record_lrc_w_CEDV_fcc_show <= qmax_CEDV * 80)
+        if (Record_lrc_w_CEDV_fcc_show <= t_com10 * 80)
         {
-            Record_lrc_w_CEDV_fcc_show = qmax_CEDV * 80; // Set 0
+            Record_lrc_w_CEDV_fcc_show = t_com10 * 80; // Set 0
         }
-        if (Record_lrc_w_CEDV_fcc_show_last <= qmax_CEDV * 80)
+        if (Record_lrc_w_CEDV_fcc_show_last <= t_com10 * 80)
         {
-            Record_lrc_w_CEDV_fcc_show_last = qmax_CEDV * 80; // 40 is right number ,since t_com10*36/3600 ,maybe rsoc == 0 ;
+            Record_lrc_w_CEDV_fcc_show_last = t_com10 * 80; // 
         }
     }
     else //  (V_min > D_0PVOLT)  && soc == 0
@@ -2272,7 +1714,7 @@ void Calc_RC_CEDV(void)
     }
     if (Record_lrc_w_CEDV_fcc_show_last < 0)
     {
-        Record_lrc_w_CEDV_fcc_show_last = 0; // 40 is right number ,since t_com10*36/3600 ,maybe rsoc == 0 ;
+        Record_lrc_w_CEDV_fcc_show_last = 0; //
     }
 
     Record_lrc_w_CEDV_fcc_show_last = Record_lrc_w_CEDV_fcc_show;
@@ -2289,10 +1731,7 @@ void Calc_RSOC_CEDV(void)
 	uint16_t atwork1;
     uint16_t atwork2;
     static uint8_t Cnt_40_CE ;
-	// RSOC = RemainingCapacity / FullChargeCapacity * 100
-	// Calc RSOC and store to temporary area.
-	// The result is rounded off.
-	atwork1 = (uint16_t)((((long)t_com0f_CEDV_show * 2000)/qmax_CEDV+10)/2);
+	atwork1 = (uint16_t)((((long)t_com0f * 2000)/t_com10+10)/2);
 
 	if(!f_charge)  // use on computer , if charge , sishewuru .
 	{
@@ -2301,8 +1740,6 @@ void Calc_RSOC_CEDV(void)
 			atwork1 += 5 ;
 		}
 	}
-
-
 	if(atwork1 > 995)
 	{
 		if(D_SBS_Gauging_Configuration_RSOCL == ON)							// More than 99% ?
@@ -2344,11 +1781,10 @@ void Calc_RSOC_CEDV(void)
                 if (Cnt_40_CE >= D_Discharge_0_voltage_Delay*4) // D_Discharge_0_voltage_Delay*4
                 {
                     Cnt_40_CE = D_Discharge_0_voltage_Delay*4 ;
-                    // Record_lrc_w_CEDV_fcc_show = 0;						// Correction capacity = 0
-                    // t_com0f_CEDV_show = 0;					// RC[mAh] = 0
                     atwork1 = 0;
-                  //   SOC_CEDV_show = 0;
-                }else // V_min <= D_0PVOLT   Cnt_40_CE <  D_Discharge_0_voltage_Delay*4
+                  
+                }
+                else // V_min <= D_0PVOLT   Cnt_40_CE <  D_Discharge_0_voltage_Delay*4
                 {
                     // atwork1 = 0;   when it is soc = 0 first , can not make soc  =1  ;
                     if(SOC_CEDV_show >0)
@@ -2376,9 +1812,26 @@ void Calc_RSOC_CEDV(void)
 	SOC_CEDV_show = atwork1;		
     t_com0d = SOC_CEDV_show ;					// Set to RSOC  RSOC 
 
-    atwork2 = (uint16_t)((((long)t_com0f_CEDV*2000)/qmax_CEDV)/ 2);  // jia 0.99%    // to do 20250919
+    atwork2 = (uint16_t)((((long)t_com0f_CEDV*2000)/t_com10)/ 2);  // jia 0.99%    // to do 20250919
     SOC_CEDV = atwork2/10;		
-    t_com8d_out  =  SOC_CEDV  ;
+    t_com8d_out  =  SOC_CEDV;
+
+    if(BatteryMode(CAPM) == ON)
+	{
+		t_com0fCap = (long)t_com0f*D_Design_Voltage/10000; //cWh
+		t_com10Cap = (long)t_com10*D_Design_Voltage/10000;//cWh
+		_DesignCapacity = (long)D_Design_Capacity_mAh*D_Design_Voltage/10000;//cWh  //20221110-YYT
+		_RemainingCapacityAlarm = (long)D_Data_Remaining_Wh_Capacity_Alarm;//cWh
+		BatteryMode(CAPM) = ON;
+	}
+	else
+	{
+		t_com0fCap = t_com0f;//mAh
+		t_com10Cap = t_com10;//mAh
+		_DesignCapacity  =D_Design_Capacity_mAh ;
+		_RemainingCapacityAlarm = D_Data_Remaining_Ah_Capacity_Alarm; // cWh//
+		BatteryMode(CAPM) = OFF;
+	}
 }
 
 
@@ -2401,40 +1854,25 @@ static void FullCharge_CEDV(void)
         
     }
     else
-    {                                            // Make relearning
-      //  FCC_Limit_Chk();                         // FCC inc/dec limit check
-
-        Record_lrc_w_CEDV_fcc_show =  (uint32_t)fcc_use_qmax * (60 * 60*4);   // idea rc * 14400
-        //tccup = (uint16_t)((long)fcc_use_qmax * ABS(D_Cycle_Count_Percentage)/100);
+    {                                      
+        Record_lrc_w_CEDV_fcc_show =  (uint32_t)t_com10 * (60 * 60*4);   // idea rc * 14400
         SOC_CEDV_show = 100;     // RSOC=100%
-        t_com0f_CEDV_show = fcc_use_qmax; // Update RemainingCapacity()
-
-        //Record_lrc_w_CEDV =  (uint32_t)qmax_CEDV * (60 * 60*4)/100*101.99;   
-        Record_lrc_w_CEDV =  (uint32_t)qmax_CEDV*14686;
+        t_com0f = t_com10; // Update RemainingCapacity()
+        Record_lrc_w_CEDV =  (uint32_t)t_com10*14686;
         SOC_CEDV = 101;     // soc_CEDV =101 ; 
-       //  t_com0f_CEDV = qmax_CEDV+ qmax_CEDV/100; // Update RemainingCapacity()  // to do 20250919
     }
 
     if (f_fullchg_CEDV == OFF) // FULLY_CHARGED == OFF ?
     {
-        Record_lrc_w_CEDV_fcc_show = (long)fcc_use_qmax * 14400; // Calc RC integration work
-        t_com0f_CEDV_show = fcc_use_qmax; // Update RemainingCapacity()
+        Record_lrc_w_CEDV_fcc_show = (long)t_com10 * 14400; // Calc RC integration work
+        t_com0f = t_com10; // Update RemainingCapacity()
         SOC_CEDV_show = 100;     // RSOC=100%
-        t_com0fCap = t_com0f_CEDV_show  ;
-
-        Record_lrc_w_CEDV =  (uint32_t)qmax_CEDV * 14686;  // full qmax* 1.0199    casue calc soc_CEDV use :  rc /fcc 
+        Record_lrc_w_CEDV =  (uint32_t)t_com10 * 14686;  // full qmax* 1.0199    casue calc soc_CEDV use :  rc /fcc 
         SOC_CEDV = 101;     // soc_CEDV =101 ; 
 
     }
     f_fullchg_CEDV = ON; // Set FULLY_CHARGED
-    // f_ful_chg_once = 1 ;
-   //  f_VCT = ON;
-   f_VCT_CEDV = ON;
-    //	acccv_cnt = 0;								// Clear CC/CV time counter
-   // t_com0c = 0;     // Clear MaxError
-    //lmaxerr_cnt = 0; // Clear MaxError counter
-   //  _ChargingCurrent = 0;     // ChargingCurrent() = 0
-
+    f_VCT_CEDV = ON;
     f_ful_chg_once = 1 ;
     lmaxerr_cnt = 0; // Clear MaxError counter
     _ChargingCurrent = 0;     // ChargingCurrent() = 0
@@ -2458,7 +1896,7 @@ void FullCharge_Chk_CEDV(void)
 
         if (f_fullchg_CEDV == ON) // FULLY_CHARGED = ON ?
         {
-            if (t_com0f_CEDV_show >= fcc_use_qmax) // RC >= FCC ?
+            if (t_com0f >= t_com10) // RC >= FCC ?
             {
                 FullCharge_CEDV(); // Full Charge Processing
             }
@@ -2647,172 +2085,8 @@ if(!f_IN_CFET || !f_SU_CFET)
     Set_FET();
 }
 
-static void FullCharge(void)
-{
-    uint16_t twork;
-    if (D_Control_flag_1_DIS_DSG_Releaning == OFF) // Dischg relearn not disable ?
-    {
-        f_study_d = ON; // Set discharge relearn flag
-        f_study_d1 = ON;
-        f_study_d2 = ON;
-        f_study_d3_ful = ON;
-    }
-
-    if (Ts_max < D_FCC_relearn_temp_limit || f_study_c == OFF) // Less than relearn limit temp  // or Charge relearn flag=OFF ?
-    {
-        if (Record_trek_cnt != 0 && D_FCC_Deterioration_capacity != 0) // Degradation cnt is not 0 ?
-        {
-            // FCC = FCC - (Degradation counter * Degradation capacity)
-            twork = (uint16_t)(((long)Record_trek_cnt * D_FCC_Deterioration_capacity) / 100);
-            if (t_com10 > twork) // Not Under flow ?
-            {
-                t_com10 = t_com10 - twork;
-                tccup = (uint16_t)((long)t_com10 * ABS(D_Cycle_Count_Percentage)/100);
-            }
-            else
-            {
-                t_com10 = 10; // Under flow
-                tccup = (uint16_t)((long)t_com10 * ABS(D_Cycle_Count_Percentage)/100);
-            }
-        }
-    }
-    else
-    {                                            // Make relearning
-        arelearn_cnt = 0;                        // Clear Relearning counter
-        f_relearn = OFF;                         // Clear Relearning flag
-        tcom10c_w = (uint16_t)(lrccr_w / 14400); // Calc new FCC
-        FCC_Limit_Chk();                         // FCC inc/dec limit check
-        t_com10 = tcom10c_w;                     // Set FullChargeCapacity()
-
-        Record_lrc_w =  (uint32_t)t_com10 * (60 * 60*4);   // idea rc * 14400
-        Record_Ilrc_w = (long)t_com89* 14400; // Calc RC integration work
-
-        // Record_Ilrc_w =  (uint32_t)t_com88 * (60 * 60*4);   // idea rc * 14400
-        tccup = (uint16_t)((long)t_com10 * ABS(D_Cycle_Count_Percentage)/100);
-
-        t_com8a = 100 ;  // idea rsoc = 100 
-        t_com0d = 100; 
-
-        t_com0f = t_com10; // Update RemainingCapacity()
-        t_com88 =  t_com89 ;  // idea rc = idea fcc 
-        
-
-    }
-    Record_trek_cnt = 0; // Clear degradation counter
-    f_study_c = OFF;
-
-    if (f_fullchg == OFF) // FULLY_CHARGED == OFF ?
-    {
-        Record_lrc_w = (long)t_com10 * 14400; // Calc RC integration work
-        Record_Ilrc_w = (long)t_com89 * 14400; // Calc RC integration work
-        if (f_study_d == ON)           // Start discharge relearn ?
-        {
-            lrcdr_w = 0; // Clear discharge relarn cap.
-        }
-        t_com0d = 100;     // RSOC=100%
-        t_com8a = 100 ;  // idea rsoc = 100 
-
-        t_com0f = t_com10; // Update RemainingCapacity()
-        t_com88 = t_com89 ;  // idea rc = idea fcc 
-        
-        // (To prevent changing CC when capacity is jumped.)
-        toldrc = t_com10; // Update to RemCap value last time
-                          // Update last RemCap
-    }
-    f_fullchg = ON; // Set FULLY_CHARGED
-    f_VCT = ON;
-    //	acccv_cnt = 0;								// Clear CC/CV time counter
-   // t_com0c = 0;     // Clear MaxError
-    f_ful_chg_once = 1 ;
-    lmaxerr_cnt = 0; // Clear MaxError counter
-    _ChargingCurrent = 0;     // ChargingCurrent() = 0
-}
-
-/********************************
- * Function Name: FullCharge_Chk
- * Return:        void
- * note: void
- *********************************/
-void FullCharge_Chk(void)
-{
-    // FCC
-    static uint16_t tfc_cnt = 0;
-    static uint32_t rc_integral = 0;
-    uint16_t twork;
-
-    // if (t_com0d < 100)
-    // {
-    //     f_VCT = OFF;
-    // }
-
-    // if(f_pi_mode)  // step into pimode , not dsg update .
-	// {
-    //     f_study_d = 0 ;
-	// }
-    
 
 
-    // Not OVER_CHARGED_ALARMf_chg
-    // if (f_chg) // C-FET = ON ?
-    // {
-    if (f_charge == ON && f_chg) // Charging current detection ?
-    {
-        if (f_fullchg == ON) // FULLY_CHARGED = ON ?
-        {
-            if (t_com0f >= t_com10) // RC >= FCC ?
-            {
-                FullCharge(); // Full Charge Processing
-            }
-        }
-        else
-        { // FULLY_CHARGED = OFF
-          // MaxV >= Single cell CV-FCtaperV
-          // & Full Charge Current less than ?
-            // t_com3a_out = NUMBER_SERIES  ;
-            if ((V_max >= (_ChargingVoltage/NUMBER_SERIES - D_Termination_Charge_Term_Voltage)) && (_AverageCurrent < Charge_Term))
-            {
-                // t_com15_test = _ChargingVoltage ;
-                // if (!getSoftTimerStatus(SOFT_TIMER_FC_ID))
-                // {
-                //     StartSoftTimer(SOFT_TIMER_FC_ID, SINGLE_MODE, D_Termination_Fullcharge_judgement_time * 1000, FullCharge);
-                // }
-                tfc_cnt++; // Full Charge check count + 1
-                rc_integral += I_abs;
-                // Full charge determination time elapsed ?
-                if (tfc_cnt >= D_Termination_Fullcharge_judgement_time * 4)
-                {
-                    // tfc_cnt = 0;  // Clear Full Charge check count
-                    if (rc_integral / 4 / 3600 >= D_Termination_Charge_Term_Taper_Capacity)
-                    {
-                        tfc_cnt = 0;
-                        rc_integral = 0;
-                        FullCharge(); // Full Charge Processing
-                    }
-                    else
-                    {
-                        tfc_cnt = D_Termination_Fullcharge_judgement_time - 1;
-                    }
-                }
-            }
-            // else
-            // {
-            //     if (tfc_cnt != 0) // Full Charge check count = 0 ?
-            //     {
-            //         tfc_cnt-=Periodtime; // Full Charge check count - 1
-            //     }
-            //     rc_integral = 0;
-            // }
-        }
-    }
-    else
-    {
-        // Charging current undetected
-        tfc_cnt = 0; // Clear Full Charge check count
-        rc_integral = 0;
-    }
-
-   // }
-}
 
 
 void CellBalance_Chk(void)

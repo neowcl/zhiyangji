@@ -2536,22 +2536,9 @@ void plugged_IN(void)
        pi_count = 0;
        f_pi_pinghua = 0;
    }
-
-
-
-
-   // TO  DO  
-// 1. pi_count = 0;
-  // 2.  f_pi_pinghua = 0;
-
-
     if(f_pi_mode)  // pimode  finished，  then re evaluate . 
 	{
       f_study_d = 0 ;
-	//   pi_count++ ;
-    //   if(pi_count >= 3600 )f_
-    //   {
-        //  pi_count = 3600;
         if(f_relax)
         {
 
@@ -2565,7 +2552,6 @@ void plugged_IN(void)
           {
               if (V_min >= OCV_SOC[20]) // Bigger than 100% voltage ?
               {
-                      // Set capacity to 100%
                       Record_lrc_w_pi = (long)t_com10 * 14400; // (100/100*14400=14400)
                       rsoc_pi = 100 ; 
               }
@@ -2575,7 +2561,6 @@ void plugged_IN(void)
                   Record_lrc_w_pi = (long)t_com10 * rsoc_pi* 144;
               }
           }
-    //   }
                 
         }
     }
@@ -2586,10 +2571,8 @@ void plugged_IN(void)
 
       if (f_pi_pinghua)
       {
-       //  t_com0f = Record_lrc_w / 14400 ;
           if (rsoc_pi != t_com0d)
           {
-            //   if ((f_discharge == 1) && (f_relax == 0))
              if ((f_discharge == 1) && (f_relax == 0))
               {
                   Record_lrc_w -=  3* I_abs;  // total -4 times , cause calute rc still - I_abs . 
@@ -2614,13 +2597,7 @@ void plugged_IN(void)
                   {
                       rsoc_pi = 100;
                   }
-                 // rsoc_pi = Record_lrc_w_pi/14400/t_com10*100 ;
-                  //  twork = (uint16_t)(((((long)t_com0f * 200)*10 / t_com10) + 10)/2);
-
-                //   rsoc_pi = Record_lrc_w_pi*10/144/t_com10/10;
                    rsoc_pi = (Record_lrc_w_pi*5/72/t_com10+5)/10;
-
-                //   t_com0d =  (uint16_t)(((((long)t_com0f * 100)*10 / t_com10) + 5)/10) ;
                   if (rsoc_pi == t_com0d) // maybe need to judge 2 times
                   {
                      f_pi_pinghua = 0;

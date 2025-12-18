@@ -45,17 +45,11 @@ int main(void)
 
 			Judgment_Temp_Change();
 			AdvanceChargeAlgorithm_Fun();
-			// Calc_CC();	
-			// Calc_RC();
-			// Calc_RSOC();
-	
+			Calc_CC();	
 			Calc_RC_CEDV();
 			Calc_RSOC_CEDV();
-			//RSOC_HOLD();
-			//Calc_iRSOC();
 			Calc_ATTF(); // ATTF
 			Calc_ATTE(); // ATTE
-			// QMax_Calc();
 		 	Calc_k_CEDV();
 			QMax_Calc_CEDV();
 			Calc_FCC_CEDV();
@@ -66,8 +60,6 @@ int main(void)
 			Call_PermanentFailFun();
 			
 			AlarmWarning_Check();
-			
-			//FullCharge_Chk(); //
 			FullCharge_Chk_CEDV() ;
 			LifeTime();
 			if (!(D_Manufacturing_Status_Init_LDO_EN && D_DA_Configuration_NR))
@@ -76,8 +68,6 @@ int main(void)
 			}
 			CellBalance_Chk();
 			plugged_IN();
-
-			//delay_ms(100);
 		}
 		
 		SmbusTimeout_Chk(); // Check IIC communication Timeout

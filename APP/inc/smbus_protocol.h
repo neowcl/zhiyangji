@@ -177,7 +177,7 @@ extern uint16_t t_com8e_out ;
 extern uint16_t t_com8f_out ;
 
 
-extern uint16_t t_com10_out ;
+
 extern uint16_t t_com90_out ;
 extern uint16_t t_com91_out ;
 extern uint16_t t_com92_out ;
@@ -200,7 +200,7 @@ extern uint16_t t_coma1_out ;
 
  extern uint16_t fcc_CEDV_Ture ;
  extern uint8_t SOC_CEDV_show ;
- extern uint16_t qmax_CEDV ;
+
  extern uint16_t qmax_CEDV1 ;
  extern uint16_t qmax_CEDV2 ;
  extern uint16_t qmax_CEDV3 ;

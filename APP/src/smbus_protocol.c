@@ -107,7 +107,7 @@ uint16_t t_com8d_out ;
 uint16_t t_com8e_out ;
 uint16_t t_com8f_out ;
 
-uint16_t t_com10_out ;
+
 
 
 uint16_t t_com90_out ;
@@ -141,7 +141,6 @@ uint16_t t_coma1;
 uint16_t fcc_CEDV_Ture ;
 
 uint8_t SOC_CEDV_show ;
-uint16_t qmax_CEDV ;
 // uint16_t qmax_CEDV1 ;
 // uint16_t qmax_CEDV2 ;
 // uint16_t qmax_CEDV3 ;
@@ -169,7 +168,6 @@ const _ST_SMB scom_no_tbl[] =
         {0x02, (uint8_t *)&t_com0e},                         // 0x0e AbsoluteStateOfCharge()
         {0x02, (uint8_t *)&t_com0fCap},                      // 0x0f RemainingCapacity()
         {0x02, (uint8_t *)&t_com10Cap},                      // 0x10 FullChargeCapacity()
-        // {0x02, (uint8_t *)&t_com10_out},                      // 0x10 FullChargeCapacity()
         {0x02, (uint8_t *)&_RunTimeToEmpty},                 // 0x11 RunTimeToEmpty()
         {0x02, (uint8_t *)&_AverageTimeToEmpty},             // 0x12 AverageTimeToEmpty()
         {0x02, (uint8_t *)&_AverageTimeToFull},              // 0x13 AverageTimeToFull()
@@ -190,7 +188,7 @@ const _ST_SMB scom_no_tbl[] =
         {0x05, (uint8_t *)&D_Data_Device_Chemistry[1]},          // 0x22 DeviceChemistry()
         {0x21, (uint8_t *)&_ManufacturerData},               // 0x23 ManufacturerData()
         {0x02, (uint8_t *)&t_com24},                         // 0x24
-        {0x02, (uint8_t *)&t_com25},                         // 0x25
+        {0x02, (uint8_t *)&fcc_CEDV_Ture},                         // 0x25
         {0x02, (uint8_t *)&t_com26},                         // 0x26
         {0x20, (uint8_t *)_AuthCahllenge},                   // 0x27
         {0x20, (uint8_t *)_AuthResponse},                    // 0x28
@@ -1965,20 +1963,11 @@ void bi2cs_dataCmd_init(void)
     _CycleCount =Record_CycleCount;
     t_com89 = Record_IdealFCC;
     t_com8a = Record_IRsoc;
-
+    
     _GaugeStatus3.QMax0 = Record_QmaxCell0;
     _GaugeStatus3.QMax1 = Record_QmaxCell1;
     _GaugeStatus3.QMax2 = Record_QmaxCell2;
     _GaugeStatus3.QMax3 = Record_QmaxCell3;
-    // if (_CycleCount < D_New_use_df_cycle)
-    // {
-     // Init_Cap();
-    // }
-    // else
-    // {
-    //   t_com0d = DF_RSOC;
-    // }
-
     if (Record_ShutDown_Mode == 0x00f0)
     {
       t_com0d = Record_RSOC;
@@ -2013,20 +2002,6 @@ void bi2cs_dataCmd_init(void)
   f_sdm = OFF;
   f_sleep = OFF;
   t_com57 = (t_com57 & 0xfc07) | (D_Manufacturing_Status_Init & 0x03f8);
-  // if (D_DA_Configuration_NR == 0) // 5.16
-  // {
-  //   uint8_t presd;
-  //   afe_gpio_input_data_bit_read(GPIO_PB0_PIN, &presd);
-  //   if (presd)
-  //   {
-  //     f_pres = OFF;
-  //   }
-  //   else
-  //   {
-  //     f_pres = ON;
-  //   }
-  // }
-
   if (UF_SEAL_COUNT != 0 && UF_SEAL_COUNT != 0xFFFF)
   {
     f_sec0 = ON;
@@ -2036,8 +2011,6 @@ void bi2cs_dataCmd_init(void)
   {
     f_sec0 = ON;
   }
-  Make_RC();
-  Make_iRC();
   calc_DFSignature();
   tccup = (uint16_t)((long)t_com10 * ABS(D_Cycle_Count_Percentage) / 100);
   toldrc = t_com0f;

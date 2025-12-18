@@ -415,9 +415,7 @@ void Charging_CV_Fun(void)
             {
                 if(D_Charging_Config_CRATE)
                 {
-                    // ChargeCurrent = D_Rec_RT_CCM * (t_com10/ t_com18);
                     ChargeCurrent = D_Rec_RT_CCM * (t_com10/ D_Design_Capacity_mAh);
-                    
 
                 }
                 else

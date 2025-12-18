@@ -193,8 +193,8 @@ void DFDataSave(void)
 	//  Record_MAXLOADTTE =;//MaxLoadTimeToEmpty
 	Record_RSOC = t_com0d;
 	Record_ASOC = t_com0e;
-	Record_Remainingcapacity = t_com0f; // Remainingcapacity
-	Record_FullChargeCapacity = t_com10;
+	Record_Remainingcapacity = t_com0fCap; // Remainingcapacity
+	Record_FullChargeCapacity = t_com10Cap;
 	Record_CycleCount = _CycleCount; // CycleCount
 
 	Record_IdealRC  = t_com88 ;

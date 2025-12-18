@@ -40,11 +40,9 @@ extern uint16_t  k_CEDV  ;
 extern int32_t Record_lrc_w_CEDV_fcc_show ;
 extern int32_t  Record_lrc_w_CEDV_fcc_show_last ; 
 extern int32_t Record_lrc_w_CEDV ;
-extern uint16_t t_com0f_CEDV_show ;
 extern uint16_t t_com0f_CEDV;
 extern uint8_t SOC_CEDV ; 
 extern int32_t dsg_CEDV_Record_lrc_w_update_k ;
-extern uint16_t fcc_use_qmax  ;
 extern int16_t k_CEDV_average ;   //to use to  jisuan cpl voltage 
 
 
