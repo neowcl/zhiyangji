@@ -1,0 +1,100 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¦ÌVision V5.33.0.0
+Copyright (C) 2020 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: 1226721052@qq.com 1226721052@qq.com, 1226721052@qq.com, LIC=MPPLD-8CAKD-HLCCL-0NAAC-65JI1-8GTPV
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.33.0.0
+Toolchain Path:  D:\keil5\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.15
+Assembler:       Armasm.exe V6.15
+Linker/Locator:  ArmLink.exe V6.15
+Library Manager: ArmAr.exe V6.15
+Hex Converter:   FromElf.exe V6.15
+CPU DLL:         SARMCM3.DLL V5.33.0.0
+Dialog DLL:      DARMCM1.DLL V1.19.4.0
+Target DLL:      Segger\JL2CM3.dll V2.99.38.0
+Dialog DLL:      TARMCM1.DLL V1.14.3.0
+ 
+<h2>Project:</h2>
+D:\×ÀÃæ\ZYJ\SFG2025_ZYJ_GEN_1.04\project\SWD_BMS_APP.uvprojx
+Project File Date:  12/17/2025
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.15', folder: 'D:\keil5\ARM\ARMCLANG\Bin'
+Build target 'Target 1'
+After Build - User command #1: fromelf.exe --bin --bincombined --bincombined_padding=1,0xff --output APP.bin .\Objects\APP.axf
+After Build - User command #2: CBM8580_bin.exe
+".\Objects\APP.axf" - 0 Error(s), 0 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.7.0.pack
+                ARM.CMSIS.5.7.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.4.0
+
+Package Vendor: Chipsea
+                
+                Chipsea.CBM858x_v2_DFP.1.0.3
+                Chipsea Technologies(ShenZhen) CS32 Series Device Support, Drivers and Examples
+   * Component: AFE Version: 1.0.0
+   * Component: CRYPTO Version: 1.0.0
+   * Component: Framework Version: 1.0.3
+   * Component: Startup Version: 1.0.0
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\Device\CBM8580_v2
+  .\RTE\_Target_1
+  C:\Users\12267\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include
+  C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\crypto\inc
+  C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.4.0
+
+   * Component: Chipsea::Device:Driver:AFE:1.0.0
+      Include file:  Device\Driver\inc\cbm858x_afe_wkcp.h
+      Include file:  Device\Driver\inc\cbm858x_afe_transimit.h
+      Source file:   Device\Driver\src\cbm858x_afe.lib
+      Include file:  Device\Driver\inc\cbm858x_afe_rcc.h
+      Source file:   Device\Driver\src\cbm858x_afe_transimit.c
+      Include file:  Device\Driver\inc\cbm858x_afe_timera.h
+      Include file:  Device\Driver\inc\cbm858x_afe_dtdrv.h
+      Include file:  Device\Driver\inc\cbm858x_afe_gcr.h
+      Include file:  Device\Driver\inc\cbm858x_afe_hdp.h
+      Include file:  Device\Driver\inc\cbm858x_afe_iwdg.h
+      Include file:  Device\Driver\inc\cbm858x_afe_int.h
+      Include file:  Device\Driver\inc\cbm858x_afe_leddrv.h
+      Include file:  Device\Driver\inc\cbm858x_afe_pmu.h
+      Include file:  Device\Driver\inc\cbm858x_afe_vadc.h
+      Include file:  Device\Driver\inc\cbm858x_afe_cc.h
+      Include file:  Device\Driver\inc\cbm858x_afe_tb3p0.h
+      Include file:  Device\Driver\inc\cbm858x_afe_cddrv.h
+      Include file:  Device\Driver\inc\cbm858x_afe_gpio.h
+
+   * Component: Chipsea::Device:Driver:CRYPTO:1.0.0
+      Source file:   Device\Driver\crypto\src\crypto.lib
+
+   * Component: Chipsea::Device:Driver:Framework:1.0.3
+      Include file:  Device\Driver\inc\cbm858xm_conf.h
+      Source file:   Device\Driver\src\cbm858xm_gpio.c
+      Source file:   Device\Driver\src\cbm858xm.lib
+      Include file:  Device\Driver\inc\cbm858xm_i2c.h
+      Include file:  Device\Driver\inc\cbm858xm_gpio.h
+      Source file:   Device\Driver\src\cbm858xm_i2c.c
+
+   * Component: Chipsea::Device:Startup:1.0.0
+      Include file:  Device\Driver\inc\cbm858xm.h
+      Source file:   Device\Driver\src\system_cbm858xm.c
+      Source file:   Device\Source\ARM\startup_cbm858xm.S
+Build Time Elapsed:  00:00:01
+</pre>
+</body>
+</html>

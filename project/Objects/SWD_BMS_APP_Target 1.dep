@@ -1,0 +1,1906 @@
+Dependencies for Project 'SWD_BMS_APP', Target 'Target 1': (DO NOT MODIFY !)
+CompilerVersion: 6150000::V6.15::ARMCLANG
+F (..\APP\src\AdvancedChargeAlgorithm.c)(0x693799BC)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -fropi -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../APP/inc-I./RTE/Device/CBM8580_v2-I./RTE/_Target_1-IC:/Users/12267/AppData/Local/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/Core/Include-IC:/Users/12267/AppData/Local/Arm/Packs/Chipsea/CBM858x_v2_DFP/1.0.3/Device/Driver/crypto/inc-IC:/Users/12267/AppData/Local/Arm/Packs/Chipsea/CBM858x_v2_DFP/1.0.3/Device/Driver/inc-D__UVISION_VERSION="533" -D_RTE_ -D_RTE_ -DRELEASE_MODE-o ./objects/advancedchargealgorithm.o -MD)
+I (..\APP\inc\AdvancedChargeAlgorithm.h)(0x693799BC)
+I (..\APP\inc\main.h)(0x693799BC)
+I (D:\keil5\ARM\ARMCLANG\include\stdio.h)(0x5F36D0B4)
+I (D:\keil5\ARM\ARMCLANG\include\string.h)(0x5F36D0A4)
+I (D:\keil5\ARM\ARMCLANG\include\stdint.h)(0x5F36D0A8)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm.h)(0x680EFB26)
+I (RTE\_Target_1\RTE_Components.h)(0x693BBF52)
+I (C:\Users\12267\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\core_cm0.h)(0x5E8ED122)
+I (C:\Users\12267\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_version.h)(0x5E8ED122)
+I (C:\Users\12267\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5E8306C2)
+I (C:\Users\12267\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_armclang.h)(0x5E8ED122)
+I (D:\keil5\ARM\ARMCLANG\include\arm_compat.h)(0x5EE12742)
+I (D:\keil5\ARM\ARMCLANG\include\arm_acle.h)(0x5F268738)
+I (..\APP\inc\log.h)(0x693799BE)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_i2c.h)(0x6899B1C8)
+I (..\APP\inc\data_flash_value.h)(0x69424FFC)
+I (..\APP\inc\protect.h)(0x693799BC)
+I (..\APP\inc\Power_Modes.h)(0x693799BC)
+I (..\APP\inc\soft_timer.h)(0x693799BC)
+I (..\APP\inc\SBS_Commands.h)(0x69436D70)
+I (..\APP\inc\mode.h)(0x694246F7)
+I (..\APP\inc\ram.h)(0x693799BC)
+I (..\APP\inc\hdp.h)(0x693799BC)
+I (..\APP\inc\afe_cvt.h)(0x693799BC)
+I (..\APP\inc\definefile.h)(0x693799BC)
+I (..\APP\inc\lifetime.h)(0x693799BC)
+I (..\APP\inc\mcu.h)(0x693799BC)
+I (..\APP\inc\smbus_protocol.h)(0x693799BC)
+I (..\APP\inc\afetimer.h)(0x693799BC)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_flash.h)(0x680F1EF0)
+I (..\APP\inc\lptm.h)(0x693799BC)
+I (..\APP\inc\tim.h)(0x693799BC)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_tim.h)(0x66A7480A)
+I (..\APP\inc\dataflash.h)(0x69436AE5)
+I (..\APP\inc\datcalc_spl.h)(0x693799BC)
+I (..\APP\inc\Calc_Attf.h)(0x693799BC)
+I (..\APP\inc\rtc.h)(0x693799BC)
+I (..\APP\inc\oscm.h)(0x693799BC)
+I (..\APP\inc\UpFlash.h)(0x693799BC)
+I (RTE\Device\CBM8580_v2\cbm858xm_conf.h)(0x64E55D04)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_misc.h)(0x668D0238)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_spi.h)(0x66A74FBA)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_gpio.h)(0x66B08DD2)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_rcu.h)(0x680EFB3A)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_usart.h)(0x66A747FC)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_transimit.h)(0x64E6F1E4)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_rcc.h)(0x680EDD84)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_gcr.h)(0x680F6A9E)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_gpio.h)(0x64E55D04)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_int.h)(0x680EDDB0)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_timera.h)(0x680EDD7C)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_dtdrv.h)(0x66729832)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_exti.h)(0x667BBDA6)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_syscfg.h)(0x6698CA12)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_vadc.h)(0x680EDD74)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_cc.h)(0x680EDDCC)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_iwdg.h)(0x64E55D04)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_pmu.h)(0x680EDD8C)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_pmu.h)(0x668DFC00)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_rtc.h)(0x66A74820)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_wkcp.h)(0x680EDD6E)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_hdp.h)(0x680EDDB8)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_cddrv.h)(0x6670FD04)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_lptim.h)(0x66B08BC4)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\crypto\inc\trng.h)(0x64E55D04)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\crypto\inc\crypto_reg.h)(0x680EE596)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_fwdt.h)(0x66B0775A)
+I (..\APP\inc\cbm8580m_int.h)(0x693799BC)
+I (..\APP\inc\ra_value.h)(0x693799BC)
+F (..\APP\src\afe_cvt.c)(0x693799BC)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -fropi -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../APP/inc-I./RTE/Device/CBM8580_v2-I./RTE/_Target_1-IC:/Users/12267/AppData/Local/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/Core/Include-IC:/Users/12267/AppData/Local/Arm/Packs/Chipsea/CBM858x_v2_DFP/1.0.3/Device/Driver/crypto/inc-IC:/Users/12267/AppData/Local/Arm/Packs/Chipsea/CBM858x_v2_DFP/1.0.3/Device/Driver/inc-D__UVISION_VERSION="533" -D_RTE_ -D_RTE_ -DRELEASE_MODE-o ./objects/afe_cvt.o -MD)
+I (..\APP\inc\afe_cvt.h)(0x693799BC)
+I (..\APP\inc\main.h)(0x693799BC)
+I (D:\keil5\ARM\ARMCLANG\include\stdio.h)(0x5F36D0B4)
+I (D:\keil5\ARM\ARMCLANG\include\string.h)(0x5F36D0A4)
+I (D:\keil5\ARM\ARMCLANG\include\stdint.h)(0x5F36D0A8)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm.h)(0x680EFB26)
+I (RTE\_Target_1\RTE_Components.h)(0x693BBF52)
+I (C:\Users\12267\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\core_cm0.h)(0x5E8ED122)
+I (C:\Users\12267\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_version.h)(0x5E8ED122)
+I (C:\Users\12267\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5E8306C2)
+I (C:\Users\12267\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_armclang.h)(0x5E8ED122)
+I (D:\keil5\ARM\ARMCLANG\include\arm_compat.h)(0x5EE12742)
+I (D:\keil5\ARM\ARMCLANG\include\arm_acle.h)(0x5F268738)
+I (..\APP\inc\log.h)(0x693799BE)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_i2c.h)(0x6899B1C8)
+I (..\APP\inc\data_flash_value.h)(0x69424FFC)
+I (..\APP\inc\protect.h)(0x693799BC)
+I (..\APP\inc\Power_Modes.h)(0x693799BC)
+I (..\APP\inc\AdvancedChargeAlgorithm.h)(0x693799BC)
+I (..\APP\inc\soft_timer.h)(0x693799BC)
+I (..\APP\inc\SBS_Commands.h)(0x69436D70)
+I (..\APP\inc\mode.h)(0x694246F7)
+I (..\APP\inc\ram.h)(0x693799BC)
+I (..\APP\inc\hdp.h)(0x693799BC)
+I (..\APP\inc\definefile.h)(0x693799BC)
+I (..\APP\inc\lifetime.h)(0x693799BC)
+I (..\APP\inc\mcu.h)(0x693799BC)
+I (..\APP\inc\smbus_protocol.h)(0x693799BC)
+I (..\APP\inc\afetimer.h)(0x693799BC)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_flash.h)(0x680F1EF0)
+I (..\APP\inc\lptm.h)(0x693799BC)
+I (..\APP\inc\tim.h)(0x693799BC)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_tim.h)(0x66A7480A)
+I (..\APP\inc\dataflash.h)(0x69436AE5)
+I (..\APP\inc\datcalc_spl.h)(0x693799BC)
+I (..\APP\inc\Calc_Attf.h)(0x693799BC)
+I (..\APP\inc\rtc.h)(0x693799BC)
+I (..\APP\inc\oscm.h)(0x693799BC)
+I (..\APP\inc\UpFlash.h)(0x693799BC)
+I (RTE\Device\CBM8580_v2\cbm858xm_conf.h)(0x64E55D04)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_misc.h)(0x668D0238)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_spi.h)(0x66A74FBA)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_gpio.h)(0x66B08DD2)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_rcu.h)(0x680EFB3A)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_usart.h)(0x66A747FC)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_transimit.h)(0x64E6F1E4)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_rcc.h)(0x680EDD84)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_gcr.h)(0x680F6A9E)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_gpio.h)(0x64E55D04)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_int.h)(0x680EDDB0)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_timera.h)(0x680EDD7C)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_dtdrv.h)(0x66729832)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_exti.h)(0x667BBDA6)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_syscfg.h)(0x6698CA12)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_vadc.h)(0x680EDD74)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_cc.h)(0x680EDDCC)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_iwdg.h)(0x64E55D04)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_pmu.h)(0x680EDD8C)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_pmu.h)(0x668DFC00)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_rtc.h)(0x66A74820)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_wkcp.h)(0x680EDD6E)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_hdp.h)(0x680EDDB8)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_cddrv.h)(0x6670FD04)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_lptim.h)(0x66B08BC4)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\crypto\inc\trng.h)(0x64E55D04)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\crypto\inc\crypto_reg.h)(0x680EE596)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_fwdt.h)(0x66B0775A)
+I (..\APP\inc\cbm8580m_int.h)(0x693799BC)
+I (..\APP\inc\ra_value.h)(0x693799BC)
+F (..\APP\src\afetimer.c)(0x693799BC)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -fropi -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../APP/inc-I./RTE/Device/CBM8580_v2-I./RTE/_Target_1-IC:/Users/12267/AppData/Local/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/Core/Include-IC:/Users/12267/AppData/Local/Arm/Packs/Chipsea/CBM858x_v2_DFP/1.0.3/Device/Driver/crypto/inc-IC:/Users/12267/AppData/Local/Arm/Packs/Chipsea/CBM858x_v2_DFP/1.0.3/Device/Driver/inc-D__UVISION_VERSION="533" -D_RTE_ -D_RTE_ -DRELEASE_MODE-o ./objects/afetimer.o -MD)
+I (..\APP\inc\main.h)(0x693799BC)
+I (D:\keil5\ARM\ARMCLANG\include\stdio.h)(0x5F36D0B4)
+I (D:\keil5\ARM\ARMCLANG\include\string.h)(0x5F36D0A4)
+I (D:\keil5\ARM\ARMCLANG\include\stdint.h)(0x5F36D0A8)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm.h)(0x680EFB26)
+I (RTE\_Target_1\RTE_Components.h)(0x693BBF52)
+I (C:\Users\12267\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\core_cm0.h)(0x5E8ED122)
+I (C:\Users\12267\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_version.h)(0x5E8ED122)
+I (C:\Users\12267\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5E8306C2)
+I (C:\Users\12267\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_armclang.h)(0x5E8ED122)
+I (D:\keil5\ARM\ARMCLANG\include\arm_compat.h)(0x5EE12742)
+I (D:\keil5\ARM\ARMCLANG\include\arm_acle.h)(0x5F268738)
+I (..\APP\inc\log.h)(0x693799BE)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_i2c.h)(0x6899B1C8)
+I (..\APP\inc\data_flash_value.h)(0x69424FFC)
+I (..\APP\inc\protect.h)(0x693799BC)
+I (..\APP\inc\Power_Modes.h)(0x693799BC)
+I (..\APP\inc\AdvancedChargeAlgorithm.h)(0x693799BC)
+I (..\APP\inc\soft_timer.h)(0x693799BC)
+I (..\APP\inc\SBS_Commands.h)(0x69436D70)
+I (..\APP\inc\mode.h)(0x694246F7)
+I (..\APP\inc\ram.h)(0x693799BC)
+I (..\APP\inc\hdp.h)(0x693799BC)
+I (..\APP\inc\afe_cvt.h)(0x693799BC)
+I (..\APP\inc\definefile.h)(0x693799BC)
+I (..\APP\inc\lifetime.h)(0x693799BC)
+I (..\APP\inc\mcu.h)(0x693799BC)
+I (..\APP\inc\smbus_protocol.h)(0x693799BC)
+I (..\APP\inc\afetimer.h)(0x693799BC)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_flash.h)(0x680F1EF0)
+I (..\APP\inc\lptm.h)(0x693799BC)
+I (..\APP\inc\tim.h)(0x693799BC)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_tim.h)(0x66A7480A)
+I (..\APP\inc\dataflash.h)(0x69436AE5)
+I (..\APP\inc\datcalc_spl.h)(0x693799BC)
+I (..\APP\inc\Calc_Attf.h)(0x693799BC)
+I (..\APP\inc\rtc.h)(0x693799BC)
+I (..\APP\inc\oscm.h)(0x693799BC)
+I (..\APP\inc\UpFlash.h)(0x693799BC)
+I (RTE\Device\CBM8580_v2\cbm858xm_conf.h)(0x64E55D04)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_misc.h)(0x668D0238)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_spi.h)(0x66A74FBA)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_gpio.h)(0x66B08DD2)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_rcu.h)(0x680EFB3A)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_usart.h)(0x66A747FC)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_transimit.h)(0x64E6F1E4)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_rcc.h)(0x680EDD84)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_gcr.h)(0x680F6A9E)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_gpio.h)(0x64E55D04)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_int.h)(0x680EDDB0)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_timera.h)(0x680EDD7C)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_dtdrv.h)(0x66729832)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_exti.h)(0x667BBDA6)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_syscfg.h)(0x6698CA12)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_vadc.h)(0x680EDD74)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_cc.h)(0x680EDDCC)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_iwdg.h)(0x64E55D04)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_pmu.h)(0x680EDD8C)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_pmu.h)(0x668DFC00)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_rtc.h)(0x66A74820)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_wkcp.h)(0x680EDD6E)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_hdp.h)(0x680EDDB8)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_cddrv.h)(0x6670FD04)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_lptim.h)(0x66B08BC4)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\crypto\inc\trng.h)(0x64E55D04)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\crypto\inc\crypto_reg.h)(0x680EE596)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_fwdt.h)(0x66B0775A)
+I (..\APP\inc\cbm8580m_int.h)(0x693799BC)
+I (..\APP\inc\ra_value.h)(0x693799BC)
+F (..\APP\src\Calc_Attf.c)(0x693799BC)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -fropi -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../APP/inc-I./RTE/Device/CBM8580_v2-I./RTE/_Target_1-IC:/Users/12267/AppData/Local/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/Core/Include-IC:/Users/12267/AppData/Local/Arm/Packs/Chipsea/CBM858x_v2_DFP/1.0.3/Device/Driver/crypto/inc-IC:/Users/12267/AppData/Local/Arm/Packs/Chipsea/CBM858x_v2_DFP/1.0.3/Device/Driver/inc-D__UVISION_VERSION="533" -D_RTE_ -D_RTE_ -DRELEASE_MODE-o ./objects/calc_attf.o -MD)
+I (..\APP\inc\Calc_Attf.h)(0x693799BC)
+I (..\APP\inc\main.h)(0x693799BC)
+I (D:\keil5\ARM\ARMCLANG\include\stdio.h)(0x5F36D0B4)
+I (D:\keil5\ARM\ARMCLANG\include\string.h)(0x5F36D0A4)
+I (D:\keil5\ARM\ARMCLANG\include\stdint.h)(0x5F36D0A8)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm.h)(0x680EFB26)
+I (RTE\_Target_1\RTE_Components.h)(0x693BBF52)
+I (C:\Users\12267\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\core_cm0.h)(0x5E8ED122)
+I (C:\Users\12267\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_version.h)(0x5E8ED122)
+I (C:\Users\12267\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5E8306C2)
+I (C:\Users\12267\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_armclang.h)(0x5E8ED122)
+I (D:\keil5\ARM\ARMCLANG\include\arm_compat.h)(0x5EE12742)
+I (D:\keil5\ARM\ARMCLANG\include\arm_acle.h)(0x5F268738)
+I (..\APP\inc\log.h)(0x693799BE)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_i2c.h)(0x6899B1C8)
+I (..\APP\inc\data_flash_value.h)(0x69424FFC)
+I (..\APP\inc\protect.h)(0x693799BC)
+I (..\APP\inc\Power_Modes.h)(0x693799BC)
+I (..\APP\inc\AdvancedChargeAlgorithm.h)(0x693799BC)
+I (..\APP\inc\soft_timer.h)(0x693799BC)
+I (..\APP\inc\SBS_Commands.h)(0x69436D70)
+I (..\APP\inc\mode.h)(0x694246F7)
+I (..\APP\inc\ram.h)(0x693799BC)
+I (..\APP\inc\hdp.h)(0x693799BC)
+I (..\APP\inc\afe_cvt.h)(0x693799BC)
+I (..\APP\inc\definefile.h)(0x693799BC)
+I (..\APP\inc\lifetime.h)(0x693799BC)
+I (..\APP\inc\mcu.h)(0x693799BC)
+I (..\APP\inc\smbus_protocol.h)(0x693799BC)
+I (..\APP\inc\afetimer.h)(0x693799BC)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_flash.h)(0x680F1EF0)
+I (..\APP\inc\lptm.h)(0x693799BC)
+I (..\APP\inc\tim.h)(0x693799BC)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_tim.h)(0x66A7480A)
+I (..\APP\inc\dataflash.h)(0x69436AE5)
+I (..\APP\inc\datcalc_spl.h)(0x693799BC)
+I (..\APP\inc\rtc.h)(0x693799BC)
+I (..\APP\inc\oscm.h)(0x693799BC)
+I (..\APP\inc\UpFlash.h)(0x693799BC)
+I (RTE\Device\CBM8580_v2\cbm858xm_conf.h)(0x64E55D04)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_misc.h)(0x668D0238)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_spi.h)(0x66A74FBA)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_gpio.h)(0x66B08DD2)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_rcu.h)(0x680EFB3A)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_usart.h)(0x66A747FC)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_transimit.h)(0x64E6F1E4)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_rcc.h)(0x680EDD84)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_gcr.h)(0x680F6A9E)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_gpio.h)(0x64E55D04)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_int.h)(0x680EDDB0)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_timera.h)(0x680EDD7C)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_dtdrv.h)(0x66729832)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_exti.h)(0x667BBDA6)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_syscfg.h)(0x6698CA12)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_vadc.h)(0x680EDD74)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_cc.h)(0x680EDDCC)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_iwdg.h)(0x64E55D04)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_pmu.h)(0x680EDD8C)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_pmu.h)(0x668DFC00)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_rtc.h)(0x66A74820)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_wkcp.h)(0x680EDD6E)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_hdp.h)(0x680EDDB8)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_cddrv.h)(0x6670FD04)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_lptim.h)(0x66B08BC4)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\crypto\inc\trng.h)(0x64E55D04)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\crypto\inc\crypto_reg.h)(0x680EE596)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_fwdt.h)(0x66B0775A)
+I (..\APP\inc\cbm8580m_int.h)(0x693799BC)
+I (..\APP\inc\ra_value.h)(0x693799BC)
+F (..\APP\src\cbm8580m_int.c)(0x693799BC)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -fropi -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../APP/inc-I./RTE/Device/CBM8580_v2-I./RTE/_Target_1-IC:/Users/12267/AppData/Local/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/Core/Include-IC:/Users/12267/AppData/Local/Arm/Packs/Chipsea/CBM858x_v2_DFP/1.0.3/Device/Driver/crypto/inc-IC:/Users/12267/AppData/Local/Arm/Packs/Chipsea/CBM858x_v2_DFP/1.0.3/Device/Driver/inc-D__UVISION_VERSION="533" -D_RTE_ -D_RTE_ -DRELEASE_MODE-o ./objects/cbm8580m_int.o -MD)
+I (..\APP\inc\main.h)(0x693799BC)
+I (D:\keil5\ARM\ARMCLANG\include\stdio.h)(0x5F36D0B4)
+I (D:\keil5\ARM\ARMCLANG\include\string.h)(0x5F36D0A4)
+I (D:\keil5\ARM\ARMCLANG\include\stdint.h)(0x5F36D0A8)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm.h)(0x680EFB26)
+I (RTE\_Target_1\RTE_Components.h)(0x693BBF52)
+I (C:\Users\12267\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\core_cm0.h)(0x5E8ED122)
+I (C:\Users\12267\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_version.h)(0x5E8ED122)
+I (C:\Users\12267\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5E8306C2)
+I (C:\Users\12267\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_armclang.h)(0x5E8ED122)
+I (D:\keil5\ARM\ARMCLANG\include\arm_compat.h)(0x5EE12742)
+I (D:\keil5\ARM\ARMCLANG\include\arm_acle.h)(0x5F268738)
+I (..\APP\inc\log.h)(0x693799BE)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_i2c.h)(0x6899B1C8)
+I (..\APP\inc\data_flash_value.h)(0x69424FFC)
+I (..\APP\inc\protect.h)(0x693799BC)
+I (..\APP\inc\Power_Modes.h)(0x693799BC)
+I (..\APP\inc\AdvancedChargeAlgorithm.h)(0x693799BC)
+I (..\APP\inc\soft_timer.h)(0x693799BC)
+I (..\APP\inc\SBS_Commands.h)(0x69436D70)
+I (..\APP\inc\mode.h)(0x694246F7)
+I (..\APP\inc\ram.h)(0x693799BC)
+I (..\APP\inc\hdp.h)(0x693799BC)
+I (..\APP\inc\afe_cvt.h)(0x693799BC)
+I (..\APP\inc\definefile.h)(0x693799BC)
+I (..\APP\inc\lifetime.h)(0x693799BC)
+I (..\APP\inc\mcu.h)(0x693799BC)
+I (..\APP\inc\smbus_protocol.h)(0x693799BC)
+I (..\APP\inc\afetimer.h)(0x693799BC)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_flash.h)(0x680F1EF0)
+I (..\APP\inc\lptm.h)(0x693799BC)
+I (..\APP\inc\tim.h)(0x693799BC)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_tim.h)(0x66A7480A)
+I (..\APP\inc\dataflash.h)(0x69436AE5)
+I (..\APP\inc\datcalc_spl.h)(0x693799BC)
+I (..\APP\inc\Calc_Attf.h)(0x693799BC)
+I (..\APP\inc\rtc.h)(0x693799BC)
+I (..\APP\inc\oscm.h)(0x693799BC)
+I (..\APP\inc\UpFlash.h)(0x693799BC)
+I (RTE\Device\CBM8580_v2\cbm858xm_conf.h)(0x64E55D04)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_misc.h)(0x668D0238)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_spi.h)(0x66A74FBA)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_gpio.h)(0x66B08DD2)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_rcu.h)(0x680EFB3A)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_usart.h)(0x66A747FC)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_transimit.h)(0x64E6F1E4)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_rcc.h)(0x680EDD84)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_gcr.h)(0x680F6A9E)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_gpio.h)(0x64E55D04)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_int.h)(0x680EDDB0)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_timera.h)(0x680EDD7C)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_dtdrv.h)(0x66729832)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_exti.h)(0x667BBDA6)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_syscfg.h)(0x6698CA12)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_vadc.h)(0x680EDD74)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_cc.h)(0x680EDDCC)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_iwdg.h)(0x64E55D04)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_pmu.h)(0x680EDD8C)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_pmu.h)(0x668DFC00)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_rtc.h)(0x66A74820)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_wkcp.h)(0x680EDD6E)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_hdp.h)(0x680EDDB8)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_cddrv.h)(0x6670FD04)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_lptim.h)(0x66B08BC4)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\crypto\inc\trng.h)(0x64E55D04)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\crypto\inc\crypto_reg.h)(0x680EE596)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_fwdt.h)(0x66B0775A)
+I (..\APP\inc\cbm8580m_int.h)(0x693799BC)
+I (..\APP\inc\ra_value.h)(0x693799BC)
+I (..\APP\inc\comm_protocol.h)(0x693799BC)
+F (..\APP\src\comm_protocol.c)(0x693799BC)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -fropi -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../APP/inc-I./RTE/Device/CBM8580_v2-I./RTE/_Target_1-IC:/Users/12267/AppData/Local/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/Core/Include-IC:/Users/12267/AppData/Local/Arm/Packs/Chipsea/CBM858x_v2_DFP/1.0.3/Device/Driver/crypto/inc-IC:/Users/12267/AppData/Local/Arm/Packs/Chipsea/CBM858x_v2_DFP/1.0.3/Device/Driver/inc-D__UVISION_VERSION="533" -D_RTE_ -D_RTE_ -DRELEASE_MODE-o ./objects/comm_protocol.o -MD)
+I (..\APP\inc\main.h)(0x693799BC)
+I (D:\keil5\ARM\ARMCLANG\include\stdio.h)(0x5F36D0B4)
+I (D:\keil5\ARM\ARMCLANG\include\string.h)(0x5F36D0A4)
+I (D:\keil5\ARM\ARMCLANG\include\stdint.h)(0x5F36D0A8)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm.h)(0x680EFB26)
+I (RTE\_Target_1\RTE_Components.h)(0x693BBF52)
+I (C:\Users\12267\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\core_cm0.h)(0x5E8ED122)
+I (C:\Users\12267\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_version.h)(0x5E8ED122)
+I (C:\Users\12267\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5E8306C2)
+I (C:\Users\12267\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_armclang.h)(0x5E8ED122)
+I (D:\keil5\ARM\ARMCLANG\include\arm_compat.h)(0x5EE12742)
+I (D:\keil5\ARM\ARMCLANG\include\arm_acle.h)(0x5F268738)
+I (..\APP\inc\log.h)(0x693799BE)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_i2c.h)(0x6899B1C8)
+I (..\APP\inc\data_flash_value.h)(0x69424FFC)
+I (..\APP\inc\protect.h)(0x693799BC)
+I (..\APP\inc\Power_Modes.h)(0x693799BC)
+I (..\APP\inc\AdvancedChargeAlgorithm.h)(0x693799BC)
+I (..\APP\inc\soft_timer.h)(0x693799BC)
+I (..\APP\inc\SBS_Commands.h)(0x69436D70)
+I (..\APP\inc\mode.h)(0x694246F7)
+I (..\APP\inc\ram.h)(0x693799BC)
+I (..\APP\inc\hdp.h)(0x693799BC)
+I (..\APP\inc\afe_cvt.h)(0x693799BC)
+I (..\APP\inc\definefile.h)(0x693799BC)
+I (..\APP\inc\lifetime.h)(0x693799BC)
+I (..\APP\inc\mcu.h)(0x693799BC)
+I (..\APP\inc\smbus_protocol.h)(0x693799BC)
+I (..\APP\inc\afetimer.h)(0x693799BC)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_flash.h)(0x680F1EF0)
+I (..\APP\inc\lptm.h)(0x693799BC)
+I (..\APP\inc\tim.h)(0x693799BC)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_tim.h)(0x66A7480A)
+I (..\APP\inc\dataflash.h)(0x69436AE5)
+I (..\APP\inc\datcalc_spl.h)(0x693799BC)
+I (..\APP\inc\Calc_Attf.h)(0x693799BC)
+I (..\APP\inc\rtc.h)(0x693799BC)
+I (..\APP\inc\oscm.h)(0x693799BC)
+I (..\APP\inc\UpFlash.h)(0x693799BC)
+I (RTE\Device\CBM8580_v2\cbm858xm_conf.h)(0x64E55D04)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_misc.h)(0x668D0238)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_spi.h)(0x66A74FBA)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_gpio.h)(0x66B08DD2)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_rcu.h)(0x680EFB3A)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_usart.h)(0x66A747FC)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_transimit.h)(0x64E6F1E4)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_rcc.h)(0x680EDD84)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_gcr.h)(0x680F6A9E)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_gpio.h)(0x64E55D04)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_int.h)(0x680EDDB0)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_timera.h)(0x680EDD7C)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_dtdrv.h)(0x66729832)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_exti.h)(0x667BBDA6)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_syscfg.h)(0x6698CA12)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_vadc.h)(0x680EDD74)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_cc.h)(0x680EDDCC)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_iwdg.h)(0x64E55D04)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_pmu.h)(0x680EDD8C)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_pmu.h)(0x668DFC00)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_rtc.h)(0x66A74820)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_wkcp.h)(0x680EDD6E)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_hdp.h)(0x680EDDB8)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_cddrv.h)(0x6670FD04)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_lptim.h)(0x66B08BC4)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\crypto\inc\trng.h)(0x64E55D04)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\crypto\inc\crypto_reg.h)(0x680EE596)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_fwdt.h)(0x66B0775A)
+I (..\APP\inc\cbm8580m_int.h)(0x693799BC)
+I (..\APP\inc\ra_value.h)(0x693799BC)
+I (D:\keil5\ARM\ARMCLANG\include\stdlib.h)(0x5F36D0AE)
+I (..\APP\inc\comm_protocol.h)(0x693799BC)
+F (..\APP\src\data_flash_value.c)(0x69424ECB)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -fropi -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../APP/inc-I./RTE/Device/CBM8580_v2-I./RTE/_Target_1-IC:/Users/12267/AppData/Local/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/Core/Include-IC:/Users/12267/AppData/Local/Arm/Packs/Chipsea/CBM858x_v2_DFP/1.0.3/Device/Driver/crypto/inc-IC:/Users/12267/AppData/Local/Arm/Packs/Chipsea/CBM858x_v2_DFP/1.0.3/Device/Driver/inc-D__UVISION_VERSION="533" -D_RTE_ -D_RTE_ -DRELEASE_MODE-o ./objects/data_flash_value.o -MD)
+I (..\APP\inc\data_flash_value.h)(0x69424FFC)
+I (..\APP\inc\main.h)(0x693799BC)
+I (D:\keil5\ARM\ARMCLANG\include\stdio.h)(0x5F36D0B4)
+I (D:\keil5\ARM\ARMCLANG\include\string.h)(0x5F36D0A4)
+I (D:\keil5\ARM\ARMCLANG\include\stdint.h)(0x5F36D0A8)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm.h)(0x680EFB26)
+I (RTE\_Target_1\RTE_Components.h)(0x693BBF52)
+I (C:\Users\12267\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\core_cm0.h)(0x5E8ED122)
+I (C:\Users\12267\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_version.h)(0x5E8ED122)
+I (C:\Users\12267\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5E8306C2)
+I (C:\Users\12267\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_armclang.h)(0x5E8ED122)
+I (D:\keil5\ARM\ARMCLANG\include\arm_compat.h)(0x5EE12742)
+I (D:\keil5\ARM\ARMCLANG\include\arm_acle.h)(0x5F268738)
+I (..\APP\inc\log.h)(0x693799BE)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_i2c.h)(0x6899B1C8)
+I (..\APP\inc\protect.h)(0x693799BC)
+I (..\APP\inc\Power_Modes.h)(0x693799BC)
+I (..\APP\inc\AdvancedChargeAlgorithm.h)(0x693799BC)
+I (..\APP\inc\soft_timer.h)(0x693799BC)
+I (..\APP\inc\SBS_Commands.h)(0x69436D70)
+I (..\APP\inc\mode.h)(0x694246F7)
+I (..\APP\inc\ram.h)(0x693799BC)
+I (..\APP\inc\hdp.h)(0x693799BC)
+I (..\APP\inc\afe_cvt.h)(0x693799BC)
+I (..\APP\inc\definefile.h)(0x693799BC)
+I (..\APP\inc\lifetime.h)(0x693799BC)
+I (..\APP\inc\mcu.h)(0x693799BC)
+I (..\APP\inc\smbus_protocol.h)(0x693799BC)
+I (..\APP\inc\afetimer.h)(0x693799BC)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_flash.h)(0x680F1EF0)
+I (..\APP\inc\lptm.h)(0x693799BC)
+I (..\APP\inc\tim.h)(0x693799BC)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_tim.h)(0x66A7480A)
+I (..\APP\inc\dataflash.h)(0x69436AE5)
+I (..\APP\inc\datcalc_spl.h)(0x693799BC)
+I (..\APP\inc\Calc_Attf.h)(0x693799BC)
+I (..\APP\inc\rtc.h)(0x693799BC)
+I (..\APP\inc\oscm.h)(0x693799BC)
+I (..\APP\inc\UpFlash.h)(0x693799BC)
+I (RTE\Device\CBM8580_v2\cbm858xm_conf.h)(0x64E55D04)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_misc.h)(0x668D0238)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_spi.h)(0x66A74FBA)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_gpio.h)(0x66B08DD2)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_rcu.h)(0x680EFB3A)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_usart.h)(0x66A747FC)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_transimit.h)(0x64E6F1E4)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_rcc.h)(0x680EDD84)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_gcr.h)(0x680F6A9E)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_gpio.h)(0x64E55D04)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_int.h)(0x680EDDB0)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_timera.h)(0x680EDD7C)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_dtdrv.h)(0x66729832)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_exti.h)(0x667BBDA6)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_syscfg.h)(0x6698CA12)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_vadc.h)(0x680EDD74)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_cc.h)(0x680EDDCC)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_iwdg.h)(0x64E55D04)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_pmu.h)(0x680EDD8C)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_pmu.h)(0x668DFC00)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_rtc.h)(0x66A74820)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_wkcp.h)(0x680EDD6E)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_hdp.h)(0x680EDDB8)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_cddrv.h)(0x6670FD04)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_lptim.h)(0x66B08BC4)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\crypto\inc\trng.h)(0x64E55D04)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\crypto\inc\crypto_reg.h)(0x680EE596)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_fwdt.h)(0x66B0775A)
+I (..\APP\inc\cbm8580m_int.h)(0x693799BC)
+I (..\APP\inc\ra_value.h)(0x693799BC)
+F (..\APP\src\dataflash.c)(0x69436C88)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -fropi -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../APP/inc-I./RTE/Device/CBM8580_v2-I./RTE/_Target_1-IC:/Users/12267/AppData/Local/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/Core/Include-IC:/Users/12267/AppData/Local/Arm/Packs/Chipsea/CBM858x_v2_DFP/1.0.3/Device/Driver/crypto/inc-IC:/Users/12267/AppData/Local/Arm/Packs/Chipsea/CBM858x_v2_DFP/1.0.3/Device/Driver/inc-D__UVISION_VERSION="533" -D_RTE_ -D_RTE_ -DRELEASE_MODE-o ./objects/dataflash.o -MD)
+I (..\APP\inc\dataflash.h)(0x69436AE5)
+I (..\APP\inc\main.h)(0x693799BC)
+I (D:\keil5\ARM\ARMCLANG\include\stdio.h)(0x5F36D0B4)
+I (D:\keil5\ARM\ARMCLANG\include\string.h)(0x5F36D0A4)
+I (D:\keil5\ARM\ARMCLANG\include\stdint.h)(0x5F36D0A8)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm.h)(0x680EFB26)
+I (RTE\_Target_1\RTE_Components.h)(0x693BBF52)
+I (C:\Users\12267\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\core_cm0.h)(0x5E8ED122)
+I (C:\Users\12267\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_version.h)(0x5E8ED122)
+I (C:\Users\12267\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5E8306C2)
+I (C:\Users\12267\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_armclang.h)(0x5E8ED122)
+I (D:\keil5\ARM\ARMCLANG\include\arm_compat.h)(0x5EE12742)
+I (D:\keil5\ARM\ARMCLANG\include\arm_acle.h)(0x5F268738)
+I (..\APP\inc\log.h)(0x693799BE)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_i2c.h)(0x6899B1C8)
+I (..\APP\inc\data_flash_value.h)(0x69424FFC)
+I (..\APP\inc\protect.h)(0x693799BC)
+I (..\APP\inc\Power_Modes.h)(0x693799BC)
+I (..\APP\inc\AdvancedChargeAlgorithm.h)(0x693799BC)
+I (..\APP\inc\soft_timer.h)(0x693799BC)
+I (..\APP\inc\SBS_Commands.h)(0x69436D70)
+I (..\APP\inc\mode.h)(0x694246F7)
+I (..\APP\inc\ram.h)(0x693799BC)
+I (..\APP\inc\hdp.h)(0x693799BC)
+I (..\APP\inc\afe_cvt.h)(0x693799BC)
+I (..\APP\inc\definefile.h)(0x693799BC)
+I (..\APP\inc\lifetime.h)(0x693799BC)
+I (..\APP\inc\mcu.h)(0x693799BC)
+I (..\APP\inc\smbus_protocol.h)(0x693799BC)
+I (..\APP\inc\afetimer.h)(0x693799BC)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_flash.h)(0x680F1EF0)
+I (..\APP\inc\lptm.h)(0x693799BC)
+I (..\APP\inc\tim.h)(0x693799BC)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_tim.h)(0x66A7480A)
+I (..\APP\inc\datcalc_spl.h)(0x693799BC)
+I (..\APP\inc\Calc_Attf.h)(0x693799BC)
+I (..\APP\inc\rtc.h)(0x693799BC)
+I (..\APP\inc\oscm.h)(0x693799BC)
+I (..\APP\inc\UpFlash.h)(0x693799BC)
+I (RTE\Device\CBM8580_v2\cbm858xm_conf.h)(0x64E55D04)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_misc.h)(0x668D0238)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_spi.h)(0x66A74FBA)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_gpio.h)(0x66B08DD2)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_rcu.h)(0x680EFB3A)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_usart.h)(0x66A747FC)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_transimit.h)(0x64E6F1E4)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_rcc.h)(0x680EDD84)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_gcr.h)(0x680F6A9E)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_gpio.h)(0x64E55D04)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_int.h)(0x680EDDB0)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_timera.h)(0x680EDD7C)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_dtdrv.h)(0x66729832)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_exti.h)(0x667BBDA6)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_syscfg.h)(0x6698CA12)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_vadc.h)(0x680EDD74)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_cc.h)(0x680EDDCC)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_iwdg.h)(0x64E55D04)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_pmu.h)(0x680EDD8C)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_pmu.h)(0x668DFC00)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_rtc.h)(0x66A74820)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_wkcp.h)(0x680EDD6E)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_hdp.h)(0x680EDDB8)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_cddrv.h)(0x6670FD04)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_lptim.h)(0x66B08BC4)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\crypto\inc\trng.h)(0x64E55D04)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\crypto\inc\crypto_reg.h)(0x680EE596)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_fwdt.h)(0x66B0775A)
+I (..\APP\inc\cbm8580m_int.h)(0x693799BC)
+I (..\APP\inc\ra_value.h)(0x693799BC)
+F (..\APP\src\datcalc_spl.c)(0x694269EB)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -fropi -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../APP/inc-I./RTE/Device/CBM8580_v2-I./RTE/_Target_1-IC:/Users/12267/AppData/Local/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/Core/Include-IC:/Users/12267/AppData/Local/Arm/Packs/Chipsea/CBM858x_v2_DFP/1.0.3/Device/Driver/crypto/inc-IC:/Users/12267/AppData/Local/Arm/Packs/Chipsea/CBM858x_v2_DFP/1.0.3/Device/Driver/inc-D__UVISION_VERSION="533" -D_RTE_ -D_RTE_ -DRELEASE_MODE-o ./objects/datcalc_spl.o -MD)
+I (..\APP\inc\main.h)(0x693799BC)
+I (D:\keil5\ARM\ARMCLANG\include\stdio.h)(0x5F36D0B4)
+I (D:\keil5\ARM\ARMCLANG\include\string.h)(0x5F36D0A4)
+I (D:\keil5\ARM\ARMCLANG\include\stdint.h)(0x5F36D0A8)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm.h)(0x680EFB26)
+I (RTE\_Target_1\RTE_Components.h)(0x693BBF52)
+I (C:\Users\12267\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\core_cm0.h)(0x5E8ED122)
+I (C:\Users\12267\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_version.h)(0x5E8ED122)
+I (C:\Users\12267\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5E8306C2)
+I (C:\Users\12267\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_armclang.h)(0x5E8ED122)
+I (D:\keil5\ARM\ARMCLANG\include\arm_compat.h)(0x5EE12742)
+I (D:\keil5\ARM\ARMCLANG\include\arm_acle.h)(0x5F268738)
+I (..\APP\inc\log.h)(0x693799BE)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_i2c.h)(0x6899B1C8)
+I (..\APP\inc\data_flash_value.h)(0x69424FFC)
+I (..\APP\inc\protect.h)(0x693799BC)
+I (..\APP\inc\Power_Modes.h)(0x693799BC)
+I (..\APP\inc\AdvancedChargeAlgorithm.h)(0x693799BC)
+I (..\APP\inc\soft_timer.h)(0x693799BC)
+I (..\APP\inc\SBS_Commands.h)(0x69436D70)
+I (..\APP\inc\mode.h)(0x694246F7)
+I (..\APP\inc\ram.h)(0x693799BC)
+I (..\APP\inc\hdp.h)(0x693799BC)
+I (..\APP\inc\afe_cvt.h)(0x693799BC)
+I (..\APP\inc\definefile.h)(0x693799BC)
+I (..\APP\inc\lifetime.h)(0x693799BC)
+I (..\APP\inc\mcu.h)(0x693799BC)
+I (..\APP\inc\smbus_protocol.h)(0x693799BC)
+I (..\APP\inc\afetimer.h)(0x693799BC)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_flash.h)(0x680F1EF0)
+I (..\APP\inc\lptm.h)(0x693799BC)
+I (..\APP\inc\tim.h)(0x693799BC)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_tim.h)(0x66A7480A)
+I (..\APP\inc\dataflash.h)(0x69436AE5)
+I (..\APP\inc\datcalc_spl.h)(0x693799BC)
+I (..\APP\inc\Calc_Attf.h)(0x693799BC)
+I (..\APP\inc\rtc.h)(0x693799BC)
+I (..\APP\inc\oscm.h)(0x693799BC)
+I (..\APP\inc\UpFlash.h)(0x693799BC)
+I (RTE\Device\CBM8580_v2\cbm858xm_conf.h)(0x64E55D04)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_misc.h)(0x668D0238)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_spi.h)(0x66A74FBA)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_gpio.h)(0x66B08DD2)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_rcu.h)(0x680EFB3A)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_usart.h)(0x66A747FC)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_transimit.h)(0x64E6F1E4)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_rcc.h)(0x680EDD84)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_gcr.h)(0x680F6A9E)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_gpio.h)(0x64E55D04)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_int.h)(0x680EDDB0)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_timera.h)(0x680EDD7C)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_dtdrv.h)(0x66729832)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_exti.h)(0x667BBDA6)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_syscfg.h)(0x6698CA12)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_vadc.h)(0x680EDD74)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_cc.h)(0x680EDDCC)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_iwdg.h)(0x64E55D04)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_pmu.h)(0x680EDD8C)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_pmu.h)(0x668DFC00)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_rtc.h)(0x66A74820)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_wkcp.h)(0x680EDD6E)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_hdp.h)(0x680EDDB8)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_cddrv.h)(0x6670FD04)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_lptim.h)(0x66B08BC4)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\crypto\inc\trng.h)(0x64E55D04)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\crypto\inc\crypto_reg.h)(0x680EE596)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_fwdt.h)(0x66B0775A)
+I (..\APP\inc\cbm8580m_int.h)(0x693799BC)
+I (..\APP\inc\ra_value.h)(0x693799BC)
+F (..\APP\src\hdp.c)(0x693799BC)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -fropi -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../APP/inc-I./RTE/Device/CBM8580_v2-I./RTE/_Target_1-IC:/Users/12267/AppData/Local/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/Core/Include-IC:/Users/12267/AppData/Local/Arm/Packs/Chipsea/CBM858x_v2_DFP/1.0.3/Device/Driver/crypto/inc-IC:/Users/12267/AppData/Local/Arm/Packs/Chipsea/CBM858x_v2_DFP/1.0.3/Device/Driver/inc-D__UVISION_VERSION="533" -D_RTE_ -D_RTE_ -DRELEASE_MODE-o ./objects/hdp.o -MD)
+I (..\APP\inc\hdp.h)(0x693799BC)
+I (..\APP\inc\main.h)(0x693799BC)
+I (D:\keil5\ARM\ARMCLANG\include\stdio.h)(0x5F36D0B4)
+I (D:\keil5\ARM\ARMCLANG\include\string.h)(0x5F36D0A4)
+I (D:\keil5\ARM\ARMCLANG\include\stdint.h)(0x5F36D0A8)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm.h)(0x680EFB26)
+I (RTE\_Target_1\RTE_Components.h)(0x693BBF52)
+I (C:\Users\12267\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\core_cm0.h)(0x5E8ED122)
+I (C:\Users\12267\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_version.h)(0x5E8ED122)
+I (C:\Users\12267\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5E8306C2)
+I (C:\Users\12267\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_armclang.h)(0x5E8ED122)
+I (D:\keil5\ARM\ARMCLANG\include\arm_compat.h)(0x5EE12742)
+I (D:\keil5\ARM\ARMCLANG\include\arm_acle.h)(0x5F268738)
+I (..\APP\inc\log.h)(0x693799BE)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_i2c.h)(0x6899B1C8)
+I (..\APP\inc\data_flash_value.h)(0x69424FFC)
+I (..\APP\inc\protect.h)(0x693799BC)
+I (..\APP\inc\Power_Modes.h)(0x693799BC)
+I (..\APP\inc\AdvancedChargeAlgorithm.h)(0x693799BC)
+I (..\APP\inc\soft_timer.h)(0x693799BC)
+I (..\APP\inc\SBS_Commands.h)(0x69436D70)
+I (..\APP\inc\mode.h)(0x694246F7)
+I (..\APP\inc\ram.h)(0x693799BC)
+I (..\APP\inc\afe_cvt.h)(0x693799BC)
+I (..\APP\inc\definefile.h)(0x693799BC)
+I (..\APP\inc\lifetime.h)(0x693799BC)
+I (..\APP\inc\mcu.h)(0x693799BC)
+I (..\APP\inc\smbus_protocol.h)(0x693799BC)
+I (..\APP\inc\afetimer.h)(0x693799BC)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_flash.h)(0x680F1EF0)
+I (..\APP\inc\lptm.h)(0x693799BC)
+I (..\APP\inc\tim.h)(0x693799BC)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_tim.h)(0x66A7480A)
+I (..\APP\inc\dataflash.h)(0x69436AE5)
+I (..\APP\inc\datcalc_spl.h)(0x693799BC)
+I (..\APP\inc\Calc_Attf.h)(0x693799BC)
+I (..\APP\inc\rtc.h)(0x693799BC)
+I (..\APP\inc\oscm.h)(0x693799BC)
+I (..\APP\inc\UpFlash.h)(0x693799BC)
+I (RTE\Device\CBM8580_v2\cbm858xm_conf.h)(0x64E55D04)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_misc.h)(0x668D0238)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_spi.h)(0x66A74FBA)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_gpio.h)(0x66B08DD2)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_rcu.h)(0x680EFB3A)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_usart.h)(0x66A747FC)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_transimit.h)(0x64E6F1E4)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_rcc.h)(0x680EDD84)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_gcr.h)(0x680F6A9E)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_gpio.h)(0x64E55D04)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_int.h)(0x680EDDB0)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_timera.h)(0x680EDD7C)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_dtdrv.h)(0x66729832)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_exti.h)(0x667BBDA6)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_syscfg.h)(0x6698CA12)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_vadc.h)(0x680EDD74)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_cc.h)(0x680EDDCC)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_iwdg.h)(0x64E55D04)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_pmu.h)(0x680EDD8C)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_pmu.h)(0x668DFC00)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_rtc.h)(0x66A74820)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_wkcp.h)(0x680EDD6E)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_hdp.h)(0x680EDDB8)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_cddrv.h)(0x6670FD04)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_lptim.h)(0x66B08BC4)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\crypto\inc\trng.h)(0x64E55D04)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\crypto\inc\crypto_reg.h)(0x680EE596)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_fwdt.h)(0x66B0775A)
+I (..\APP\inc\cbm8580m_int.h)(0x693799BC)
+I (..\APP\inc\ra_value.h)(0x693799BC)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\crypto\inc\hmac.h)(0x64E55D04)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\crypto\inc\hash.h)(0x66725048)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\crypto\inc\hash_basic.h)(0x680EE846)
+F (..\APP\src\lifetime.c)(0x693799BC)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -fropi -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../APP/inc-I./RTE/Device/CBM8580_v2-I./RTE/_Target_1-IC:/Users/12267/AppData/Local/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/Core/Include-IC:/Users/12267/AppData/Local/Arm/Packs/Chipsea/CBM858x_v2_DFP/1.0.3/Device/Driver/crypto/inc-IC:/Users/12267/AppData/Local/Arm/Packs/Chipsea/CBM858x_v2_DFP/1.0.3/Device/Driver/inc-D__UVISION_VERSION="533" -D_RTE_ -D_RTE_ -DRELEASE_MODE-o ./objects/lifetime.o -MD)
+I (..\APP\inc\main.h)(0x693799BC)
+I (D:\keil5\ARM\ARMCLANG\include\stdio.h)(0x5F36D0B4)
+I (D:\keil5\ARM\ARMCLANG\include\string.h)(0x5F36D0A4)
+I (D:\keil5\ARM\ARMCLANG\include\stdint.h)(0x5F36D0A8)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm.h)(0x680EFB26)
+I (RTE\_Target_1\RTE_Components.h)(0x693BBF52)
+I (C:\Users\12267\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\core_cm0.h)(0x5E8ED122)
+I (C:\Users\12267\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_version.h)(0x5E8ED122)
+I (C:\Users\12267\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5E8306C2)
+I (C:\Users\12267\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_armclang.h)(0x5E8ED122)
+I (D:\keil5\ARM\ARMCLANG\include\arm_compat.h)(0x5EE12742)
+I (D:\keil5\ARM\ARMCLANG\include\arm_acle.h)(0x5F268738)
+I (..\APP\inc\log.h)(0x693799BE)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_i2c.h)(0x6899B1C8)
+I (..\APP\inc\data_flash_value.h)(0x69424FFC)
+I (..\APP\inc\protect.h)(0x693799BC)
+I (..\APP\inc\Power_Modes.h)(0x693799BC)
+I (..\APP\inc\AdvancedChargeAlgorithm.h)(0x693799BC)
+I (..\APP\inc\soft_timer.h)(0x693799BC)
+I (..\APP\inc\SBS_Commands.h)(0x69436D70)
+I (..\APP\inc\mode.h)(0x694246F7)
+I (..\APP\inc\ram.h)(0x693799BC)
+I (..\APP\inc\hdp.h)(0x693799BC)
+I (..\APP\inc\afe_cvt.h)(0x693799BC)
+I (..\APP\inc\definefile.h)(0x693799BC)
+I (..\APP\inc\lifetime.h)(0x693799BC)
+I (..\APP\inc\mcu.h)(0x693799BC)
+I (..\APP\inc\smbus_protocol.h)(0x693799BC)
+I (..\APP\inc\afetimer.h)(0x693799BC)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_flash.h)(0x680F1EF0)
+I (..\APP\inc\lptm.h)(0x693799BC)
+I (..\APP\inc\tim.h)(0x693799BC)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_tim.h)(0x66A7480A)
+I (..\APP\inc\dataflash.h)(0x69436AE5)
+I (..\APP\inc\datcalc_spl.h)(0x693799BC)
+I (..\APP\inc\Calc_Attf.h)(0x693799BC)
+I (..\APP\inc\rtc.h)(0x693799BC)
+I (..\APP\inc\oscm.h)(0x693799BC)
+I (..\APP\inc\UpFlash.h)(0x693799BC)
+I (RTE\Device\CBM8580_v2\cbm858xm_conf.h)(0x64E55D04)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_misc.h)(0x668D0238)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_spi.h)(0x66A74FBA)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_gpio.h)(0x66B08DD2)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_rcu.h)(0x680EFB3A)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_usart.h)(0x66A747FC)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_transimit.h)(0x64E6F1E4)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_rcc.h)(0x680EDD84)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_gcr.h)(0x680F6A9E)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_gpio.h)(0x64E55D04)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_int.h)(0x680EDDB0)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_timera.h)(0x680EDD7C)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_dtdrv.h)(0x66729832)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_exti.h)(0x667BBDA6)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_syscfg.h)(0x6698CA12)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_vadc.h)(0x680EDD74)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_cc.h)(0x680EDDCC)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_iwdg.h)(0x64E55D04)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_pmu.h)(0x680EDD8C)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_pmu.h)(0x668DFC00)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_rtc.h)(0x66A74820)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_wkcp.h)(0x680EDD6E)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_hdp.h)(0x680EDDB8)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_cddrv.h)(0x6670FD04)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_lptim.h)(0x66B08BC4)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\crypto\inc\trng.h)(0x64E55D04)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\crypto\inc\crypto_reg.h)(0x680EE596)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_fwdt.h)(0x66B0775A)
+I (..\APP\inc\cbm8580m_int.h)(0x693799BC)
+I (..\APP\inc\ra_value.h)(0x693799BC)
+F (..\APP\src\log.c)(0x693799BE)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -fropi -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../APP/inc-I./RTE/Device/CBM8580_v2-I./RTE/_Target_1-IC:/Users/12267/AppData/Local/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/Core/Include-IC:/Users/12267/AppData/Local/Arm/Packs/Chipsea/CBM858x_v2_DFP/1.0.3/Device/Driver/crypto/inc-IC:/Users/12267/AppData/Local/Arm/Packs/Chipsea/CBM858x_v2_DFP/1.0.3/Device/Driver/inc-D__UVISION_VERSION="533" -D_RTE_ -D_RTE_ -DRELEASE_MODE-o ./objects/log.o -MD)
+I (..\APP\inc\log.h)(0x693799BE)
+I (D:\keil5\ARM\ARMCLANG\include\stdio.h)(0x5F36D0B4)
+I (D:\keil5\ARM\ARMCLANG\include\string.h)(0x5F36D0A4)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm.h)(0x680EFB26)
+I (D:\keil5\ARM\ARMCLANG\include\stdint.h)(0x5F36D0A8)
+I (RTE\_Target_1\RTE_Components.h)(0x693BBF52)
+I (C:\Users\12267\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\core_cm0.h)(0x5E8ED122)
+I (C:\Users\12267\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_version.h)(0x5E8ED122)
+I (C:\Users\12267\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5E8306C2)
+I (C:\Users\12267\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_armclang.h)(0x5E8ED122)
+I (D:\keil5\ARM\ARMCLANG\include\arm_compat.h)(0x5EE12742)
+I (D:\keil5\ARM\ARMCLANG\include\arm_acle.h)(0x5F268738)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_rcu.h)(0x680EFB3A)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_gpio.h)(0x66B08DD2)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_exti.h)(0x667BBDA6)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_usart.h)(0x66A747FC)
+F (..\APP\src\lptm.c)(0x693799BC)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -fropi -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../APP/inc-I./RTE/Device/CBM8580_v2-I./RTE/_Target_1-IC:/Users/12267/AppData/Local/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/Core/Include-IC:/Users/12267/AppData/Local/Arm/Packs/Chipsea/CBM858x_v2_DFP/1.0.3/Device/Driver/crypto/inc-IC:/Users/12267/AppData/Local/Arm/Packs/Chipsea/CBM858x_v2_DFP/1.0.3/Device/Driver/inc-D__UVISION_VERSION="533" -D_RTE_ -D_RTE_ -DRELEASE_MODE-o ./objects/lptm.o -MD)
+I (..\APP\inc\lptm.h)(0x693799BC)
+I (D:\keil5\ARM\ARMCLANG\include\stdio.h)(0x5F36D0B4)
+I (D:\keil5\ARM\ARMCLANG\include\stdint.h)(0x5F36D0A8)
+I (..\APP\inc\main.h)(0x693799BC)
+I (D:\keil5\ARM\ARMCLANG\include\string.h)(0x5F36D0A4)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm.h)(0x680EFB26)
+I (RTE\_Target_1\RTE_Components.h)(0x693BBF52)
+I (C:\Users\12267\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\core_cm0.h)(0x5E8ED122)
+I (C:\Users\12267\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_version.h)(0x5E8ED122)
+I (C:\Users\12267\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5E8306C2)
+I (C:\Users\12267\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_armclang.h)(0x5E8ED122)
+I (D:\keil5\ARM\ARMCLANG\include\arm_compat.h)(0x5EE12742)
+I (D:\keil5\ARM\ARMCLANG\include\arm_acle.h)(0x5F268738)
+I (..\APP\inc\log.h)(0x693799BE)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_i2c.h)(0x6899B1C8)
+I (..\APP\inc\data_flash_value.h)(0x69424FFC)
+I (..\APP\inc\protect.h)(0x693799BC)
+I (..\APP\inc\Power_Modes.h)(0x693799BC)
+I (..\APP\inc\AdvancedChargeAlgorithm.h)(0x693799BC)
+I (..\APP\inc\soft_timer.h)(0x693799BC)
+I (..\APP\inc\SBS_Commands.h)(0x69436D70)
+I (..\APP\inc\mode.h)(0x694246F7)
+I (..\APP\inc\ram.h)(0x693799BC)
+I (..\APP\inc\hdp.h)(0x693799BC)
+I (..\APP\inc\afe_cvt.h)(0x693799BC)
+I (..\APP\inc\definefile.h)(0x693799BC)
+I (..\APP\inc\lifetime.h)(0x693799BC)
+I (..\APP\inc\mcu.h)(0x693799BC)
+I (..\APP\inc\smbus_protocol.h)(0x693799BC)
+I (..\APP\inc\afetimer.h)(0x693799BC)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_flash.h)(0x680F1EF0)
+I (..\APP\inc\tim.h)(0x693799BC)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_tim.h)(0x66A7480A)
+I (..\APP\inc\dataflash.h)(0x69436AE5)
+I (..\APP\inc\datcalc_spl.h)(0x693799BC)
+I (..\APP\inc\Calc_Attf.h)(0x693799BC)
+I (..\APP\inc\rtc.h)(0x693799BC)
+I (..\APP\inc\oscm.h)(0x693799BC)
+I (..\APP\inc\UpFlash.h)(0x693799BC)
+I (RTE\Device\CBM8580_v2\cbm858xm_conf.h)(0x64E55D04)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_misc.h)(0x668D0238)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_spi.h)(0x66A74FBA)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_gpio.h)(0x66B08DD2)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_rcu.h)(0x680EFB3A)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_usart.h)(0x66A747FC)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_transimit.h)(0x64E6F1E4)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_rcc.h)(0x680EDD84)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_gcr.h)(0x680F6A9E)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_gpio.h)(0x64E55D04)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_int.h)(0x680EDDB0)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_timera.h)(0x680EDD7C)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_dtdrv.h)(0x66729832)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_exti.h)(0x667BBDA6)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_syscfg.h)(0x6698CA12)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_vadc.h)(0x680EDD74)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_cc.h)(0x680EDDCC)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_iwdg.h)(0x64E55D04)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_pmu.h)(0x680EDD8C)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_pmu.h)(0x668DFC00)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_rtc.h)(0x66A74820)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_wkcp.h)(0x680EDD6E)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_hdp.h)(0x680EDDB8)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_cddrv.h)(0x6670FD04)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_lptim.h)(0x66B08BC4)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\crypto\inc\trng.h)(0x64E55D04)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\crypto\inc\crypto_reg.h)(0x680EE596)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_fwdt.h)(0x66B0775A)
+I (..\APP\inc\cbm8580m_int.h)(0x693799BC)
+I (..\APP\inc\ra_value.h)(0x693799BC)
+F (..\APP\src\main.c)(0x69436863)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -fropi -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../APP/inc-I./RTE/Device/CBM8580_v2-I./RTE/_Target_1-IC:/Users/12267/AppData/Local/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/Core/Include-IC:/Users/12267/AppData/Local/Arm/Packs/Chipsea/CBM858x_v2_DFP/1.0.3/Device/Driver/crypto/inc-IC:/Users/12267/AppData/Local/Arm/Packs/Chipsea/CBM858x_v2_DFP/1.0.3/Device/Driver/inc-D__UVISION_VERSION="533" -D_RTE_ -D_RTE_ -DRELEASE_MODE-o ./objects/main.o -MD)
+I (..\APP\inc\main.h)(0x693799BC)
+I (D:\keil5\ARM\ARMCLANG\include\stdio.h)(0x5F36D0B4)
+I (D:\keil5\ARM\ARMCLANG\include\string.h)(0x5F36D0A4)
+I (D:\keil5\ARM\ARMCLANG\include\stdint.h)(0x5F36D0A8)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm.h)(0x680EFB26)
+I (RTE\_Target_1\RTE_Components.h)(0x693BBF52)
+I (C:\Users\12267\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\core_cm0.h)(0x5E8ED122)
+I (C:\Users\12267\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_version.h)(0x5E8ED122)
+I (C:\Users\12267\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5E8306C2)
+I (C:\Users\12267\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_armclang.h)(0x5E8ED122)
+I (D:\keil5\ARM\ARMCLANG\include\arm_compat.h)(0x5EE12742)
+I (D:\keil5\ARM\ARMCLANG\include\arm_acle.h)(0x5F268738)
+I (..\APP\inc\log.h)(0x693799BE)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_i2c.h)(0x6899B1C8)
+I (..\APP\inc\data_flash_value.h)(0x69424FFC)
+I (..\APP\inc\protect.h)(0x693799BC)
+I (..\APP\inc\Power_Modes.h)(0x693799BC)
+I (..\APP\inc\AdvancedChargeAlgorithm.h)(0x693799BC)
+I (..\APP\inc\soft_timer.h)(0x693799BC)
+I (..\APP\inc\SBS_Commands.h)(0x69436D70)
+I (..\APP\inc\mode.h)(0x694246F7)
+I (..\APP\inc\ram.h)(0x693799BC)
+I (..\APP\inc\hdp.h)(0x693799BC)
+I (..\APP\inc\afe_cvt.h)(0x693799BC)
+I (..\APP\inc\definefile.h)(0x693799BC)
+I (..\APP\inc\lifetime.h)(0x693799BC)
+I (..\APP\inc\mcu.h)(0x693799BC)
+I (..\APP\inc\smbus_protocol.h)(0x693799BC)
+I (..\APP\inc\afetimer.h)(0x693799BC)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_flash.h)(0x680F1EF0)
+I (..\APP\inc\lptm.h)(0x693799BC)
+I (..\APP\inc\tim.h)(0x693799BC)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_tim.h)(0x66A7480A)
+I (..\APP\inc\dataflash.h)(0x69436AE5)
+I (..\APP\inc\datcalc_spl.h)(0x693799BC)
+I (..\APP\inc\Calc_Attf.h)(0x693799BC)
+I (..\APP\inc\rtc.h)(0x693799BC)
+I (..\APP\inc\oscm.h)(0x693799BC)
+I (..\APP\inc\UpFlash.h)(0x693799BC)
+I (RTE\Device\CBM8580_v2\cbm858xm_conf.h)(0x64E55D04)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_misc.h)(0x668D0238)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_spi.h)(0x66A74FBA)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_gpio.h)(0x66B08DD2)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_rcu.h)(0x680EFB3A)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_usart.h)(0x66A747FC)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_transimit.h)(0x64E6F1E4)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_rcc.h)(0x680EDD84)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_gcr.h)(0x680F6A9E)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_gpio.h)(0x64E55D04)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_int.h)(0x680EDDB0)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_timera.h)(0x680EDD7C)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_dtdrv.h)(0x66729832)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_exti.h)(0x667BBDA6)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_syscfg.h)(0x6698CA12)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_vadc.h)(0x680EDD74)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_cc.h)(0x680EDDCC)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_iwdg.h)(0x64E55D04)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_pmu.h)(0x680EDD8C)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_pmu.h)(0x668DFC00)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_rtc.h)(0x66A74820)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_wkcp.h)(0x680EDD6E)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_hdp.h)(0x680EDDB8)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_cddrv.h)(0x6670FD04)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_lptim.h)(0x66B08BC4)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\crypto\inc\trng.h)(0x64E55D04)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\crypto\inc\crypto_reg.h)(0x680EE596)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_fwdt.h)(0x66B0775A)
+I (..\APP\inc\cbm8580m_int.h)(0x693799BC)
+I (..\APP\inc\ra_value.h)(0x693799BC)
+F (..\APP\src\mcu.c)(0x69436CE3)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -fropi -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../APP/inc-I./RTE/Device/CBM8580_v2-I./RTE/_Target_1-IC:/Users/12267/AppData/Local/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/Core/Include-IC:/Users/12267/AppData/Local/Arm/Packs/Chipsea/CBM858x_v2_DFP/1.0.3/Device/Driver/crypto/inc-IC:/Users/12267/AppData/Local/Arm/Packs/Chipsea/CBM858x_v2_DFP/1.0.3/Device/Driver/inc-D__UVISION_VERSION="533" -D_RTE_ -D_RTE_ -DRELEASE_MODE-o ./objects/mcu.o -MD)
+I (..\APP\inc\mcu.h)(0x693799BC)
+I (..\APP\inc\main.h)(0x693799BC)
+I (D:\keil5\ARM\ARMCLANG\include\stdio.h)(0x5F36D0B4)
+I (D:\keil5\ARM\ARMCLANG\include\string.h)(0x5F36D0A4)
+I (D:\keil5\ARM\ARMCLANG\include\stdint.h)(0x5F36D0A8)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm.h)(0x680EFB26)
+I (RTE\_Target_1\RTE_Components.h)(0x693BBF52)
+I (C:\Users\12267\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\core_cm0.h)(0x5E8ED122)
+I (C:\Users\12267\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_version.h)(0x5E8ED122)
+I (C:\Users\12267\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5E8306C2)
+I (C:\Users\12267\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_armclang.h)(0x5E8ED122)
+I (D:\keil5\ARM\ARMCLANG\include\arm_compat.h)(0x5EE12742)
+I (D:\keil5\ARM\ARMCLANG\include\arm_acle.h)(0x5F268738)
+I (..\APP\inc\log.h)(0x693799BE)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_i2c.h)(0x6899B1C8)
+I (..\APP\inc\data_flash_value.h)(0x69424FFC)
+I (..\APP\inc\protect.h)(0x693799BC)
+I (..\APP\inc\Power_Modes.h)(0x693799BC)
+I (..\APP\inc\AdvancedChargeAlgorithm.h)(0x693799BC)
+I (..\APP\inc\soft_timer.h)(0x693799BC)
+I (..\APP\inc\SBS_Commands.h)(0x69436D70)
+I (..\APP\inc\mode.h)(0x694246F7)
+I (..\APP\inc\ram.h)(0x693799BC)
+I (..\APP\inc\hdp.h)(0x693799BC)
+I (..\APP\inc\afe_cvt.h)(0x693799BC)
+I (..\APP\inc\definefile.h)(0x693799BC)
+I (..\APP\inc\lifetime.h)(0x693799BC)
+I (..\APP\inc\smbus_protocol.h)(0x693799BC)
+I (..\APP\inc\afetimer.h)(0x693799BC)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_flash.h)(0x680F1EF0)
+I (..\APP\inc\lptm.h)(0x693799BC)
+I (..\APP\inc\tim.h)(0x693799BC)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_tim.h)(0x66A7480A)
+I (..\APP\inc\dataflash.h)(0x69436AE5)
+I (..\APP\inc\datcalc_spl.h)(0x693799BC)
+I (..\APP\inc\Calc_Attf.h)(0x693799BC)
+I (..\APP\inc\rtc.h)(0x693799BC)
+I (..\APP\inc\oscm.h)(0x693799BC)
+I (..\APP\inc\UpFlash.h)(0x693799BC)
+I (RTE\Device\CBM8580_v2\cbm858xm_conf.h)(0x64E55D04)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_misc.h)(0x668D0238)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_spi.h)(0x66A74FBA)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_gpio.h)(0x66B08DD2)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_rcu.h)(0x680EFB3A)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_usart.h)(0x66A747FC)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_transimit.h)(0x64E6F1E4)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_rcc.h)(0x680EDD84)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_gcr.h)(0x680F6A9E)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_gpio.h)(0x64E55D04)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_int.h)(0x680EDDB0)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_timera.h)(0x680EDD7C)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_dtdrv.h)(0x66729832)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_exti.h)(0x667BBDA6)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_syscfg.h)(0x6698CA12)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_vadc.h)(0x680EDD74)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_cc.h)(0x680EDDCC)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_iwdg.h)(0x64E55D04)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_pmu.h)(0x680EDD8C)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_pmu.h)(0x668DFC00)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_rtc.h)(0x66A74820)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_wkcp.h)(0x680EDD6E)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_hdp.h)(0x680EDDB8)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_cddrv.h)(0x6670FD04)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_lptim.h)(0x66B08BC4)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\crypto\inc\trng.h)(0x64E55D04)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\crypto\inc\crypto_reg.h)(0x680EE596)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_fwdt.h)(0x66B0775A)
+I (..\APP\inc\cbm8580m_int.h)(0x693799BC)
+I (..\APP\inc\ra_value.h)(0x693799BC)
+F (..\APP\src\mode.c)(0x69426A75)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -fropi -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../APP/inc-I./RTE/Device/CBM8580_v2-I./RTE/_Target_1-IC:/Users/12267/AppData/Local/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/Core/Include-IC:/Users/12267/AppData/Local/Arm/Packs/Chipsea/CBM858x_v2_DFP/1.0.3/Device/Driver/crypto/inc-IC:/Users/12267/AppData/Local/Arm/Packs/Chipsea/CBM858x_v2_DFP/1.0.3/Device/Driver/inc-D__UVISION_VERSION="533" -D_RTE_ -D_RTE_ -DRELEASE_MODE-o ./objects/mode.o -MD)
+I (..\APP\inc\mode.h)(0x694246F7)
+I (..\APP\inc\main.h)(0x693799BC)
+I (D:\keil5\ARM\ARMCLANG\include\stdio.h)(0x5F36D0B4)
+I (D:\keil5\ARM\ARMCLANG\include\string.h)(0x5F36D0A4)
+I (D:\keil5\ARM\ARMCLANG\include\stdint.h)(0x5F36D0A8)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm.h)(0x680EFB26)
+I (RTE\_Target_1\RTE_Components.h)(0x693BBF52)
+I (C:\Users\12267\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\core_cm0.h)(0x5E8ED122)
+I (C:\Users\12267\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_version.h)(0x5E8ED122)
+I (C:\Users\12267\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5E8306C2)
+I (C:\Users\12267\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_armclang.h)(0x5E8ED122)
+I (D:\keil5\ARM\ARMCLANG\include\arm_compat.h)(0x5EE12742)
+I (D:\keil5\ARM\ARMCLANG\include\arm_acle.h)(0x5F268738)
+I (..\APP\inc\log.h)(0x693799BE)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_i2c.h)(0x6899B1C8)
+I (..\APP\inc\data_flash_value.h)(0x69424FFC)
+I (..\APP\inc\protect.h)(0x693799BC)
+I (..\APP\inc\Power_Modes.h)(0x693799BC)
+I (..\APP\inc\AdvancedChargeAlgorithm.h)(0x693799BC)
+I (..\APP\inc\soft_timer.h)(0x693799BC)
+I (..\APP\inc\SBS_Commands.h)(0x69436D70)
+I (..\APP\inc\ram.h)(0x693799BC)
+I (..\APP\inc\hdp.h)(0x693799BC)
+I (..\APP\inc\afe_cvt.h)(0x693799BC)
+I (..\APP\inc\definefile.h)(0x693799BC)
+I (..\APP\inc\lifetime.h)(0x693799BC)
+I (..\APP\inc\mcu.h)(0x693799BC)
+I (..\APP\inc\smbus_protocol.h)(0x693799BC)
+I (..\APP\inc\afetimer.h)(0x693799BC)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_flash.h)(0x680F1EF0)
+I (..\APP\inc\lptm.h)(0x693799BC)
+I (..\APP\inc\tim.h)(0x693799BC)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_tim.h)(0x66A7480A)
+I (..\APP\inc\dataflash.h)(0x69436AE5)
+I (..\APP\inc\datcalc_spl.h)(0x693799BC)
+I (..\APP\inc\Calc_Attf.h)(0x693799BC)
+I (..\APP\inc\rtc.h)(0x693799BC)
+I (..\APP\inc\oscm.h)(0x693799BC)
+I (..\APP\inc\UpFlash.h)(0x693799BC)
+I (RTE\Device\CBM8580_v2\cbm858xm_conf.h)(0x64E55D04)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_misc.h)(0x668D0238)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_spi.h)(0x66A74FBA)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_gpio.h)(0x66B08DD2)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_rcu.h)(0x680EFB3A)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_usart.h)(0x66A747FC)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_transimit.h)(0x64E6F1E4)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_rcc.h)(0x680EDD84)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_gcr.h)(0x680F6A9E)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_gpio.h)(0x64E55D04)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_int.h)(0x680EDDB0)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_timera.h)(0x680EDD7C)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_dtdrv.h)(0x66729832)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_exti.h)(0x667BBDA6)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_syscfg.h)(0x6698CA12)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_vadc.h)(0x680EDD74)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_cc.h)(0x680EDDCC)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_iwdg.h)(0x64E55D04)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_pmu.h)(0x680EDD8C)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_pmu.h)(0x668DFC00)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_rtc.h)(0x66A74820)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_wkcp.h)(0x680EDD6E)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_hdp.h)(0x680EDDB8)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_cddrv.h)(0x6670FD04)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_lptim.h)(0x66B08BC4)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\crypto\inc\trng.h)(0x64E55D04)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\crypto\inc\crypto_reg.h)(0x680EE596)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_fwdt.h)(0x66B0775A)
+I (..\APP\inc\cbm8580m_int.h)(0x693799BC)
+I (..\APP\inc\ra_value.h)(0x693799BC)
+F (..\APP\src\modules_sha1.c)(0x693799BC)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -fropi -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../APP/inc-I./RTE/Device/CBM8580_v2-I./RTE/_Target_1-IC:/Users/12267/AppData/Local/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/Core/Include-IC:/Users/12267/AppData/Local/Arm/Packs/Chipsea/CBM858x_v2_DFP/1.0.3/Device/Driver/crypto/inc-IC:/Users/12267/AppData/Local/Arm/Packs/Chipsea/CBM858x_v2_DFP/1.0.3/Device/Driver/inc-D__UVISION_VERSION="533" -D_RTE_ -D_RTE_ -DRELEASE_MODE-o ./objects/modules_sha1.o -MD)
+I (D:\keil5\ARM\ARMCLANG\include\string.h)(0x5F36D0A4)
+I (D:\keil5\ARM\ARMCLANG\include\stdint.h)(0x5F36D0A8)
+I (..\APP\inc\modules_sha1.h)(0x693799BC)
+F (..\APP\src\oscm.c)(0x693799BC)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -fropi -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../APP/inc-I./RTE/Device/CBM8580_v2-I./RTE/_Target_1-IC:/Users/12267/AppData/Local/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/Core/Include-IC:/Users/12267/AppData/Local/Arm/Packs/Chipsea/CBM858x_v2_DFP/1.0.3/Device/Driver/crypto/inc-IC:/Users/12267/AppData/Local/Arm/Packs/Chipsea/CBM858x_v2_DFP/1.0.3/Device/Driver/inc-D__UVISION_VERSION="533" -D_RTE_ -D_RTE_ -DRELEASE_MODE-o ./objects/oscm.o -MD)
+I (..\APP\inc\oscm.h)(0x693799BC)
+I (..\APP\inc\main.h)(0x693799BC)
+I (D:\keil5\ARM\ARMCLANG\include\stdio.h)(0x5F36D0B4)
+I (D:\keil5\ARM\ARMCLANG\include\string.h)(0x5F36D0A4)
+I (D:\keil5\ARM\ARMCLANG\include\stdint.h)(0x5F36D0A8)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm.h)(0x680EFB26)
+I (RTE\_Target_1\RTE_Components.h)(0x693BBF52)
+I (C:\Users\12267\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\core_cm0.h)(0x5E8ED122)
+I (C:\Users\12267\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_version.h)(0x5E8ED122)
+I (C:\Users\12267\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5E8306C2)
+I (C:\Users\12267\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_armclang.h)(0x5E8ED122)
+I (D:\keil5\ARM\ARMCLANG\include\arm_compat.h)(0x5EE12742)
+I (D:\keil5\ARM\ARMCLANG\include\arm_acle.h)(0x5F268738)
+I (..\APP\inc\log.h)(0x693799BE)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_i2c.h)(0x6899B1C8)
+I (..\APP\inc\data_flash_value.h)(0x69424FFC)
+I (..\APP\inc\protect.h)(0x693799BC)
+I (..\APP\inc\Power_Modes.h)(0x693799BC)
+I (..\APP\inc\AdvancedChargeAlgorithm.h)(0x693799BC)
+I (..\APP\inc\soft_timer.h)(0x693799BC)
+I (..\APP\inc\SBS_Commands.h)(0x69436D70)
+I (..\APP\inc\mode.h)(0x694246F7)
+I (..\APP\inc\ram.h)(0x693799BC)
+I (..\APP\inc\hdp.h)(0x693799BC)
+I (..\APP\inc\afe_cvt.h)(0x693799BC)
+I (..\APP\inc\definefile.h)(0x693799BC)
+I (..\APP\inc\lifetime.h)(0x693799BC)
+I (..\APP\inc\mcu.h)(0x693799BC)
+I (..\APP\inc\smbus_protocol.h)(0x693799BC)
+I (..\APP\inc\afetimer.h)(0x693799BC)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_flash.h)(0x680F1EF0)
+I (..\APP\inc\lptm.h)(0x693799BC)
+I (..\APP\inc\tim.h)(0x693799BC)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_tim.h)(0x66A7480A)
+I (..\APP\inc\dataflash.h)(0x69436AE5)
+I (..\APP\inc\datcalc_spl.h)(0x693799BC)
+I (..\APP\inc\Calc_Attf.h)(0x693799BC)
+I (..\APP\inc\rtc.h)(0x693799BC)
+I (..\APP\inc\UpFlash.h)(0x693799BC)
+I (RTE\Device\CBM8580_v2\cbm858xm_conf.h)(0x64E55D04)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_misc.h)(0x668D0238)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_spi.h)(0x66A74FBA)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_gpio.h)(0x66B08DD2)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_rcu.h)(0x680EFB3A)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_usart.h)(0x66A747FC)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_transimit.h)(0x64E6F1E4)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_rcc.h)(0x680EDD84)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_gcr.h)(0x680F6A9E)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_gpio.h)(0x64E55D04)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_int.h)(0x680EDDB0)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_timera.h)(0x680EDD7C)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_dtdrv.h)(0x66729832)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_exti.h)(0x667BBDA6)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_syscfg.h)(0x6698CA12)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_vadc.h)(0x680EDD74)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_cc.h)(0x680EDDCC)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_iwdg.h)(0x64E55D04)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_pmu.h)(0x680EDD8C)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_pmu.h)(0x668DFC00)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_rtc.h)(0x66A74820)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_wkcp.h)(0x680EDD6E)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_hdp.h)(0x680EDDB8)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_cddrv.h)(0x6670FD04)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_lptim.h)(0x66B08BC4)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\crypto\inc\trng.h)(0x64E55D04)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\crypto\inc\crypto_reg.h)(0x680EE596)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_fwdt.h)(0x66B0775A)
+I (..\APP\inc\cbm8580m_int.h)(0x693799BC)
+I (..\APP\inc\ra_value.h)(0x693799BC)
+F (..\APP\src\Power_Modes.c)(0x69436D0B)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -fropi -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../APP/inc-I./RTE/Device/CBM8580_v2-I./RTE/_Target_1-IC:/Users/12267/AppData/Local/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/Core/Include-IC:/Users/12267/AppData/Local/Arm/Packs/Chipsea/CBM858x_v2_DFP/1.0.3/Device/Driver/crypto/inc-IC:/Users/12267/AppData/Local/Arm/Packs/Chipsea/CBM858x_v2_DFP/1.0.3/Device/Driver/inc-D__UVISION_VERSION="533" -D_RTE_ -D_RTE_ -DRELEASE_MODE-o ./objects/power_modes.o -MD)
+I (..\APP\inc\Power_Modes.h)(0x693799BC)
+I (..\APP\inc\main.h)(0x693799BC)
+I (D:\keil5\ARM\ARMCLANG\include\stdio.h)(0x5F36D0B4)
+I (D:\keil5\ARM\ARMCLANG\include\string.h)(0x5F36D0A4)
+I (D:\keil5\ARM\ARMCLANG\include\stdint.h)(0x5F36D0A8)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm.h)(0x680EFB26)
+I (RTE\_Target_1\RTE_Components.h)(0x693BBF52)
+I (C:\Users\12267\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\core_cm0.h)(0x5E8ED122)
+I (C:\Users\12267\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_version.h)(0x5E8ED122)
+I (C:\Users\12267\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5E8306C2)
+I (C:\Users\12267\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_armclang.h)(0x5E8ED122)
+I (D:\keil5\ARM\ARMCLANG\include\arm_compat.h)(0x5EE12742)
+I (D:\keil5\ARM\ARMCLANG\include\arm_acle.h)(0x5F268738)
+I (..\APP\inc\log.h)(0x693799BE)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_i2c.h)(0x6899B1C8)
+I (..\APP\inc\data_flash_value.h)(0x69424FFC)
+I (..\APP\inc\protect.h)(0x693799BC)
+I (..\APP\inc\AdvancedChargeAlgorithm.h)(0x693799BC)
+I (..\APP\inc\soft_timer.h)(0x693799BC)
+I (..\APP\inc\SBS_Commands.h)(0x69436D70)
+I (..\APP\inc\mode.h)(0x694246F7)
+I (..\APP\inc\ram.h)(0x693799BC)
+I (..\APP\inc\hdp.h)(0x693799BC)
+I (..\APP\inc\afe_cvt.h)(0x693799BC)
+I (..\APP\inc\definefile.h)(0x693799BC)
+I (..\APP\inc\lifetime.h)(0x693799BC)
+I (..\APP\inc\mcu.h)(0x693799BC)
+I (..\APP\inc\smbus_protocol.h)(0x693799BC)
+I (..\APP\inc\afetimer.h)(0x693799BC)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_flash.h)(0x680F1EF0)
+I (..\APP\inc\lptm.h)(0x693799BC)
+I (..\APP\inc\tim.h)(0x693799BC)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_tim.h)(0x66A7480A)
+I (..\APP\inc\dataflash.h)(0x69436AE5)
+I (..\APP\inc\datcalc_spl.h)(0x693799BC)
+I (..\APP\inc\Calc_Attf.h)(0x693799BC)
+I (..\APP\inc\rtc.h)(0x693799BC)
+I (..\APP\inc\oscm.h)(0x693799BC)
+I (..\APP\inc\UpFlash.h)(0x693799BC)
+I (RTE\Device\CBM8580_v2\cbm858xm_conf.h)(0x64E55D04)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_misc.h)(0x668D0238)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_spi.h)(0x66A74FBA)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_gpio.h)(0x66B08DD2)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_rcu.h)(0x680EFB3A)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_usart.h)(0x66A747FC)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_transimit.h)(0x64E6F1E4)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_rcc.h)(0x680EDD84)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_gcr.h)(0x680F6A9E)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_gpio.h)(0x64E55D04)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_int.h)(0x680EDDB0)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_timera.h)(0x680EDD7C)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_dtdrv.h)(0x66729832)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_exti.h)(0x667BBDA6)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_syscfg.h)(0x6698CA12)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_vadc.h)(0x680EDD74)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_cc.h)(0x680EDDCC)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_iwdg.h)(0x64E55D04)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_pmu.h)(0x680EDD8C)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_pmu.h)(0x668DFC00)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_rtc.h)(0x66A74820)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_wkcp.h)(0x680EDD6E)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_hdp.h)(0x680EDDB8)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_cddrv.h)(0x6670FD04)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_lptim.h)(0x66B08BC4)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\crypto\inc\trng.h)(0x64E55D04)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\crypto\inc\crypto_reg.h)(0x680EE596)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_fwdt.h)(0x66B0775A)
+I (..\APP\inc\cbm8580m_int.h)(0x693799BC)
+I (..\APP\inc\ra_value.h)(0x693799BC)
+F (..\APP\src\protect.c)(0x693799BC)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -fropi -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../APP/inc-I./RTE/Device/CBM8580_v2-I./RTE/_Target_1-IC:/Users/12267/AppData/Local/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/Core/Include-IC:/Users/12267/AppData/Local/Arm/Packs/Chipsea/CBM858x_v2_DFP/1.0.3/Device/Driver/crypto/inc-IC:/Users/12267/AppData/Local/Arm/Packs/Chipsea/CBM858x_v2_DFP/1.0.3/Device/Driver/inc-D__UVISION_VERSION="533" -D_RTE_ -D_RTE_ -DRELEASE_MODE-o ./objects/protect.o -MD)
+I (..\APP\inc\protect.h)(0x693799BC)
+I (..\APP\inc\main.h)(0x693799BC)
+I (D:\keil5\ARM\ARMCLANG\include\stdio.h)(0x5F36D0B4)
+I (D:\keil5\ARM\ARMCLANG\include\string.h)(0x5F36D0A4)
+I (D:\keil5\ARM\ARMCLANG\include\stdint.h)(0x5F36D0A8)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm.h)(0x680EFB26)
+I (RTE\_Target_1\RTE_Components.h)(0x693BBF52)
+I (C:\Users\12267\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\core_cm0.h)(0x5E8ED122)
+I (C:\Users\12267\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_version.h)(0x5E8ED122)
+I (C:\Users\12267\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5E8306C2)
+I (C:\Users\12267\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_armclang.h)(0x5E8ED122)
+I (D:\keil5\ARM\ARMCLANG\include\arm_compat.h)(0x5EE12742)
+I (D:\keil5\ARM\ARMCLANG\include\arm_acle.h)(0x5F268738)
+I (..\APP\inc\log.h)(0x693799BE)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_i2c.h)(0x6899B1C8)
+I (..\APP\inc\data_flash_value.h)(0x69424FFC)
+I (..\APP\inc\Power_Modes.h)(0x693799BC)
+I (..\APP\inc\AdvancedChargeAlgorithm.h)(0x693799BC)
+I (..\APP\inc\soft_timer.h)(0x693799BC)
+I (..\APP\inc\SBS_Commands.h)(0x69436D70)
+I (..\APP\inc\mode.h)(0x694246F7)
+I (..\APP\inc\ram.h)(0x693799BC)
+I (..\APP\inc\hdp.h)(0x693799BC)
+I (..\APP\inc\afe_cvt.h)(0x693799BC)
+I (..\APP\inc\definefile.h)(0x693799BC)
+I (..\APP\inc\lifetime.h)(0x693799BC)
+I (..\APP\inc\mcu.h)(0x693799BC)
+I (..\APP\inc\smbus_protocol.h)(0x693799BC)
+I (..\APP\inc\afetimer.h)(0x693799BC)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_flash.h)(0x680F1EF0)
+I (..\APP\inc\lptm.h)(0x693799BC)
+I (..\APP\inc\tim.h)(0x693799BC)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_tim.h)(0x66A7480A)
+I (..\APP\inc\dataflash.h)(0x69436AE5)
+I (..\APP\inc\datcalc_spl.h)(0x693799BC)
+I (..\APP\inc\Calc_Attf.h)(0x693799BC)
+I (..\APP\inc\rtc.h)(0x693799BC)
+I (..\APP\inc\oscm.h)(0x693799BC)
+I (..\APP\inc\UpFlash.h)(0x693799BC)
+I (RTE\Device\CBM8580_v2\cbm858xm_conf.h)(0x64E55D04)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_misc.h)(0x668D0238)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_spi.h)(0x66A74FBA)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_gpio.h)(0x66B08DD2)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_rcu.h)(0x680EFB3A)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_usart.h)(0x66A747FC)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_transimit.h)(0x64E6F1E4)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_rcc.h)(0x680EDD84)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_gcr.h)(0x680F6A9E)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_gpio.h)(0x64E55D04)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_int.h)(0x680EDDB0)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_timera.h)(0x680EDD7C)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_dtdrv.h)(0x66729832)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_exti.h)(0x667BBDA6)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_syscfg.h)(0x6698CA12)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_vadc.h)(0x680EDD74)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_cc.h)(0x680EDDCC)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_iwdg.h)(0x64E55D04)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_pmu.h)(0x680EDD8C)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_pmu.h)(0x668DFC00)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_rtc.h)(0x66A74820)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_wkcp.h)(0x680EDD6E)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_hdp.h)(0x680EDDB8)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_cddrv.h)(0x6670FD04)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_lptim.h)(0x66B08BC4)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\crypto\inc\trng.h)(0x64E55D04)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\crypto\inc\crypto_reg.h)(0x680EE596)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_fwdt.h)(0x66B0775A)
+I (..\APP\inc\cbm8580m_int.h)(0x693799BC)
+I (..\APP\inc\ra_value.h)(0x693799BC)
+F (..\APP\src\ra_value.c)(0x693799BC)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -fropi -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../APP/inc-I./RTE/Device/CBM8580_v2-I./RTE/_Target_1-IC:/Users/12267/AppData/Local/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/Core/Include-IC:/Users/12267/AppData/Local/Arm/Packs/Chipsea/CBM858x_v2_DFP/1.0.3/Device/Driver/crypto/inc-IC:/Users/12267/AppData/Local/Arm/Packs/Chipsea/CBM858x_v2_DFP/1.0.3/Device/Driver/inc-D__UVISION_VERSION="533" -D_RTE_ -D_RTE_ -DRELEASE_MODE-o ./objects/ra_value.o -MD)
+I (..\APP\inc\ra_value.h)(0x693799BC)
+I (..\APP\inc\main.h)(0x693799BC)
+I (D:\keil5\ARM\ARMCLANG\include\stdio.h)(0x5F36D0B4)
+I (D:\keil5\ARM\ARMCLANG\include\string.h)(0x5F36D0A4)
+I (D:\keil5\ARM\ARMCLANG\include\stdint.h)(0x5F36D0A8)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm.h)(0x680EFB26)
+I (RTE\_Target_1\RTE_Components.h)(0x693BBF52)
+I (C:\Users\12267\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\core_cm0.h)(0x5E8ED122)
+I (C:\Users\12267\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_version.h)(0x5E8ED122)
+I (C:\Users\12267\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5E8306C2)
+I (C:\Users\12267\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_armclang.h)(0x5E8ED122)
+I (D:\keil5\ARM\ARMCLANG\include\arm_compat.h)(0x5EE12742)
+I (D:\keil5\ARM\ARMCLANG\include\arm_acle.h)(0x5F268738)
+I (..\APP\inc\log.h)(0x693799BE)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_i2c.h)(0x6899B1C8)
+I (..\APP\inc\data_flash_value.h)(0x69424FFC)
+I (..\APP\inc\protect.h)(0x693799BC)
+I (..\APP\inc\Power_Modes.h)(0x693799BC)
+I (..\APP\inc\AdvancedChargeAlgorithm.h)(0x693799BC)
+I (..\APP\inc\soft_timer.h)(0x693799BC)
+I (..\APP\inc\SBS_Commands.h)(0x69436D70)
+I (..\APP\inc\mode.h)(0x694246F7)
+I (..\APP\inc\ram.h)(0x693799BC)
+I (..\APP\inc\hdp.h)(0x693799BC)
+I (..\APP\inc\afe_cvt.h)(0x693799BC)
+I (..\APP\inc\definefile.h)(0x693799BC)
+I (..\APP\inc\lifetime.h)(0x693799BC)
+I (..\APP\inc\mcu.h)(0x693799BC)
+I (..\APP\inc\smbus_protocol.h)(0x693799BC)
+I (..\APP\inc\afetimer.h)(0x693799BC)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_flash.h)(0x680F1EF0)
+I (..\APP\inc\lptm.h)(0x693799BC)
+I (..\APP\inc\tim.h)(0x693799BC)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_tim.h)(0x66A7480A)
+I (..\APP\inc\dataflash.h)(0x69436AE5)
+I (..\APP\inc\datcalc_spl.h)(0x693799BC)
+I (..\APP\inc\Calc_Attf.h)(0x693799BC)
+I (..\APP\inc\rtc.h)(0x693799BC)
+I (..\APP\inc\oscm.h)(0x693799BC)
+I (..\APP\inc\UpFlash.h)(0x693799BC)
+I (RTE\Device\CBM8580_v2\cbm858xm_conf.h)(0x64E55D04)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_misc.h)(0x668D0238)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_spi.h)(0x66A74FBA)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_gpio.h)(0x66B08DD2)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_rcu.h)(0x680EFB3A)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_usart.h)(0x66A747FC)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_transimit.h)(0x64E6F1E4)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_rcc.h)(0x680EDD84)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_gcr.h)(0x680F6A9E)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_gpio.h)(0x64E55D04)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_int.h)(0x680EDDB0)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_timera.h)(0x680EDD7C)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_dtdrv.h)(0x66729832)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_exti.h)(0x667BBDA6)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_syscfg.h)(0x6698CA12)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_vadc.h)(0x680EDD74)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_cc.h)(0x680EDDCC)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_iwdg.h)(0x64E55D04)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_pmu.h)(0x680EDD8C)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_pmu.h)(0x668DFC00)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_rtc.h)(0x66A74820)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_wkcp.h)(0x680EDD6E)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_hdp.h)(0x680EDDB8)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_cddrv.h)(0x6670FD04)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_lptim.h)(0x66B08BC4)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\crypto\inc\trng.h)(0x64E55D04)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\crypto\inc\crypto_reg.h)(0x680EE596)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_fwdt.h)(0x66B0775A)
+I (..\APP\inc\cbm8580m_int.h)(0x693799BC)
+F (..\APP\src\ram.c)(0x693799BC)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -fropi -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../APP/inc-I./RTE/Device/CBM8580_v2-I./RTE/_Target_1-IC:/Users/12267/AppData/Local/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/Core/Include-IC:/Users/12267/AppData/Local/Arm/Packs/Chipsea/CBM858x_v2_DFP/1.0.3/Device/Driver/crypto/inc-IC:/Users/12267/AppData/Local/Arm/Packs/Chipsea/CBM858x_v2_DFP/1.0.3/Device/Driver/inc-D__UVISION_VERSION="533" -D_RTE_ -D_RTE_ -DRELEASE_MODE-o ./objects/ram.o -MD)
+I (..\APP\inc\ram.h)(0x693799BC)
+I (..\APP\inc\main.h)(0x693799BC)
+I (D:\keil5\ARM\ARMCLANG\include\stdio.h)(0x5F36D0B4)
+I (D:\keil5\ARM\ARMCLANG\include\string.h)(0x5F36D0A4)
+I (D:\keil5\ARM\ARMCLANG\include\stdint.h)(0x5F36D0A8)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm.h)(0x680EFB26)
+I (RTE\_Target_1\RTE_Components.h)(0x693BBF52)
+I (C:\Users\12267\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\core_cm0.h)(0x5E8ED122)
+I (C:\Users\12267\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_version.h)(0x5E8ED122)
+I (C:\Users\12267\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5E8306C2)
+I (C:\Users\12267\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_armclang.h)(0x5E8ED122)
+I (D:\keil5\ARM\ARMCLANG\include\arm_compat.h)(0x5EE12742)
+I (D:\keil5\ARM\ARMCLANG\include\arm_acle.h)(0x5F268738)
+I (..\APP\inc\log.h)(0x693799BE)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_i2c.h)(0x6899B1C8)
+I (..\APP\inc\data_flash_value.h)(0x69424FFC)
+I (..\APP\inc\protect.h)(0x693799BC)
+I (..\APP\inc\Power_Modes.h)(0x693799BC)
+I (..\APP\inc\AdvancedChargeAlgorithm.h)(0x693799BC)
+I (..\APP\inc\soft_timer.h)(0x693799BC)
+I (..\APP\inc\SBS_Commands.h)(0x69436D70)
+I (..\APP\inc\mode.h)(0x694246F7)
+I (..\APP\inc\hdp.h)(0x693799BC)
+I (..\APP\inc\afe_cvt.h)(0x693799BC)
+I (..\APP\inc\definefile.h)(0x693799BC)
+I (..\APP\inc\lifetime.h)(0x693799BC)
+I (..\APP\inc\mcu.h)(0x693799BC)
+I (..\APP\inc\smbus_protocol.h)(0x693799BC)
+I (..\APP\inc\afetimer.h)(0x693799BC)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_flash.h)(0x680F1EF0)
+I (..\APP\inc\lptm.h)(0x693799BC)
+I (..\APP\inc\tim.h)(0x693799BC)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_tim.h)(0x66A7480A)
+I (..\APP\inc\dataflash.h)(0x69436AE5)
+I (..\APP\inc\datcalc_spl.h)(0x693799BC)
+I (..\APP\inc\Calc_Attf.h)(0x693799BC)
+I (..\APP\inc\rtc.h)(0x693799BC)
+I (..\APP\inc\oscm.h)(0x693799BC)
+I (..\APP\inc\UpFlash.h)(0x693799BC)
+I (RTE\Device\CBM8580_v2\cbm858xm_conf.h)(0x64E55D04)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_misc.h)(0x668D0238)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_spi.h)(0x66A74FBA)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_gpio.h)(0x66B08DD2)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_rcu.h)(0x680EFB3A)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_usart.h)(0x66A747FC)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_transimit.h)(0x64E6F1E4)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_rcc.h)(0x680EDD84)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_gcr.h)(0x680F6A9E)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_gpio.h)(0x64E55D04)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_int.h)(0x680EDDB0)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_timera.h)(0x680EDD7C)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_dtdrv.h)(0x66729832)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_exti.h)(0x667BBDA6)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_syscfg.h)(0x6698CA12)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_vadc.h)(0x680EDD74)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_cc.h)(0x680EDDCC)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_iwdg.h)(0x64E55D04)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_pmu.h)(0x680EDD8C)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_pmu.h)(0x668DFC00)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_rtc.h)(0x66A74820)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_wkcp.h)(0x680EDD6E)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_hdp.h)(0x680EDDB8)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_cddrv.h)(0x6670FD04)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_lptim.h)(0x66B08BC4)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\crypto\inc\trng.h)(0x64E55D04)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\crypto\inc\crypto_reg.h)(0x680EE596)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_fwdt.h)(0x66B0775A)
+I (..\APP\inc\cbm8580m_int.h)(0x693799BC)
+I (..\APP\inc\ra_value.h)(0x693799BC)
+F (..\APP\src\rtc.c)(0x693799BC)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -fropi -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../APP/inc-I./RTE/Device/CBM8580_v2-I./RTE/_Target_1-IC:/Users/12267/AppData/Local/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/Core/Include-IC:/Users/12267/AppData/Local/Arm/Packs/Chipsea/CBM858x_v2_DFP/1.0.3/Device/Driver/crypto/inc-IC:/Users/12267/AppData/Local/Arm/Packs/Chipsea/CBM858x_v2_DFP/1.0.3/Device/Driver/inc-D__UVISION_VERSION="533" -D_RTE_ -D_RTE_ -DRELEASE_MODE-o ./objects/rtc.o -MD)
+I (..\APP\inc\rtc.h)(0x693799BC)
+I (..\APP\inc\main.h)(0x693799BC)
+I (D:\keil5\ARM\ARMCLANG\include\stdio.h)(0x5F36D0B4)
+I (D:\keil5\ARM\ARMCLANG\include\string.h)(0x5F36D0A4)
+I (D:\keil5\ARM\ARMCLANG\include\stdint.h)(0x5F36D0A8)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm.h)(0x680EFB26)
+I (RTE\_Target_1\RTE_Components.h)(0x693BBF52)
+I (C:\Users\12267\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\core_cm0.h)(0x5E8ED122)
+I (C:\Users\12267\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_version.h)(0x5E8ED122)
+I (C:\Users\12267\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5E8306C2)
+I (C:\Users\12267\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_armclang.h)(0x5E8ED122)
+I (D:\keil5\ARM\ARMCLANG\include\arm_compat.h)(0x5EE12742)
+I (D:\keil5\ARM\ARMCLANG\include\arm_acle.h)(0x5F268738)
+I (..\APP\inc\log.h)(0x693799BE)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_i2c.h)(0x6899B1C8)
+I (..\APP\inc\data_flash_value.h)(0x69424FFC)
+I (..\APP\inc\protect.h)(0x693799BC)
+I (..\APP\inc\Power_Modes.h)(0x693799BC)
+I (..\APP\inc\AdvancedChargeAlgorithm.h)(0x693799BC)
+I (..\APP\inc\soft_timer.h)(0x693799BC)
+I (..\APP\inc\SBS_Commands.h)(0x69436D70)
+I (..\APP\inc\mode.h)(0x694246F7)
+I (..\APP\inc\ram.h)(0x693799BC)
+I (..\APP\inc\hdp.h)(0x693799BC)
+I (..\APP\inc\afe_cvt.h)(0x693799BC)
+I (..\APP\inc\definefile.h)(0x693799BC)
+I (..\APP\inc\lifetime.h)(0x693799BC)
+I (..\APP\inc\mcu.h)(0x693799BC)
+I (..\APP\inc\smbus_protocol.h)(0x693799BC)
+I (..\APP\inc\afetimer.h)(0x693799BC)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_flash.h)(0x680F1EF0)
+I (..\APP\inc\lptm.h)(0x693799BC)
+I (..\APP\inc\tim.h)(0x693799BC)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_tim.h)(0x66A7480A)
+I (..\APP\inc\dataflash.h)(0x69436AE5)
+I (..\APP\inc\datcalc_spl.h)(0x693799BC)
+I (..\APP\inc\Calc_Attf.h)(0x693799BC)
+I (..\APP\inc\oscm.h)(0x693799BC)
+I (..\APP\inc\UpFlash.h)(0x693799BC)
+I (RTE\Device\CBM8580_v2\cbm858xm_conf.h)(0x64E55D04)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_misc.h)(0x668D0238)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_spi.h)(0x66A74FBA)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_gpio.h)(0x66B08DD2)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_rcu.h)(0x680EFB3A)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_usart.h)(0x66A747FC)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_transimit.h)(0x64E6F1E4)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_rcc.h)(0x680EDD84)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_gcr.h)(0x680F6A9E)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_gpio.h)(0x64E55D04)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_int.h)(0x680EDDB0)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_timera.h)(0x680EDD7C)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_dtdrv.h)(0x66729832)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_exti.h)(0x667BBDA6)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_syscfg.h)(0x6698CA12)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_vadc.h)(0x680EDD74)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_cc.h)(0x680EDDCC)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_iwdg.h)(0x64E55D04)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_pmu.h)(0x680EDD8C)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_pmu.h)(0x668DFC00)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_rtc.h)(0x66A74820)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_wkcp.h)(0x680EDD6E)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_hdp.h)(0x680EDDB8)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_cddrv.h)(0x6670FD04)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_lptim.h)(0x66B08BC4)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\crypto\inc\trng.h)(0x64E55D04)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\crypto\inc\crypto_reg.h)(0x680EE596)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_fwdt.h)(0x66B0775A)
+I (..\APP\inc\cbm8580m_int.h)(0x693799BC)
+I (..\APP\inc\ra_value.h)(0x693799BC)
+F (..\APP\src\SBS_Commands.c)(0x693799BC)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -fropi -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../APP/inc-I./RTE/Device/CBM8580_v2-I./RTE/_Target_1-IC:/Users/12267/AppData/Local/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/Core/Include-IC:/Users/12267/AppData/Local/Arm/Packs/Chipsea/CBM858x_v2_DFP/1.0.3/Device/Driver/crypto/inc-IC:/Users/12267/AppData/Local/Arm/Packs/Chipsea/CBM858x_v2_DFP/1.0.3/Device/Driver/inc-D__UVISION_VERSION="533" -D_RTE_ -D_RTE_ -DRELEASE_MODE-o ./objects/sbs_commands.o -MD)
+I (..\APP\inc\SBS_Commands.h)(0x69436D70)
+I (..\APP\inc\main.h)(0x693799BC)
+I (D:\keil5\ARM\ARMCLANG\include\stdio.h)(0x5F36D0B4)
+I (D:\keil5\ARM\ARMCLANG\include\string.h)(0x5F36D0A4)
+I (D:\keil5\ARM\ARMCLANG\include\stdint.h)(0x5F36D0A8)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm.h)(0x680EFB26)
+I (RTE\_Target_1\RTE_Components.h)(0x693BBF52)
+I (C:\Users\12267\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\core_cm0.h)(0x5E8ED122)
+I (C:\Users\12267\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_version.h)(0x5E8ED122)
+I (C:\Users\12267\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5E8306C2)
+I (C:\Users\12267\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_armclang.h)(0x5E8ED122)
+I (D:\keil5\ARM\ARMCLANG\include\arm_compat.h)(0x5EE12742)
+I (D:\keil5\ARM\ARMCLANG\include\arm_acle.h)(0x5F268738)
+I (..\APP\inc\log.h)(0x693799BE)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_i2c.h)(0x6899B1C8)
+I (..\APP\inc\data_flash_value.h)(0x69424FFC)
+I (..\APP\inc\protect.h)(0x693799BC)
+I (..\APP\inc\Power_Modes.h)(0x693799BC)
+I (..\APP\inc\AdvancedChargeAlgorithm.h)(0x693799BC)
+I (..\APP\inc\soft_timer.h)(0x693799BC)
+I (..\APP\inc\mode.h)(0x694246F7)
+I (..\APP\inc\ram.h)(0x693799BC)
+I (..\APP\inc\hdp.h)(0x693799BC)
+I (..\APP\inc\afe_cvt.h)(0x693799BC)
+I (..\APP\inc\definefile.h)(0x693799BC)
+I (..\APP\inc\lifetime.h)(0x693799BC)
+I (..\APP\inc\mcu.h)(0x693799BC)
+I (..\APP\inc\smbus_protocol.h)(0x693799BC)
+I (..\APP\inc\afetimer.h)(0x693799BC)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_flash.h)(0x680F1EF0)
+I (..\APP\inc\lptm.h)(0x693799BC)
+I (..\APP\inc\tim.h)(0x693799BC)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_tim.h)(0x66A7480A)
+I (..\APP\inc\dataflash.h)(0x69436AE5)
+I (..\APP\inc\datcalc_spl.h)(0x693799BC)
+I (..\APP\inc\Calc_Attf.h)(0x693799BC)
+I (..\APP\inc\rtc.h)(0x693799BC)
+I (..\APP\inc\oscm.h)(0x693799BC)
+I (..\APP\inc\UpFlash.h)(0x693799BC)
+I (RTE\Device\CBM8580_v2\cbm858xm_conf.h)(0x64E55D04)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_misc.h)(0x668D0238)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_spi.h)(0x66A74FBA)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_gpio.h)(0x66B08DD2)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_rcu.h)(0x680EFB3A)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_usart.h)(0x66A747FC)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_transimit.h)(0x64E6F1E4)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_rcc.h)(0x680EDD84)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_gcr.h)(0x680F6A9E)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_gpio.h)(0x64E55D04)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_int.h)(0x680EDDB0)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_timera.h)(0x680EDD7C)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_dtdrv.h)(0x66729832)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_exti.h)(0x667BBDA6)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_syscfg.h)(0x6698CA12)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_vadc.h)(0x680EDD74)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_cc.h)(0x680EDDCC)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_iwdg.h)(0x64E55D04)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_pmu.h)(0x680EDD8C)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_pmu.h)(0x668DFC00)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_rtc.h)(0x66A74820)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_wkcp.h)(0x680EDD6E)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_hdp.h)(0x680EDDB8)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_cddrv.h)(0x6670FD04)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_lptim.h)(0x66B08BC4)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\crypto\inc\trng.h)(0x64E55D04)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\crypto\inc\crypto_reg.h)(0x680EE596)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_fwdt.h)(0x66B0775A)
+I (..\APP\inc\cbm8580m_int.h)(0x693799BC)
+I (..\APP\inc\ra_value.h)(0x693799BC)
+F (..\APP\src\smbus_protocol.c)(0x694218E8)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -fropi -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../APP/inc-I./RTE/Device/CBM8580_v2-I./RTE/_Target_1-IC:/Users/12267/AppData/Local/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/Core/Include-IC:/Users/12267/AppData/Local/Arm/Packs/Chipsea/CBM858x_v2_DFP/1.0.3/Device/Driver/crypto/inc-IC:/Users/12267/AppData/Local/Arm/Packs/Chipsea/CBM858x_v2_DFP/1.0.3/Device/Driver/inc-D__UVISION_VERSION="533" -D_RTE_ -D_RTE_ -DRELEASE_MODE-o ./objects/smbus_protocol.o -MD)
+I (..\APP\inc\smbus_protocol.h)(0x693799BC)
+I (..\APP\inc\main.h)(0x693799BC)
+I (D:\keil5\ARM\ARMCLANG\include\stdio.h)(0x5F36D0B4)
+I (D:\keil5\ARM\ARMCLANG\include\string.h)(0x5F36D0A4)
+I (D:\keil5\ARM\ARMCLANG\include\stdint.h)(0x5F36D0A8)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm.h)(0x680EFB26)
+I (RTE\_Target_1\RTE_Components.h)(0x693BBF52)
+I (C:\Users\12267\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\core_cm0.h)(0x5E8ED122)
+I (C:\Users\12267\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_version.h)(0x5E8ED122)
+I (C:\Users\12267\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5E8306C2)
+I (C:\Users\12267\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_armclang.h)(0x5E8ED122)
+I (D:\keil5\ARM\ARMCLANG\include\arm_compat.h)(0x5EE12742)
+I (D:\keil5\ARM\ARMCLANG\include\arm_acle.h)(0x5F268738)
+I (..\APP\inc\log.h)(0x693799BE)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_i2c.h)(0x6899B1C8)
+I (..\APP\inc\data_flash_value.h)(0x69424FFC)
+I (..\APP\inc\protect.h)(0x693799BC)
+I (..\APP\inc\Power_Modes.h)(0x693799BC)
+I (..\APP\inc\AdvancedChargeAlgorithm.h)(0x693799BC)
+I (..\APP\inc\soft_timer.h)(0x693799BC)
+I (..\APP\inc\SBS_Commands.h)(0x69436D70)
+I (..\APP\inc\mode.h)(0x694246F7)
+I (..\APP\inc\ram.h)(0x693799BC)
+I (..\APP\inc\hdp.h)(0x693799BC)
+I (..\APP\inc\afe_cvt.h)(0x693799BC)
+I (..\APP\inc\definefile.h)(0x693799BC)
+I (..\APP\inc\lifetime.h)(0x693799BC)
+I (..\APP\inc\mcu.h)(0x693799BC)
+I (..\APP\inc\afetimer.h)(0x693799BC)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_flash.h)(0x680F1EF0)
+I (..\APP\inc\lptm.h)(0x693799BC)
+I (..\APP\inc\tim.h)(0x693799BC)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_tim.h)(0x66A7480A)
+I (..\APP\inc\dataflash.h)(0x69436AE5)
+I (..\APP\inc\datcalc_spl.h)(0x693799BC)
+I (..\APP\inc\Calc_Attf.h)(0x693799BC)
+I (..\APP\inc\rtc.h)(0x693799BC)
+I (..\APP\inc\oscm.h)(0x693799BC)
+I (..\APP\inc\UpFlash.h)(0x693799BC)
+I (RTE\Device\CBM8580_v2\cbm858xm_conf.h)(0x64E55D04)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_misc.h)(0x668D0238)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_spi.h)(0x66A74FBA)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_gpio.h)(0x66B08DD2)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_rcu.h)(0x680EFB3A)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_usart.h)(0x66A747FC)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_transimit.h)(0x64E6F1E4)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_rcc.h)(0x680EDD84)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_gcr.h)(0x680F6A9E)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_gpio.h)(0x64E55D04)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_int.h)(0x680EDDB0)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_timera.h)(0x680EDD7C)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_dtdrv.h)(0x66729832)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_exti.h)(0x667BBDA6)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_syscfg.h)(0x6698CA12)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_vadc.h)(0x680EDD74)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_cc.h)(0x680EDDCC)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_iwdg.h)(0x64E55D04)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_pmu.h)(0x680EDD8C)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_pmu.h)(0x668DFC00)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_rtc.h)(0x66A74820)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_wkcp.h)(0x680EDD6E)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_hdp.h)(0x680EDDB8)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_cddrv.h)(0x6670FD04)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_lptim.h)(0x66B08BC4)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\crypto\inc\trng.h)(0x64E55D04)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\crypto\inc\crypto_reg.h)(0x680EE596)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_fwdt.h)(0x66B0775A)
+I (..\APP\inc\cbm8580m_int.h)(0x693799BC)
+I (..\APP\inc\ra_value.h)(0x693799BC)
+I (..\APP\inc\comm_protocol.h)(0x693799BC)
+I (..\APP\inc\modules_sha1.h)(0x693799BC)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\crypto\inc\utility_sec.h)(0x64E55D04)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\crypto\inc\utility.h)(0x680EFD24)
+F (..\APP\src\soft_timer.c)(0x693799BE)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -fropi -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../APP/inc-I./RTE/Device/CBM8580_v2-I./RTE/_Target_1-IC:/Users/12267/AppData/Local/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/Core/Include-IC:/Users/12267/AppData/Local/Arm/Packs/Chipsea/CBM858x_v2_DFP/1.0.3/Device/Driver/crypto/inc-IC:/Users/12267/AppData/Local/Arm/Packs/Chipsea/CBM858x_v2_DFP/1.0.3/Device/Driver/inc-D__UVISION_VERSION="533" -D_RTE_ -D_RTE_ -DRELEASE_MODE-o ./objects/soft_timer.o -MD)
+I (..\APP\inc\soft_timer.h)(0x693799BC)
+I (..\APP\inc\main.h)(0x693799BC)
+I (D:\keil5\ARM\ARMCLANG\include\stdio.h)(0x5F36D0B4)
+I (D:\keil5\ARM\ARMCLANG\include\string.h)(0x5F36D0A4)
+I (D:\keil5\ARM\ARMCLANG\include\stdint.h)(0x5F36D0A8)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm.h)(0x680EFB26)
+I (RTE\_Target_1\RTE_Components.h)(0x693BBF52)
+I (C:\Users\12267\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\core_cm0.h)(0x5E8ED122)
+I (C:\Users\12267\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_version.h)(0x5E8ED122)
+I (C:\Users\12267\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5E8306C2)
+I (C:\Users\12267\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_armclang.h)(0x5E8ED122)
+I (D:\keil5\ARM\ARMCLANG\include\arm_compat.h)(0x5EE12742)
+I (D:\keil5\ARM\ARMCLANG\include\arm_acle.h)(0x5F268738)
+I (..\APP\inc\log.h)(0x693799BE)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_i2c.h)(0x6899B1C8)
+I (..\APP\inc\data_flash_value.h)(0x69424FFC)
+I (..\APP\inc\protect.h)(0x693799BC)
+I (..\APP\inc\Power_Modes.h)(0x693799BC)
+I (..\APP\inc\AdvancedChargeAlgorithm.h)(0x693799BC)
+I (..\APP\inc\SBS_Commands.h)(0x69436D70)
+I (..\APP\inc\mode.h)(0x694246F7)
+I (..\APP\inc\ram.h)(0x693799BC)
+I (..\APP\inc\hdp.h)(0x693799BC)
+I (..\APP\inc\afe_cvt.h)(0x693799BC)
+I (..\APP\inc\definefile.h)(0x693799BC)
+I (..\APP\inc\lifetime.h)(0x693799BC)
+I (..\APP\inc\mcu.h)(0x693799BC)
+I (..\APP\inc\smbus_protocol.h)(0x693799BC)
+I (..\APP\inc\afetimer.h)(0x693799BC)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_flash.h)(0x680F1EF0)
+I (..\APP\inc\lptm.h)(0x693799BC)
+I (..\APP\inc\tim.h)(0x693799BC)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_tim.h)(0x66A7480A)
+I (..\APP\inc\dataflash.h)(0x69436AE5)
+I (..\APP\inc\datcalc_spl.h)(0x693799BC)
+I (..\APP\inc\Calc_Attf.h)(0x693799BC)
+I (..\APP\inc\rtc.h)(0x693799BC)
+I (..\APP\inc\oscm.h)(0x693799BC)
+I (..\APP\inc\UpFlash.h)(0x693799BC)
+I (RTE\Device\CBM8580_v2\cbm858xm_conf.h)(0x64E55D04)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_misc.h)(0x668D0238)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_spi.h)(0x66A74FBA)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_gpio.h)(0x66B08DD2)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_rcu.h)(0x680EFB3A)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_usart.h)(0x66A747FC)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_transimit.h)(0x64E6F1E4)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_rcc.h)(0x680EDD84)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_gcr.h)(0x680F6A9E)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_gpio.h)(0x64E55D04)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_int.h)(0x680EDDB0)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_timera.h)(0x680EDD7C)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_dtdrv.h)(0x66729832)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_exti.h)(0x667BBDA6)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_syscfg.h)(0x6698CA12)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_vadc.h)(0x680EDD74)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_cc.h)(0x680EDDCC)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_iwdg.h)(0x64E55D04)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_pmu.h)(0x680EDD8C)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_pmu.h)(0x668DFC00)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_rtc.h)(0x66A74820)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_wkcp.h)(0x680EDD6E)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_hdp.h)(0x680EDDB8)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_cddrv.h)(0x6670FD04)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_lptim.h)(0x66B08BC4)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\crypto\inc\trng.h)(0x64E55D04)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\crypto\inc\crypto_reg.h)(0x680EE596)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_fwdt.h)(0x66B0775A)
+I (..\APP\inc\cbm8580m_int.h)(0x693799BC)
+I (..\APP\inc\ra_value.h)(0x693799BC)
+F (..\APP\src\tim.c)(0x693799BE)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -fropi -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../APP/inc-I./RTE/Device/CBM8580_v2-I./RTE/_Target_1-IC:/Users/12267/AppData/Local/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/Core/Include-IC:/Users/12267/AppData/Local/Arm/Packs/Chipsea/CBM858x_v2_DFP/1.0.3/Device/Driver/crypto/inc-IC:/Users/12267/AppData/Local/Arm/Packs/Chipsea/CBM858x_v2_DFP/1.0.3/Device/Driver/inc-D__UVISION_VERSION="533" -D_RTE_ -D_RTE_ -DRELEASE_MODE-o ./objects/tim.o -MD)
+I (..\APP\inc\tim.h)(0x693799BC)
+I (D:\keil5\ARM\ARMCLANG\include\stdio.h)(0x5F36D0B4)
+I (D:\keil5\ARM\ARMCLANG\include\stdint.h)(0x5F36D0A8)
+I (..\APP\inc\main.h)(0x693799BC)
+I (D:\keil5\ARM\ARMCLANG\include\string.h)(0x5F36D0A4)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm.h)(0x680EFB26)
+I (RTE\_Target_1\RTE_Components.h)(0x693BBF52)
+I (C:\Users\12267\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\core_cm0.h)(0x5E8ED122)
+I (C:\Users\12267\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_version.h)(0x5E8ED122)
+I (C:\Users\12267\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5E8306C2)
+I (C:\Users\12267\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_armclang.h)(0x5E8ED122)
+I (D:\keil5\ARM\ARMCLANG\include\arm_compat.h)(0x5EE12742)
+I (D:\keil5\ARM\ARMCLANG\include\arm_acle.h)(0x5F268738)
+I (..\APP\inc\log.h)(0x693799BE)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_i2c.h)(0x6899B1C8)
+I (..\APP\inc\data_flash_value.h)(0x69424FFC)
+I (..\APP\inc\protect.h)(0x693799BC)
+I (..\APP\inc\Power_Modes.h)(0x693799BC)
+I (..\APP\inc\AdvancedChargeAlgorithm.h)(0x693799BC)
+I (..\APP\inc\soft_timer.h)(0x693799BC)
+I (..\APP\inc\SBS_Commands.h)(0x69436D70)
+I (..\APP\inc\mode.h)(0x694246F7)
+I (..\APP\inc\ram.h)(0x693799BC)
+I (..\APP\inc\hdp.h)(0x693799BC)
+I (..\APP\inc\afe_cvt.h)(0x693799BC)
+I (..\APP\inc\definefile.h)(0x693799BC)
+I (..\APP\inc\lifetime.h)(0x693799BC)
+I (..\APP\inc\mcu.h)(0x693799BC)
+I (..\APP\inc\smbus_protocol.h)(0x693799BC)
+I (..\APP\inc\afetimer.h)(0x693799BC)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_flash.h)(0x680F1EF0)
+I (..\APP\inc\lptm.h)(0x693799BC)
+I (..\APP\inc\dataflash.h)(0x69436AE5)
+I (..\APP\inc\datcalc_spl.h)(0x693799BC)
+I (..\APP\inc\Calc_Attf.h)(0x693799BC)
+I (..\APP\inc\rtc.h)(0x693799BC)
+I (..\APP\inc\oscm.h)(0x693799BC)
+I (..\APP\inc\UpFlash.h)(0x693799BC)
+I (RTE\Device\CBM8580_v2\cbm858xm_conf.h)(0x64E55D04)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_misc.h)(0x668D0238)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_spi.h)(0x66A74FBA)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_gpio.h)(0x66B08DD2)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_rcu.h)(0x680EFB3A)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_usart.h)(0x66A747FC)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_transimit.h)(0x64E6F1E4)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_rcc.h)(0x680EDD84)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_gcr.h)(0x680F6A9E)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_gpio.h)(0x64E55D04)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_int.h)(0x680EDDB0)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_timera.h)(0x680EDD7C)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_dtdrv.h)(0x66729832)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_exti.h)(0x667BBDA6)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_syscfg.h)(0x6698CA12)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_vadc.h)(0x680EDD74)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_cc.h)(0x680EDDCC)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_iwdg.h)(0x64E55D04)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_pmu.h)(0x680EDD8C)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_pmu.h)(0x668DFC00)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_rtc.h)(0x66A74820)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_wkcp.h)(0x680EDD6E)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_hdp.h)(0x680EDDB8)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_cddrv.h)(0x6670FD04)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_lptim.h)(0x66B08BC4)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\crypto\inc\trng.h)(0x64E55D04)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\crypto\inc\crypto_reg.h)(0x680EE596)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_fwdt.h)(0x66B0775A)
+I (..\APP\inc\cbm8580m_int.h)(0x693799BC)
+I (..\APP\inc\ra_value.h)(0x693799BC)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_tim.h)(0x66A7480A)
+F (..\APP\src\UpFlash.c)(0x693799BE)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -fropi -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../APP/inc-I./RTE/Device/CBM8580_v2-I./RTE/_Target_1-IC:/Users/12267/AppData/Local/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/Core/Include-IC:/Users/12267/AppData/Local/Arm/Packs/Chipsea/CBM858x_v2_DFP/1.0.3/Device/Driver/crypto/inc-IC:/Users/12267/AppData/Local/Arm/Packs/Chipsea/CBM858x_v2_DFP/1.0.3/Device/Driver/inc-D__UVISION_VERSION="533" -D_RTE_ -D_RTE_ -DRELEASE_MODE-o ./objects/upflash.o -MD)
+I (..\APP\inc\main.h)(0x693799BC)
+I (D:\keil5\ARM\ARMCLANG\include\stdio.h)(0x5F36D0B4)
+I (D:\keil5\ARM\ARMCLANG\include\string.h)(0x5F36D0A4)
+I (D:\keil5\ARM\ARMCLANG\include\stdint.h)(0x5F36D0A8)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm.h)(0x680EFB26)
+I (RTE\_Target_1\RTE_Components.h)(0x693BBF52)
+I (C:\Users\12267\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\core_cm0.h)(0x5E8ED122)
+I (C:\Users\12267\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_version.h)(0x5E8ED122)
+I (C:\Users\12267\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5E8306C2)
+I (C:\Users\12267\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_armclang.h)(0x5E8ED122)
+I (D:\keil5\ARM\ARMCLANG\include\arm_compat.h)(0x5EE12742)
+I (D:\keil5\ARM\ARMCLANG\include\arm_acle.h)(0x5F268738)
+I (..\APP\inc\log.h)(0x693799BE)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_i2c.h)(0x6899B1C8)
+I (..\APP\inc\data_flash_value.h)(0x69424FFC)
+I (..\APP\inc\protect.h)(0x693799BC)
+I (..\APP\inc\Power_Modes.h)(0x693799BC)
+I (..\APP\inc\AdvancedChargeAlgorithm.h)(0x693799BC)
+I (..\APP\inc\soft_timer.h)(0x693799BC)
+I (..\APP\inc\SBS_Commands.h)(0x69436D70)
+I (..\APP\inc\mode.h)(0x694246F7)
+I (..\APP\inc\ram.h)(0x693799BC)
+I (..\APP\inc\hdp.h)(0x693799BC)
+I (..\APP\inc\afe_cvt.h)(0x693799BC)
+I (..\APP\inc\definefile.h)(0x693799BC)
+I (..\APP\inc\lifetime.h)(0x693799BC)
+I (..\APP\inc\mcu.h)(0x693799BC)
+I (..\APP\inc\smbus_protocol.h)(0x693799BC)
+I (..\APP\inc\afetimer.h)(0x693799BC)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_flash.h)(0x680F1EF0)
+I (..\APP\inc\lptm.h)(0x693799BC)
+I (..\APP\inc\tim.h)(0x693799BC)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_tim.h)(0x66A7480A)
+I (..\APP\inc\dataflash.h)(0x69436AE5)
+I (..\APP\inc\datcalc_spl.h)(0x693799BC)
+I (..\APP\inc\Calc_Attf.h)(0x693799BC)
+I (..\APP\inc\rtc.h)(0x693799BC)
+I (..\APP\inc\oscm.h)(0x693799BC)
+I (..\APP\inc\UpFlash.h)(0x693799BC)
+I (RTE\Device\CBM8580_v2\cbm858xm_conf.h)(0x64E55D04)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_misc.h)(0x668D0238)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_spi.h)(0x66A74FBA)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_gpio.h)(0x66B08DD2)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_rcu.h)(0x680EFB3A)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_usart.h)(0x66A747FC)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_transimit.h)(0x64E6F1E4)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_rcc.h)(0x680EDD84)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_gcr.h)(0x680F6A9E)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_gpio.h)(0x64E55D04)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_int.h)(0x680EDDB0)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_timera.h)(0x680EDD7C)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_dtdrv.h)(0x66729832)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_exti.h)(0x667BBDA6)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_syscfg.h)(0x6698CA12)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_vadc.h)(0x680EDD74)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_cc.h)(0x680EDDCC)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_iwdg.h)(0x64E55D04)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_pmu.h)(0x680EDD8C)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_pmu.h)(0x668DFC00)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_rtc.h)(0x66A74820)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_wkcp.h)(0x680EDD6E)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_hdp.h)(0x680EDDB8)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_cddrv.h)(0x6670FD04)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_lptim.h)(0x66B08BC4)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\crypto\inc\trng.h)(0x64E55D04)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\crypto\inc\crypto_reg.h)(0x680EE596)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_fwdt.h)(0x66B0775A)
+I (..\APP\inc\cbm8580m_int.h)(0x693799BC)
+I (..\APP\inc\ra_value.h)(0x693799BC)
+F (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\crypto\src\crypto.lib)(0x680F263C)()
+F (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\src\cbm858x_afe.lib)(0x680F695A)()
+F (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\src\cbm858x_afe_transimit.c)(0x68C2B5AE)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -fropi -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../APP/inc-I./RTE/Device/CBM8580_v2-I./RTE/_Target_1-IC:/Users/12267/AppData/Local/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/Core/Include-IC:/Users/12267/AppData/Local/Arm/Packs/Chipsea/CBM858x_v2_DFP/1.0.3/Device/Driver/crypto/inc-IC:/Users/12267/AppData/Local/Arm/Packs/Chipsea/CBM858x_v2_DFP/1.0.3/Device/Driver/inc-D__UVISION_VERSION="533" -D_RTE_ -D_RTE_ -DRELEASE_MODE-o ./objects/cbm858x_afe_transimit.o -MD)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858x_afe_transimit.h)(0x64E6F1E4)
+I (D:\keil5\ARM\ARMCLANG\include\stdint.h)(0x5F36D0A8)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_spi.h)(0x66A74FBA)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm.h)(0x680EFB26)
+I (RTE\_Target_1\RTE_Components.h)(0x693BBF52)
+I (C:\Users\12267\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\core_cm0.h)(0x5E8ED122)
+I (C:\Users\12267\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_version.h)(0x5E8ED122)
+I (C:\Users\12267\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5E8306C2)
+I (C:\Users\12267\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_armclang.h)(0x5E8ED122)
+I (D:\keil5\ARM\ARMCLANG\include\arm_compat.h)(0x5EE12742)
+I (D:\keil5\ARM\ARMCLANG\include\arm_acle.h)(0x5F268738)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_gpio.h)(0x66B08DD2)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_rcu.h)(0x680EFB3A)
+F (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\src\cbm858xm.lib)(0x68E7A90C)()
+F (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\src\cbm858xm_gpio.c)(0x66B08DBE)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -fropi -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../APP/inc-I./RTE/Device/CBM8580_v2-I./RTE/_Target_1-IC:/Users/12267/AppData/Local/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/Core/Include-IC:/Users/12267/AppData/Local/Arm/Packs/Chipsea/CBM858x_v2_DFP/1.0.3/Device/Driver/crypto/inc-IC:/Users/12267/AppData/Local/Arm/Packs/Chipsea/CBM858x_v2_DFP/1.0.3/Device/Driver/inc-D__UVISION_VERSION="533" -D_RTE_ -D_RTE_ -DRELEASE_MODE-o ./objects/cbm858xm_gpio.o -MD)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_gpio.h)(0x66B08DD2)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm.h)(0x680EFB26)
+I (D:\keil5\ARM\ARMCLANG\include\stdint.h)(0x5F36D0A8)
+I (RTE\_Target_1\RTE_Components.h)(0x693BBF52)
+I (C:\Users\12267\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\core_cm0.h)(0x5E8ED122)
+I (C:\Users\12267\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_version.h)(0x5E8ED122)
+I (C:\Users\12267\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5E8306C2)
+I (C:\Users\12267\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_armclang.h)(0x5E8ED122)
+I (D:\keil5\ARM\ARMCLANG\include\arm_compat.h)(0x5EE12742)
+I (D:\keil5\ARM\ARMCLANG\include\arm_acle.h)(0x5F268738)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_rcu.h)(0x680EFB3A)
+F (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\src\cbm858xm_i2c.c)(0x6899B1F6)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -fropi -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../APP/inc-I./RTE/Device/CBM8580_v2-I./RTE/_Target_1-IC:/Users/12267/AppData/Local/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/Core/Include-IC:/Users/12267/AppData/Local/Arm/Packs/Chipsea/CBM858x_v2_DFP/1.0.3/Device/Driver/crypto/inc-IC:/Users/12267/AppData/Local/Arm/Packs/Chipsea/CBM858x_v2_DFP/1.0.3/Device/Driver/inc-D__UVISION_VERSION="533" -D_RTE_ -D_RTE_ -DRELEASE_MODE-o ./objects/cbm858xm_i2c.o -MD)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_i2c.h)(0x6899B1C8)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm.h)(0x680EFB26)
+I (D:\keil5\ARM\ARMCLANG\include\stdint.h)(0x5F36D0A8)
+I (RTE\_Target_1\RTE_Components.h)(0x693BBF52)
+I (C:\Users\12267\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\core_cm0.h)(0x5E8ED122)
+I (C:\Users\12267\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_version.h)(0x5E8ED122)
+I (C:\Users\12267\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5E8306C2)
+I (C:\Users\12267\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_armclang.h)(0x5E8ED122)
+I (D:\keil5\ARM\ARMCLANG\include\arm_compat.h)(0x5EE12742)
+I (D:\keil5\ARM\ARMCLANG\include\arm_acle.h)(0x5F268738)
+F (RTE\Device\CBM8580_v2\cbm858xm_conf.h)(0x64E55D04)()
+F (RTE\Device\CBM8580_v2\startup_cbm858xm.S)(0x64E55D04)(--cpu Cortex-M0 -g --pd "__MICROLIB SETA 1"-I.\RTE\Device\CBM8580_v2-I.\RTE\_Target_1-IC:\Users\12267\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\crypto\inc-IC:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc--pd "__UVISION_VERSION SETA 533"--pd "_RTE_ SETA 1"--pd "_RTE_ SETA 1"--list .\listings\startup_cbm858xm.lst--xref -o .\objects\startup_cbm858xm.o--depend .\objects\startup_cbm858xm.d)
+F (RTE\Device\CBM8580_v2\system_cbm858xm.c)(0x693B73D9)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -fropi -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../APP/inc-I./RTE/Device/CBM8580_v2-I./RTE/_Target_1-IC:/Users/12267/AppData/Local/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/Core/Include-IC:/Users/12267/AppData/Local/Arm/Packs/Chipsea/CBM858x_v2_DFP/1.0.3/Device/Driver/crypto/inc-IC:/Users/12267/AppData/Local/Arm/Packs/Chipsea/CBM858x_v2_DFP/1.0.3/Device/Driver/inc-D__UVISION_VERSION="533" -D_RTE_ -D_RTE_ -DRELEASE_MODE-o ./objects/system_cbm858xm.o -MD)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm.h)(0x680EFB26)
+I (D:\keil5\ARM\ARMCLANG\include\stdint.h)(0x5F36D0A8)
+I (RTE\_Target_1\RTE_Components.h)(0x693BBF52)
+I (C:\Users\12267\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\core_cm0.h)(0x5E8ED122)
+I (C:\Users\12267\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_version.h)(0x5E8ED122)
+I (C:\Users\12267\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5E8306C2)
+I (C:\Users\12267\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_armclang.h)(0x5E8ED122)
+I (D:\keil5\ARM\ARMCLANG\include\arm_compat.h)(0x5EE12742)
+I (D:\keil5\ARM\ARMCLANG\include\arm_acle.h)(0x5F268738)
+I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_flash.h)(0x680F1EF0)
