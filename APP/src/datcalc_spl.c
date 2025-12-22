@@ -305,7 +305,7 @@ void Calc_CPVolt(void)
 
 	tcpl_v = tcpl_v - res_chabiao * (k_CEDV_average - 1000) / 1000 * I_abs / 10000 / 2; // shoud / 10000*1000
 
-	t_com98_out = tcpl_v;
+	//t_com98_out = tcpl_v;
 
 	t_com8f_out = k_CEDV_average;
 	
@@ -570,9 +570,11 @@ void SI_Loss_Calc(void)
 	uint16_t Del_OCV;
 	uint8_t i_dex=0;
 	uint32_t factor_ht_time=0;
+	uint16_t rsoc=1;
 	if (f_relax )
 	{
-		if (t_com0d <= D_Si_Loss_Start_SOC && t_com0d >= D_Si_Loss_End_SOC)
+		rsoc=t_com0d*100;
+		if (rsoc <= D_Si_Loss_Start_SOC && rsoc >= D_Si_Loss_End_SOC)
 		{
 			if (!f_si_start)
 			{
@@ -584,9 +586,10 @@ void SI_Loss_Calc(void)
 						f_si_start = 1;
 						for (aidxq1 = 0; (aidxq1 < 102) && (V_min > SOC_OCV_103_TBL[aidxq1]); aidxq1++)
 							;
+						aidxq1-=1;	
 						T_SI_PACK_START_SOC=(float)(V_min - SOC_OCV_103_TBL[aidxq1])/(SOC_OCV_103_TBL[aidxq1 + 1] 
-							- SOC_OCV_103_TBL[aidxq1])+aidxq1-1;
-			            //t_com94_out=T_SI_PACK_START_SOC;
+							- SOC_OCV_103_TBL[aidxq1])+aidxq1;
+			            t_com94_out=(uint16_t)T_SI_PACK_START_SOC;
 						
 					}
 					else
@@ -606,10 +609,11 @@ void SI_Loss_Calc(void)
 						{
 							for (aidxq1 = 0; (aidxq1 < 102) && (V_min > SOC_OCV_103_TBL[aidxq1]); aidxq1++)
 								;
-							T_SI_PACK_END_SOC = (float)(V_min - SOC_OCV_103_TBL[aidxq1]) / (SOC_OCV_103_TBL[aidxq1 + 1] - SOC_OCV_103_TBL[aidxq1]) + aidxq1 - 1;
-							//t_com95_out = T_SI_PACK_END_SOC;
+							aidxq1-=1;
+							T_SI_PACK_END_SOC = (float)(V_min - SOC_OCV_103_TBL[aidxq1]) / (SOC_OCV_103_TBL[aidxq1 + 1] - SOC_OCV_103_TBL[aidxq1]) + aidxq1;
+							t_com95_out = (uint16_t)T_SI_PACK_END_SOC;
 							dsg_cap=T_SI_PACK_CAP_CALC/4/3600;
-							//t_com96_out=dsg_cap;
+							t_com96_out=dsg_cap;
 							if (T_SI_PACK_START_SOC <= T_SI_PACK_END_SOC ||
 								dsg_cap <= 0.05 * D_Design_Capacity_mAh)
 							{
@@ -617,11 +621,11 @@ void SI_Loss_Calc(void)
 								return;
 							}
 							T_SI_PACK_CAP = dsg_cap * (D_Si_Loss_Start_SOC - D_Si_Loss_End_SOC) / ((T_SI_PACK_START_SOC - T_SI_PACK_END_SOC)*100);
-							//t_com97_out=T_SI_PACK_CAP;
+							t_com97_out=T_SI_PACK_CAP;
 							T_SI_PACK_LOSS = (D_Si_New_Capacity - T_SI_PACK_CAP) * 100 / D_Si_New_Capacity;
-							//t_com98_out=T_SI_PACK_LOSS;
+							t_com98_out=T_SI_PACK_LOSS;
 							Del_OCV = ((D_Si_Loss_A * T_SI_PACK_LOSS) / 100 + D_Si_Loss_B) / 1000;
-							//t_com93_out=Del_OCV;
+							t_com93_out=Del_OCV;
 							if (T_SI_DELTA_OCV < DELTA_OCV_MAX)
 							{
 								T_SI_DELTA_OCV = Del_OCV;
@@ -676,7 +680,7 @@ void SI_Loss_Calc(void)
 		{
 			factor_ht_time += *(((uint32_t *)&LifeTimes_Time_Spent_in_HT_RSOC_A) + i_dex);
 		}
-        //t_com99_out=factor_ht_time;
+        t_com99_out=factor_ht_time;
 		if ((LifeTimes_Total_Firmware_Runtime - T_SI_TOTAL_RUNTIME_HRS) >= THIRDWEEK ||
 			(_CycleCount - T_SI_CYCLE_COUNT) >= 50 || (factor_ht_time-T_SI_HT_TIME) >= TEENDAYS)
 			{
@@ -688,6 +692,7 @@ void SI_Loss_Calc(void)
 			}
 	}
 }
+
 
 void Si_Loss_Init(void)
 {

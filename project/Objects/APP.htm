@@ -3,7 +3,7 @@
 <title>Static Call Graph - [.\Objects\APP.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image .\Objects\APP.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 6150002: Last Updated: Thu Dec 18 15:08:56 2025
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 6150002: Last Updated: Mon Dec 22 10:18:42 2025
 <BR><P>
 <H3>Maximum Stack Usage =        636 bytes + Unknown(Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -316,6 +316,7 @@ Global Symbols
 <LI><a href="#[3d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_double_epilogue
 </UL>
 <BR>[Called By]<UL><LI><a href="#[1a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;get_vadc_temprature_inner
+<LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Calc_RC_CEDV
 <LI><a href="#[40]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_drsub
 <LI><a href="#[3f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dsub
 </UL>
@@ -336,6 +337,7 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[1a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;get_vadc_temprature_inner
 <LI><a href="#[152]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SI_Loss_Calc
 <LI><a href="#[b1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DBPT_test
+<LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Calc_RC_CEDV
 </UL>
 
 <P><STRONG><a name="[8a]"></a>__aeabi_fcmple</STRONG> (Thumb, 28 bytes, Stack size 0 bytes, fcmple.o(.text))
@@ -453,6 +455,7 @@ Global Symbols
 <LI><a href="#[1a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;get_vadc_temprature_ex
 <LI><a href="#[e2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Get_CVT
 <LI><a href="#[152]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SI_Loss_Calc
+<LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Calc_RC_CEDV
 </UL>
 
 <P><STRONG><a name="[45]"></a>__aeabi_ui2d</STRONG> (Thumb, 24 bytes, Stack size 16 bytes, dfltui.o(.text))
@@ -462,6 +465,7 @@ Global Symbols
 </UL>
 <BR>[Called By]<UL><LI><a href="#[152]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SI_Loss_Calc
 <LI><a href="#[b1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DBPT_test
+<LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Calc_RC_CEDV
 </UL>
 
 <P><STRONG><a name="[68]"></a>__aeabi_f2iz</STRONG> (Thumb, 50 bytes, Stack size 0 bytes, ffixi.o(.text))
@@ -483,6 +487,7 @@ Global Symbols
 </UL>
 <BR>[Called By]<UL><LI><a href="#[1a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;get_vadc_temprature_inner
 <LI><a href="#[b1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DBPT_test
+<LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Calc_RC_CEDV
 </UL>
 
 <P><STRONG><a name="[1af]"></a>__aeabi_f2d</STRONG> (Thumb, 40 bytes, Stack size 0 bytes, f2d.o(.text))
@@ -867,7 +872,7 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[20]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[7c]"></a>Calc_CPVolt</STRONG> (Thumb, 784 bytes, Stack size 64 bytes, datcalc_spl.o(.text.Calc_CPVolt))
+<P><STRONG><a name="[7c]"></a>Calc_CPVolt</STRONG> (Thumb, 776 bytes, Stack size 64 bytes, datcalc_spl.o(.text.Calc_CPVolt))
 <BR><BR>[Stack]<UL><LI>Max Depth = 112<LI>Call Chain = Calc_CPVolt &rArr; Calc_InReg &rArr; __aeabi_uidiv
 </UL>
 <BR>[Calls]<UL><LI><a href="#[37]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_fsub
@@ -883,7 +888,7 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Calc_RC_CEDV
 </UL>
 
-<P><STRONG><a name="[81]"></a>Calc_FCC_CEDV</STRONG> (Thumb, 436 bytes, Stack size 56 bytes, mode.o(.text.Calc_FCC_CEDV))
+<P><STRONG><a name="[81]"></a>Calc_FCC_CEDV</STRONG> (Thumb, 424 bytes, Stack size 56 bytes, mode.o(.text.Calc_FCC_CEDV))
 <BR><BR>[Stack]<UL><LI>Max Depth = 148<LI>Call Chain = Calc_FCC_CEDV &rArr; Calc_b_aidx &rArr; __aeabi_fsub &rArr; __aeabi_fadd &rArr; _float_epilogue
 </UL>
 <BR>[Calls]<UL><LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Calc_soc_to_res
@@ -911,10 +916,15 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Calc_CPVolt
 </UL>
 
-<P><STRONG><a name="[85]"></a>Calc_RC_CEDV</STRONG> (Thumb, 1008 bytes, Stack size 48 bytes, mode.o(.text.Calc_RC_CEDV))
-<BR><BR>[Stack]<UL><LI>Max Depth = 160<LI>Call Chain = Calc_RC_CEDV &rArr; Calc_CPVolt &rArr; Calc_InReg &rArr; __aeabi_uidiv
+<P><STRONG><a name="[85]"></a>Calc_RC_CEDV</STRONG> (Thumb, 1072 bytes, Stack size 48 bytes, mode.o(.text.Calc_RC_CEDV))
+<BR><BR>[Stack]<UL><LI>Max Depth = 176<LI>Call Chain = Calc_RC_CEDV &rArr; __aeabi_dmul &rArr; _double_epilogue &rArr; __aeabi_llsr
 </UL>
-<BR>[Calls]<UL><LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Make_RC_CEDV
+<BR>[Calls]<UL><LI><a href="#[44]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_i2d
+<LI><a href="#[41]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dmul
+<LI><a href="#[3a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dadd
+<LI><a href="#[46]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_d2iz
+<LI><a href="#[45]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_ui2d
+<LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Make_RC_CEDV
 <LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Calc_CPVolt
 <LI><a href="#[87]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Chg_Pinghua_CEDV
 <LI><a href="#[86]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Calc_fulchg_dsg_cap
@@ -952,7 +962,7 @@ Global Symbols
 <LI><a href="#[81]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Calc_FCC_CEDV
 </UL>
 
-<P><STRONG><a name="[86]"></a>Calc_fulchg_dsg_cap</STRONG> (Thumb, 396 bytes, Stack size 16 bytes, mode.o(.text.Calc_fulchg_dsg_cap))
+<P><STRONG><a name="[86]"></a>Calc_fulchg_dsg_cap</STRONG> (Thumb, 380 bytes, Stack size 16 bytes, mode.o(.text.Calc_fulchg_dsg_cap))
 <BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = Calc_fulchg_dsg_cap &rArr; __aeabi_idiv
 </UL>
 <BR>[Calls]<UL><LI><a href="#[4f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_idiv
@@ -961,7 +971,7 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Calc_RC_CEDV
 </UL>
 
-<P><STRONG><a name="[8b]"></a>Calc_k_CEDV</STRONG> (Thumb, 636 bytes, Stack size 24 bytes, mode.o(.text.Calc_k_CEDV))
+<P><STRONG><a name="[8b]"></a>Calc_k_CEDV</STRONG> (Thumb, 616 bytes, Stack size 24 bytes, mode.o(.text.Calc_k_CEDV))
 <BR><BR>[Stack]<UL><LI>Max Depth = 116<LI>Call Chain = Calc_k_CEDV &rArr; Calc_b_aidx &rArr; __aeabi_fsub &rArr; __aeabi_fadd &rArr; _float_epilogue
 </UL>
 <BR>[Calls]<UL><LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Calc_soc_to_res
@@ -1244,7 +1254,7 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[d0]"></a>FET_Contrl</STRONG> (Thumb, 540 bytes, Stack size 16 bytes, mode.o(.text.FET_Contrl))
-<BR><BR>[Stack]<UL><LI>Max Depth = 152<LI>Call Chain = FET_Contrl &rArr; Set_FET &rArr; afe_cddrv_discharge_enable_ctrl &rArr; afe_gcr_reg_unlock &rArr; afe_write_data &rArr; spi_transimit_data
+<BR><BR>[Stack]<UL><LI>Max Depth = 152<LI>Call Chain = FET_Contrl &rArr; Set_FET &rArr; afe_cddrv_charge_enable_ctrl &rArr; afe_gcr_reg_unlock &rArr; afe_write_data &rArr; spi_transimit_data
 </UL>
 <BR>[Calls]<UL><LI><a href="#[d1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Set_FET
 </UL>
@@ -1276,9 +1286,9 @@ Global Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 128<LI>Call Chain = FUSE_Init &rArr; afe_dtdrv_fusing_enable_ctrl &rArr; afe_gcr_reg_unlock &rArr; afe_write_data &rArr; spi_transimit_data
 </UL>
 <BR>[Calls]<UL><LI><a href="#[5d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;afe_int_periph_int_enable_ctrl
+<LI><a href="#[d7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;afe_remove_jitter_enable_ctrl
 <LI><a href="#[d6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;afe_fuse_remove_jitter_delay_config
 <LI><a href="#[d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;afe_dtdrv_fusing_enable_ctrl
-<LI><a href="#[d7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;afe_remove_jitter_enable_ctrl
 </UL>
 <BR>[Called By]<UL><LI><a href="#[58]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Afe_Init
 </UL>
@@ -1500,7 +1510,7 @@ Global Symbols
 <BR><BR>[Called By]<UL><LI><a href="#[10c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LifeTime
 </UL>
 
-<P><STRONG><a name="[10c]"></a>LifeTime</STRONG> (Thumb, 304 bytes, Stack size 24 bytes, lifetime.o(.text.LifeTime))
+<P><STRONG><a name="[10c]"></a>LifeTime</STRONG> (Thumb, 288 bytes, Stack size 24 bytes, lifetime.o(.text.LifeTime))
 <BR><BR>[Stack]<UL><LI>Max Depth = 80<LI>Call Chain = LifeTime &rArr; Basic_LifeTime &rArr; LTMin_I
 </UL>
 <BR>[Calls]<UL><LI><a href="#[10e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lifetime_time_period
@@ -1643,12 +1653,12 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[61]"></a>Mos_init</STRONG> (Thumb, 38 bytes, Stack size 8 bytes, hdp.o(.text.Mos_init))
-<BR><BR>[Stack]<UL><LI>Max Depth = 128<LI>Call Chain = Mos_init &rArr; afe_cddrv_discharge_enable_ctrl &rArr; afe_gcr_reg_unlock &rArr; afe_write_data &rArr; spi_transimit_data
+<BR><BR>[Stack]<UL><LI>Max Depth = 128<LI>Call Chain = Mos_init &rArr; afe_cddrv_chgdsg_mos_enable_ctrl &rArr; afe_gcr_reg_unlock &rArr; afe_write_data &rArr; spi_transimit_data
 </UL>
-<BR>[Calls]<UL><LI><a href="#[13c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;afe_cddrv_discharge_enable_ctrl
-<LI><a href="#[13b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;afe_cddrv_chgdsg_mos_enable_ctrl
+<BR>[Calls]<UL><LI><a href="#[13b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;afe_cddrv_chgdsg_mos_enable_ctrl
 <LI><a href="#[13d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;afe_cddrv_charge_enable_ctrl
 <LI><a href="#[f1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;afe_rcc_periph_clock_enable_ctrl
+<LI><a href="#[13c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;afe_cddrv_discharge_enable_ctrl
 </UL>
 <BR>[Called By]<UL><LI><a href="#[58]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Afe_Init
 </UL>
@@ -1801,8 +1811,8 @@ Global Symbols
 <P><STRONG><a name="[146]"></a>PresToggle</STRONG> (Thumb, 332 bytes, Stack size 16 bytes, hdp.o(.text.PresToggle))
 <BR><BR>[Stack]<UL><LI>Max Depth = 136<LI>Call Chain = PresToggle &rArr; PresDeInit &rArr; afe_gpio_mode_config &rArr; afe_write_data &rArr; spi_transimit_data
 </UL>
-<BR>[Calls]<UL><LI><a href="#[147]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;afe_gpio_input_data_bit_read
-<LI><a href="#[143]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PresDeInit
+<BR>[Calls]<UL><LI><a href="#[143]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PresDeInit
+<LI><a href="#[147]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;afe_gpio_input_data_bit_read
 </UL>
 <BR>[Called By]<UL><LI><a href="#[20]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
@@ -1975,8 +1985,8 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Call_ProtectionFun
 </UL>
 
-<P><STRONG><a name="[148]"></a>QMaxUpdateJudge_CEDV</STRONG> (Thumb, 76 bytes, Stack size 16 bytes, mode.o(.text.QMaxUpdateJudge_CEDV))
-<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = QMaxUpdateJudge_CEDV &rArr; __aeabi_idiv
+<P><STRONG><a name="[148]"></a>QMaxUpdateJudge_CEDV</STRONG> (Thumb, 52 bytes, Stack size 8 bytes, mode.o(.text.QMaxUpdateJudge_CEDV))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = QMaxUpdateJudge_CEDV &rArr; __aeabi_idiv
 </UL>
 <BR>[Calls]<UL><LI><a href="#[4f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_idiv
 </UL>
@@ -2047,7 +2057,7 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[191]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bi2cs_dataCmd_init
 </UL>
 
-<P><STRONG><a name="[152]"></a>SI_Loss_Calc</STRONG> (Thumb, 1036 bytes, Stack size 40 bytes, datcalc_spl.o(.text.SI_Loss_Calc))
+<P><STRONG><a name="[152]"></a>SI_Loss_Calc</STRONG> (Thumb, 1096 bytes, Stack size 40 bytes, datcalc_spl.o(.text.SI_Loss_Calc))
 <BR><BR>[Stack]<UL><LI>Max Depth = 168<LI>Call Chain = SI_Loss_Calc &rArr; __aeabi_dmul &rArr; _double_epilogue &rArr; __aeabi_llsr
 </UL>
 <BR>[Calls]<UL><LI><a href="#[44]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_i2d
@@ -2073,10 +2083,10 @@ Global Symbols
 <BR>[Address Reference Count : 1]<UL><LI> startup_cbm858xm.o(RESET)
 </UL>
 <P><STRONG><a name="[d1]"></a>Set_FET</STRONG> (Thumb, 144 bytes, Stack size 16 bytes, mcu.o(.text.Set_FET))
-<BR><BR>[Stack]<UL><LI>Max Depth = 136<LI>Call Chain = Set_FET &rArr; afe_cddrv_discharge_enable_ctrl &rArr; afe_gcr_reg_unlock &rArr; afe_write_data &rArr; spi_transimit_data
+<BR><BR>[Stack]<UL><LI>Max Depth = 136<LI>Call Chain = Set_FET &rArr; afe_cddrv_charge_enable_ctrl &rArr; afe_gcr_reg_unlock &rArr; afe_write_data &rArr; spi_transimit_data
 </UL>
-<BR>[Calls]<UL><LI><a href="#[13c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;afe_cddrv_discharge_enable_ctrl
-<LI><a href="#[13d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;afe_cddrv_charge_enable_ctrl
+<BR>[Calls]<UL><LI><a href="#[13d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;afe_cddrv_charge_enable_ctrl
+<LI><a href="#[13c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;afe_cddrv_discharge_enable_ctrl
 </UL>
 <BR>[Called By]<UL><LI><a href="#[d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FET_Contrl
 </UL>
@@ -2448,8 +2458,6 @@ Global Symbols
 <BR>[Calls]<UL><LI><a href="#[170]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;afe_write_data
 </UL>
 <BR>[Called By]<UL><LI><a href="#[c9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;afe_wkcp_comparator_enable_ctrl
-<LI><a href="#[d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;afe_dtdrv_fusing_enable_ctrl
-<LI><a href="#[13c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;afe_cddrv_discharge_enable_ctrl
 <LI><a href="#[13b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;afe_cddrv_chgdsg_mos_enable_ctrl
 <LI><a href="#[13d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;afe_cddrv_charge_enable_ctrl
 <LI><a href="#[5f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;afe_pmu_sw_awaken_enable_ctrl
@@ -2460,6 +2468,8 @@ Global Symbols
 <LI><a href="#[f7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;afe_hdp_discharge_short_1_enable_ctrl
 <LI><a href="#[f3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;afe_hdp_discharge_overload_enable_ctrl
 <LI><a href="#[f5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;afe_hdp_charging_short_enable_ctrl
+<LI><a href="#[d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;afe_dtdrv_fusing_enable_ctrl
+<LI><a href="#[13c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;afe_cddrv_discharge_enable_ctrl
 </UL>
 
 <P><STRONG><a name="[179]"></a>afe_gcr_reg_unlock</STRONG> (Thumb, 42 bytes, Stack size 8 bytes, cbm858x_afe_gcr.o(.text.afe_gcr_reg_unlock))
@@ -2468,8 +2478,6 @@ Global Symbols
 <BR>[Calls]<UL><LI><a href="#[170]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;afe_write_data
 </UL>
 <BR>[Called By]<UL><LI><a href="#[c9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;afe_wkcp_comparator_enable_ctrl
-<LI><a href="#[d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;afe_dtdrv_fusing_enable_ctrl
-<LI><a href="#[13c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;afe_cddrv_discharge_enable_ctrl
 <LI><a href="#[13b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;afe_cddrv_chgdsg_mos_enable_ctrl
 <LI><a href="#[13d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;afe_cddrv_charge_enable_ctrl
 <LI><a href="#[5f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;afe_pmu_sw_awaken_enable_ctrl
@@ -2480,6 +2488,8 @@ Global Symbols
 <LI><a href="#[f7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;afe_hdp_discharge_short_1_enable_ctrl
 <LI><a href="#[f3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;afe_hdp_discharge_overload_enable_ctrl
 <LI><a href="#[f5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;afe_hdp_charging_short_enable_ctrl
+<LI><a href="#[d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;afe_dtdrv_fusing_enable_ctrl
+<LI><a href="#[13c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;afe_cddrv_discharge_enable_ctrl
 </UL>
 
 <P><STRONG><a name="[147]"></a>afe_gpio_input_data_bit_read</STRONG> (Thumb, 44 bytes, Stack size 24 bytes, cbm858x_afe_gpio.o(.text.afe_gpio_input_data_bit_read))
@@ -2730,11 +2740,6 @@ Global Symbols
 <LI><a href="#[178]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;afe_cc_flag_status_get
 <LI><a href="#[171]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;afe_cc_enable_ctrl
 <LI><a href="#[16f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;afe_cc_chop_enable_ctrl
-<LI><a href="#[145]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;afe_gpio_mode_config
-<LI><a href="#[147]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;afe_gpio_input_data_bit_read
-<LI><a href="#[d6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;afe_fuse_remove_jitter_delay_config
-<LI><a href="#[d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;afe_dtdrv_fusing_enable_ctrl
-<LI><a href="#[13c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;afe_cddrv_discharge_enable_ctrl
 <LI><a href="#[13b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;afe_cddrv_chgdsg_mos_enable_ctrl
 <LI><a href="#[13d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;afe_cddrv_charge_enable_ctrl
 <LI><a href="#[5f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;afe_pmu_sw_awaken_enable_ctrl
@@ -2754,6 +2759,11 @@ Global Symbols
 <LI><a href="#[f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;afe_hdp_discharge_overload_config
 <LI><a href="#[f5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;afe_hdp_charging_short_enable_ctrl
 <LI><a href="#[f6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;afe_hdp_charging_short_config
+<LI><a href="#[145]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;afe_gpio_mode_config
+<LI><a href="#[147]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;afe_gpio_input_data_bit_read
+<LI><a href="#[d6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;afe_fuse_remove_jitter_delay_config
+<LI><a href="#[d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;afe_dtdrv_fusing_enable_ctrl
+<LI><a href="#[13c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;afe_cddrv_discharge_enable_ctrl
 <LI><a href="#[17b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;afe_enter_shutdown
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> cbm858x_afe_cc.o(.text.afe_cc_first_order_conver_data_calc)
@@ -2989,12 +2999,6 @@ Global Symbols
 <LI><a href="#[175]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;afe_cc_general_init
 <LI><a href="#[171]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;afe_cc_enable_ctrl
 <LI><a href="#[16f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;afe_cc_chop_enable_ctrl
-<LI><a href="#[145]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;afe_gpio_mode_config
-<LI><a href="#[179]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;afe_gcr_reg_unlock
-<LI><a href="#[144]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;afe_gcr_pb0_mf_config
-<LI><a href="#[d6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;afe_fuse_remove_jitter_delay_config
-<LI><a href="#[d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;afe_dtdrv_fusing_enable_ctrl
-<LI><a href="#[13c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;afe_cddrv_discharge_enable_ctrl
 <LI><a href="#[13b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;afe_cddrv_chgdsg_mos_enable_ctrl
 <LI><a href="#[13d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;afe_cddrv_charge_enable_ctrl
 <LI><a href="#[5f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;afe_pmu_sw_awaken_enable_ctrl
@@ -3013,6 +3017,12 @@ Global Symbols
 <LI><a href="#[f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;afe_hdp_discharge_overload_config
 <LI><a href="#[f5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;afe_hdp_charging_short_enable_ctrl
 <LI><a href="#[f6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;afe_hdp_charging_short_config
+<LI><a href="#[145]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;afe_gpio_mode_config
+<LI><a href="#[179]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;afe_gcr_reg_unlock
+<LI><a href="#[144]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;afe_gcr_pb0_mf_config
+<LI><a href="#[d6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;afe_fuse_remove_jitter_delay_config
+<LI><a href="#[d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;afe_dtdrv_fusing_enable_ctrl
+<LI><a href="#[13c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;afe_cddrv_discharge_enable_ctrl
 <LI><a href="#[17a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;afe_gcr_reg_lock
 </UL>
 
@@ -3732,7 +3742,7 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[15a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SmbusMACWriteInstruction
 </UL>
 
-<P><STRONG><a name="[10e]"></a>lifetime_time_period</STRONG> (Thumb, 1228 bytes, Stack size 16 bytes, lifetime.o(.text.lifetime_time_period))
+<P><STRONG><a name="[10e]"></a>lifetime_time_period</STRONG> (Thumb, 1212 bytes, Stack size 16 bytes, lifetime.o(.text.lifetime_time_period))
 <BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = lifetime_time_period
 </UL>
 <BR>[Called By]<UL><LI><a href="#[10c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LifeTime
@@ -4216,11 +4226,11 @@ Global Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 144<LI>Call Chain = shutdown_enter &rArr; afe_enter_shutdown &rArr; afe_read_data &rArr; spi_transimit_data
 </UL>
 <BR>[Calls]<UL><LI><a href="#[59]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_ms
-<LI><a href="#[13c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;afe_cddrv_discharge_enable_ctrl
 <LI><a href="#[13d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;afe_cddrv_charge_enable_ctrl
 <LI><a href="#[bf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DF_Write
 <LI><a href="#[e0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Write_UpFlash
 <LI><a href="#[15b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DFDataSave
+<LI><a href="#[13c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;afe_cddrv_discharge_enable_ctrl
 <LI><a href="#[1f2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rcu_flag_clear
 <LI><a href="#[1f3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pmu_power_down_enter
 <LI><a href="#[17b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;afe_enter_shutdown

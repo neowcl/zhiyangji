@@ -280,16 +280,11 @@ void AlarmWarning_Check(void)
             //     f_gs_fc = ON;
             // }
 
-
             if (SOC_CEDV_show >= D_FC_Set_RSOC_Threshold)
             {
                 f_gs_fc = ON;
             }
-            
         }
-
-
-
         // Condition: SET VCT
         if (D_SOC_Flag_Config_A_FCSETVCT)
         {
@@ -302,10 +297,6 @@ void AlarmWarning_Check(void)
                 f_gs_fc = ON;
             }
         }
-
-
-
-
     }
 
     if (f_gs_td)
@@ -791,13 +782,6 @@ void Calc_k_CEDV(void) // use leiji style
                 Calc_b_aidx();
                 Calc_soc_to_res(b_aidx, calc_RES_soc_chabiao); //
                 calc_k_res_chabiao = Res_Temp_CEDV_Inner_temp;
-
-                t_com92_out = calc_k_res_chabiao;
-                // chabiao neizu .
-
-                // t_com98_out = 1;
-                // jisuan neizu
-                //  calc_k_res() ;
                 calc_RES_soc_jisuan = SOC_CEDV;
                 // t_com97_out = calc_RES_soc_jisuan;
 
@@ -813,7 +797,7 @@ void Calc_k_CEDV(void) // use leiji style
                         calc_k_res_jisuan = (uint16_t)((long)(V_OCV - V_min) * 10000 / I_abs);
                     }
 
-                    t_com99_out = calc_k_res_jisuan;
+                    //t_com99_out = calc_k_res_jisuan;
                 }
 
                 if (calc_k_res_chabiao != 0)
@@ -891,7 +875,7 @@ uint16_t QMaxUpdateJudge_CEDV(uint8_t InitSOC, uint8_t EndSOC)
     // CEDV_soc_range = QmaxCapcity_Calc*5/72/t_com18 ; // soc differece  / Design capa *1000 
     dropSoc = ABS(InitSOC - EndSOC); 
     t_com90_out =  dropSoc  ;
-    t_com94_out =  QmaxCapcity_Calc/14400  ;  
+    //t_com94_out =  QmaxCapcity_Calc/14400  ;  
     qmax_CEDV_temp = QmaxCapcity_Calc/dropSoc/144 ;   // (dropSoc/100)  = soc / 100   
 
     return qmax_CEDV_temp  ;
@@ -1304,7 +1288,7 @@ void Calc_FCC_CEDV(void)  // read four , % -1.5 0 1 2 3 4 ....101 res  , calc on
             // if (judge_greater_than_0 >= 0)
             if (judge_greater_than_0_add_k >= 0)
             {
-                t_com93_out = soc_to_res_index;
+                //t_com93_out = soc_to_res_index;
                 t_com1f_out = Res_Temp_CEDV_Inner_turn_new;
                 Res_Temp_CEDV_Inner_out = Res_Temp_CEDV_Inner_turn;
                 fcc_CEDV_Ture = (uint16_t)(long)t_com10 * (102 - soc_to_res_index) / 102;
@@ -1346,7 +1330,6 @@ void Make_RC_CEDV(void)
 
 
     twork2 = (uint16_t)(Record_lrc_w_CEDV / (60*60*4));   // CEDV at most = 102 .
-   //  if (twork2 >= t_com10+t_com10/50-1 )  // cause soc_CEDV index : less than 102 , can reach 101 .
   if (twork2 >= t_com10 )  // cause soc_CEDV index : less than 102 , can reach 101 .
     {
         t_com0f_CEDV = t_com10;
@@ -1384,7 +1367,7 @@ void Calc_fulchg_dsg_cap(void)
     {
         // I_abs_ful = I_abs  ;
 		ful_dsg_cap_chg +=I_abs  ;
-        t_com95_out = ful_dsg_cap_chg/14400;
+        //t_com95_out = ful_dsg_cap_chg/14400;
     }
 
     if (!f_charge)
@@ -1659,7 +1642,7 @@ void Calc_RC_CEDV(void)
                 else //  V_min >= tcpl_v
                 {
                     acpl_cnt_CE = 0;
-                    Record_lrc_w_CEDV_fcc_show -= cur_qmax_chu_fcc;
+                    Record_lrc_w_CEDV_fcc_show -= (cur_qmax_chu_fcc*1.02);
                     Record_lrc_w_CEDV -= I_abs;
                 }
             }
@@ -1733,7 +1716,7 @@ void Calc_RSOC_CEDV(void)
     static uint8_t Cnt_40_CE ;
 	atwork1 = (uint16_t)((((long)t_com0f * 2000)/t_com10+10)/2);
 
-	if(!f_charge)  // use on computer , if charge , sishewuru .
+	if(!f_charge)  
 	{
 		if(atwork1 >=10)   // soc more than 1%  .  jia 1 .
 		{	
