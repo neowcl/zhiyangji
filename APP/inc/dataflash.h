@@ -17,10 +17,10 @@
 #define  LTBLOCK              8
 #define  LT_LEN               480
 #define  LF_DATA_OFFSET	      0x0040						// DataFlash data start offset
-#define  LF_BLOCK_A           0x08034400
-#define  LIFETIME_A_ST        0x08034440 
-#define  LF_BLOCK_B           0x08034800
-#define  LIFETIME_B_ST        0x08034840 
+#define  LF_BLOCK_A           0x08034000
+#define  LIFETIME_A_ST        0x08034040 
+#define  LF_BLOCK_B           0x08034400
+#define  LIFETIME_B_ST        0x08034440 
 #define USER_KEY_REGION       0x1F001A00
 #define USER_KEY_LEN          16
 

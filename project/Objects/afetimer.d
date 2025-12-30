@@ -53,4 +53,4 @@
   C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\crypto\inc\trng.h \
   C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\crypto\inc\crypto_reg.h \
   C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_fwdt.h \
-  ..\APP\inc\cbm8580m_int.h ..\APP\inc\ra_value.h
+  ..\APP\inc\cbm8580m_int.h ..\APP\inc\ra_value.h ..\APP\inc\afetimer.h

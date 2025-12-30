@@ -62,12 +62,24 @@ int main(void)
 			AlarmWarning_Check();
 			FullCharge_Chk_CEDV() ;
 			LifeTime();
-			if (!(D_Manufacturing_Status_Init_LDO_EN && D_DA_Configuration_NR))
-			{
-				PresToggle();
-			}
+			// if (!(D_Manufacturing_Status_Init_LDO_EN && D_DA_Configuration_NR))
+			// {
+			// 	PresToggle();
+			// }
 			CellBalance_Chk();
 			plugged_IN();
+			led_control();
+			// if(ff)
+			// {
+			// 	afe_gpio_output_data_bit_set(GPIO_PB0_PIN);
+			// 	ff=0;
+			// }
+			// else
+			// {
+			// 	afe_gpio_output_data_bit_reset(GPIO_PB0_PIN);
+			// 	ff=1;
+			// }
+			
 		}
 		
 		SmbusTimeout_Chk(); // Check IIC communication Timeout
