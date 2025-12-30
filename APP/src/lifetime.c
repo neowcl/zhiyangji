@@ -1445,7 +1445,7 @@ void lt_banlance(void)
 uint8_t lifetime_Writer()
 {
     uint8_t ret;
-     ret = fmc_write_flash((uint32_t)LF_BLOCK_A - FMC_DATA_FLASH_BASE_ADDR, (uint8_t *)&l_lifetimes,
+     ret = fmc_write_flash((uint32_t)LF_BLOCK_A - FMC_DATA_FLASH_BASE_ADDR, (uint8_t *)&t_lifetimes,
                               sizeof(LifeTimes));
     return ret;
 }

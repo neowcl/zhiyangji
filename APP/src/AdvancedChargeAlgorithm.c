@@ -492,8 +492,7 @@ void Charging_CV_Fun(void)
     _ChargingVoltage = ChargeVoltage;
     Charge_Inhibit();
     Charge_Suspend();
-    // _ChargingCurrent = 0x075A;  // can not put here , becasue will be changed 
-    // _ChargingVoltage = 0x3264;
+ 
 }
 
 void Poly_CC_Calc(void)
@@ -970,31 +969,32 @@ void FFC_Charge(void)
 {
     if(D_Manufacturing_Status_Init_FFC_EN )
     {
-        if((V_max-V_min)<=D_FFC_CHARGE_CellimbalanceVoltage)
+        if((V_max-V_min)<=D_FFC_CellimbalanceVoltage)
         {
-          if((D_FFC_CHARGE_TemperatureTbl0<=Ts_max) && (Ts_max<D_FFC_CHARGE_TemperatureTbl1))
+          if((D_FFC_TemperatureTbl0<=Ts_max) && (Ts_max<D_FFC_TemperatureTbl1))
           {
             if(_ChargingVoltage !=0)
             {
-                _ChargingVoltage += D_FFC_CHARGE_ChargeCellVoltageOffsetTbl0;
+                _ChargingVoltage += D_FFC_ChargeCellVoltageOffsetTbl0;
             }
-             Charge_Term= D_FFC_CHARGE_ChargeTaperCurrentTbl0;
+             Charge_Term= D_FFC_ChargeTaperCurrentTbl0;
           }
-          else if((D_FFC_CHARGE_TemperatureTbl1<=Ts_max) && (Ts_max<D_FFC_CHARGE_TemperatureTbl2))
+          else if((D_FFC_TemperatureTbl1<=Ts_max) && (Ts_max<D_FFC_TemperatureTbl2))
           {
              if(_ChargingVoltage !=0)
             {
-                _ChargingVoltage += D_FFC_CHARGE_ChargeCellVoltageOffsetTbl1;
+                _ChargingVoltage += D_FFC_ChargeCellVoltageOffsetTbl1;
             }
-            Charge_Term= D_FFC_CHARGE_ChargeTaperCurrentTbl1;
+            Charge_Term= D_FFC_ChargeTaperCurrentTbl1;
           }
-          else if((D_FFC_CHARGE_TemperatureTbl2<=Ts_max) && (Ts_max<=D_FFC_CHARGE_TemperatureTbl3))
+          else if((D_FFC_TemperatureTbl2<=Ts_max) && (Ts_max<=(D_FFC_TemperatureTbl3)))
           {
               if(_ChargingVoltage !=0)
             {
-                _ChargingVoltage += D_FFC_CHARGE_ChargeCellVoltageOffsetTbl1;
-                Charge_Term= D_FFC_CHARGE_ChargeTaperCurrentTbl2;
+                _ChargingVoltage += D_FFC_ChargeCellVoltageOffsetTbl2;
             }
+                Charge_Term= D_FFC_ChargeTaperCurrentTbl2;
+            
           }
           else
           {

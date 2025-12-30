@@ -1534,7 +1534,7 @@ void write_processmsg(uint8_t*rx_buffer,uint8_t g_RecvCnt)
       eMac.MAC_T.nAltManufacturerAccess = (rx_buffer[3] << 8) | rx_buffer[2];
       if (MACDataLength <= 2) // Read
       {
-        if ((eMac.MAC_T.nAltManufacturerAccess >= 0x2400 && eMac.MAC_T.nAltManufacturerAccess < 0x2800) || (eMac.MAC_T.nAltManufacturerAccess >= 0x4000 && eMac.MAC_T.nAltManufacturerAccess <= 0x6000))
+        if ((eMac.MAC_T.nAltManufacturerAccess >= 0x2400 && eMac.MAC_T.nAltManufacturerAccess < 0x2800) || (eMac.MAC_T.nAltManufacturerAccess >= 0x4000 && eMac.MAC_T.nAltManufacturerAccess <= MEMORY_LEN))
         {
           t_com44._MAC_T.nMacLen = 0x22;
           t_com44._MAC_T.nAltManufacturerAccess = eMac.MAC_T.nAltManufacturerAccess;
@@ -1939,7 +1939,7 @@ void bi2cs_dataCmd_init(void)
   if (Record_FullChargeCapacity == 0 || Record_FullChargeCapacity == 0xFFFF) // Set Initial FCC, RC, RSOC
   {
 
-    t_com10 = D_INITIAL_FCC; // set initial FCC
+    t_com10 = D_State_QmaxPack ; // set initial FCC
     Record_SOH = 100;
     _SoH = Record_SOH;
     t_com89 = D_Design_Capacity_mAh;
@@ -1962,12 +1962,11 @@ void bi2cs_dataCmd_init(void)
     t_com10 = Record_FullChargeCapacity;
     _CycleCount =Record_CycleCount;
     t_com89 = Record_IdealFCC;
-    t_com8a = Record_IRsoc;
-    
-    _GaugeStatus3.QMax0 = Record_QmaxCell0;
-    _GaugeStatus3.QMax1 = Record_QmaxCell1;
-    _GaugeStatus3.QMax2 = Record_QmaxCell2;
-    _GaugeStatus3.QMax3 = Record_QmaxCell3;
+    t_com8a = Record_IRsoc;    
+    _GaugeStatus3.QMax0 = Record_QmaxCell1;
+    _GaugeStatus3.QMax1 = Record_QmaxCell2;
+    _GaugeStatus3.QMax2 = Record_QmaxCell3;
+    _GaugeStatus3.QMax3 = Record_QmaxCell4;
     if (Record_ShutDown_Mode == 0x00f0)
     {
       t_com0d = Record_RSOC;
