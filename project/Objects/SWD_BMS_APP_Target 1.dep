@@ -20,7 +20,11 @@ I (..\APP\inc\data_flash_value.h)(0x69424FFC)
 I (..\APP\inc\protect.h)(0x693799BC)
 I (..\APP\inc\Power_Modes.h)(0x693799BC)
 I (..\APP\inc\soft_timer.h)(0x693799BC)
+<<<<<<< HEAD
 I (..\APP\inc\SBS_Commands.h)(0x69494C80)
+=======
+I (..\APP\inc\SBS_Commands.h)(0x6948FADA)
+>>>>>>> 4f574d1f727c8b694c5b15b56c39b4a862173d35
 I (..\APP\inc\mode.h)(0x6943A586)
 I (..\APP\inc\ram.h)(0x693799BC)
 I (..\APP\inc\hdp.h)(0x6948FA8E)
@@ -34,7 +38,11 @@ I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Dr
 I (..\APP\inc\lptm.h)(0x693799BC)
 I (..\APP\inc\tim.h)(0x693799BC)
 I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_tim.h)(0x66A7480A)
+<<<<<<< HEAD
 I (..\APP\inc\dataflash.h)(0x6949F15D)
+=======
+I (..\APP\inc\dataflash.h)(0x69436AE4)
+>>>>>>> 4f574d1f727c8b694c5b15b56c39b4a862173d35
 I (..\APP\inc\datcalc_spl.h)(0x693799BC)
 I (..\APP\inc\Calc_Attf.h)(0x693799BC)
 I (..\APP\inc\rtc.h)(0x693799BC)
@@ -91,7 +99,11 @@ I (..\APP\inc\protect.h)(0x693799BC)
 I (..\APP\inc\Power_Modes.h)(0x693799BC)
 I (..\APP\inc\AdvancedChargeAlgorithm.h)(0x693799BC)
 I (..\APP\inc\soft_timer.h)(0x693799BC)
+<<<<<<< HEAD
 I (..\APP\inc\SBS_Commands.h)(0x69494C80)
+=======
+I (..\APP\inc\SBS_Commands.h)(0x6948FADA)
+>>>>>>> 4f574d1f727c8b694c5b15b56c39b4a862173d35
 I (..\APP\inc\mode.h)(0x6943A586)
 I (..\APP\inc\ram.h)(0x693799BC)
 I (..\APP\inc\hdp.h)(0x6948FA8E)
@@ -104,7 +116,11 @@ I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Dr
 I (..\APP\inc\lptm.h)(0x693799BC)
 I (..\APP\inc\tim.h)(0x693799BC)
 I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_tim.h)(0x66A7480A)
+<<<<<<< HEAD
 I (..\APP\inc\dataflash.h)(0x6949F15D)
+=======
+I (..\APP\inc\dataflash.h)(0x69436AE4)
+>>>>>>> 4f574d1f727c8b694c5b15b56c39b4a862173d35
 I (..\APP\inc\datcalc_spl.h)(0x693799BC)
 I (..\APP\inc\Calc_Attf.h)(0x693799BC)
 I (..\APP\inc\rtc.h)(0x693799BC)
@@ -160,7 +176,11 @@ I (..\APP\inc\protect.h)(0x693799BC)
 I (..\APP\inc\Power_Modes.h)(0x693799BC)
 I (..\APP\inc\AdvancedChargeAlgorithm.h)(0x693799BC)
 I (..\APP\inc\soft_timer.h)(0x693799BC)
+<<<<<<< HEAD
 I (..\APP\inc\SBS_Commands.h)(0x69494C80)
+=======
+I (..\APP\inc\SBS_Commands.h)(0x6948FADA)
+>>>>>>> 4f574d1f727c8b694c5b15b56c39b4a862173d35
 I (..\APP\inc\mode.h)(0x6943A586)
 I (..\APP\inc\ram.h)(0x693799BC)
 I (..\APP\inc\hdp.h)(0x6948FA8E)
@@ -174,7 +194,11 @@ I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Dr
 I (..\APP\inc\lptm.h)(0x693799BC)
 I (..\APP\inc\tim.h)(0x693799BC)
 I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_tim.h)(0x66A7480A)
+<<<<<<< HEAD
 I (..\APP\inc\dataflash.h)(0x6949F15D)
+=======
+I (..\APP\inc\dataflash.h)(0x69436AE4)
+>>>>>>> 4f574d1f727c8b694c5b15b56c39b4a862173d35
 I (..\APP\inc\datcalc_spl.h)(0x693799BC)
 I (..\APP\inc\Calc_Attf.h)(0x693799BC)
 I (..\APP\inc\rtc.h)(0x693799BC)
@@ -231,7 +255,11 @@ I (..\APP\inc\protect.h)(0x693799BC)
 I (..\APP\inc\Power_Modes.h)(0x693799BC)
 I (..\APP\inc\AdvancedChargeAlgorithm.h)(0x693799BC)
 I (..\APP\inc\soft_timer.h)(0x693799BC)
+<<<<<<< HEAD
 I (..\APP\inc\SBS_Commands.h)(0x69494C80)
+=======
+I (..\APP\inc\SBS_Commands.h)(0x6948FADA)
+>>>>>>> 4f574d1f727c8b694c5b15b56c39b4a862173d35
 I (..\APP\inc\mode.h)(0x6943A586)
 I (..\APP\inc\ram.h)(0x693799BC)
 I (..\APP\inc\hdp.h)(0x6948FA8E)
@@ -245,7 +273,11 @@ I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Dr
 I (..\APP\inc\lptm.h)(0x693799BC)
 I (..\APP\inc\tim.h)(0x693799BC)
 I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_tim.h)(0x66A7480A)
+<<<<<<< HEAD
 I (..\APP\inc\dataflash.h)(0x6949F15D)
+=======
+I (..\APP\inc\dataflash.h)(0x69436AE4)
+>>>>>>> 4f574d1f727c8b694c5b15b56c39b4a862173d35
 I (..\APP\inc\datcalc_spl.h)(0x693799BC)
 I (..\APP\inc\rtc.h)(0x693799BC)
 I (..\APP\inc\oscm.h)(0x693799BC)
@@ -280,7 +312,11 @@ I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Dr
 I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_fwdt.h)(0x66B0775A)
 I (..\APP\inc\cbm8580m_int.h)(0x693799BC)
 I (..\APP\inc\ra_value.h)(0x693799BC)
+<<<<<<< HEAD
 F (..\APP\src\cbm8580m_int.c)(0x69495280)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -fropi -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../APP/inc-I./RTE/Device/CBM8580_v2-I./RTE/_Target_1-IC:/Users/12267/AppData/Local/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/Core/Include-IC:/Users/12267/AppData/Local/Arm/Packs/Chipsea/CBM858x_v2_DFP/1.0.3/Device/Driver/crypto/inc-IC:/Users/12267/AppData/Local/Arm/Packs/Chipsea/CBM858x_v2_DFP/1.0.3/Device/Driver/inc-D__UVISION_VERSION="533" -D_RTE_ -D_RTE_ -DRELEASE_MODE-o ./objects/cbm8580m_int.o -MD)
+=======
+F (..\APP\src\cbm8580m_int.c)(0x6948F9B2)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -fropi -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../APP/inc-I./RTE/Device/CBM8580_v2-I./RTE/_Target_1-IC:/Users/12267/AppData/Local/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/Core/Include-IC:/Users/12267/AppData/Local/Arm/Packs/Chipsea/CBM858x_v2_DFP/1.0.3/Device/Driver/crypto/inc-IC:/Users/12267/AppData/Local/Arm/Packs/Chipsea/CBM858x_v2_DFP/1.0.3/Device/Driver/inc-D__UVISION_VERSION="533" -D_RTE_ -D_RTE_ -DRELEASE_MODE-o ./objects/cbm8580m_int.o -MD)
+>>>>>>> 4f574d1f727c8b694c5b15b56c39b4a862173d35
 I (..\APP\inc\main.h)(0x693799BC)
 I (D:\keil5\ARM\ARMCLANG\include\stdio.h)(0x5F36D0B4)
 I (D:\keil5\ARM\ARMCLANG\include\string.h)(0x5F36D0A4)
@@ -300,7 +336,11 @@ I (..\APP\inc\protect.h)(0x693799BC)
 I (..\APP\inc\Power_Modes.h)(0x693799BC)
 I (..\APP\inc\AdvancedChargeAlgorithm.h)(0x693799BC)
 I (..\APP\inc\soft_timer.h)(0x693799BC)
+<<<<<<< HEAD
 I (..\APP\inc\SBS_Commands.h)(0x69494C80)
+=======
+I (..\APP\inc\SBS_Commands.h)(0x6948FADA)
+>>>>>>> 4f574d1f727c8b694c5b15b56c39b4a862173d35
 I (..\APP\inc\mode.h)(0x6943A586)
 I (..\APP\inc\ram.h)(0x693799BC)
 I (..\APP\inc\hdp.h)(0x6948FA8E)
@@ -314,7 +354,11 @@ I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Dr
 I (..\APP\inc\lptm.h)(0x693799BC)
 I (..\APP\inc\tim.h)(0x693799BC)
 I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_tim.h)(0x66A7480A)
+<<<<<<< HEAD
 I (..\APP\inc\dataflash.h)(0x6949F15D)
+=======
+I (..\APP\inc\dataflash.h)(0x69436AE4)
+>>>>>>> 4f574d1f727c8b694c5b15b56c39b4a862173d35
 I (..\APP\inc\datcalc_spl.h)(0x693799BC)
 I (..\APP\inc\Calc_Attf.h)(0x693799BC)
 I (..\APP\inc\rtc.h)(0x693799BC)
@@ -371,7 +415,11 @@ I (..\APP\inc\protect.h)(0x693799BC)
 I (..\APP\inc\Power_Modes.h)(0x693799BC)
 I (..\APP\inc\AdvancedChargeAlgorithm.h)(0x693799BC)
 I (..\APP\inc\soft_timer.h)(0x693799BC)
+<<<<<<< HEAD
 I (..\APP\inc\SBS_Commands.h)(0x69494C80)
+=======
+I (..\APP\inc\SBS_Commands.h)(0x6948FADA)
+>>>>>>> 4f574d1f727c8b694c5b15b56c39b4a862173d35
 I (..\APP\inc\mode.h)(0x6943A586)
 I (..\APP\inc\ram.h)(0x693799BC)
 I (..\APP\inc\hdp.h)(0x6948FA8E)
@@ -385,7 +433,11 @@ I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Dr
 I (..\APP\inc\lptm.h)(0x693799BC)
 I (..\APP\inc\tim.h)(0x693799BC)
 I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_tim.h)(0x66A7480A)
+<<<<<<< HEAD
 I (..\APP\inc\dataflash.h)(0x6949F15D)
+=======
+I (..\APP\inc\dataflash.h)(0x69436AE4)
+>>>>>>> 4f574d1f727c8b694c5b15b56c39b4a862173d35
 I (..\APP\inc\datcalc_spl.h)(0x693799BC)
 I (..\APP\inc\Calc_Attf.h)(0x693799BC)
 I (..\APP\inc\rtc.h)(0x693799BC)
@@ -443,7 +495,11 @@ I (..\APP\inc\protect.h)(0x693799BC)
 I (..\APP\inc\Power_Modes.h)(0x693799BC)
 I (..\APP\inc\AdvancedChargeAlgorithm.h)(0x693799BC)
 I (..\APP\inc\soft_timer.h)(0x693799BC)
+<<<<<<< HEAD
 I (..\APP\inc\SBS_Commands.h)(0x69494C80)
+=======
+I (..\APP\inc\SBS_Commands.h)(0x6948FADA)
+>>>>>>> 4f574d1f727c8b694c5b15b56c39b4a862173d35
 I (..\APP\inc\mode.h)(0x6943A586)
 I (..\APP\inc\ram.h)(0x693799BC)
 I (..\APP\inc\hdp.h)(0x6948FA8E)
@@ -457,7 +513,11 @@ I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Dr
 I (..\APP\inc\lptm.h)(0x693799BC)
 I (..\APP\inc\tim.h)(0x693799BC)
 I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_tim.h)(0x66A7480A)
+<<<<<<< HEAD
 I (..\APP\inc\dataflash.h)(0x6949F15D)
+=======
+I (..\APP\inc\dataflash.h)(0x69436AE4)
+>>>>>>> 4f574d1f727c8b694c5b15b56c39b4a862173d35
 I (..\APP\inc\datcalc_spl.h)(0x693799BC)
 I (..\APP\inc\Calc_Attf.h)(0x693799BC)
 I (..\APP\inc\rtc.h)(0x693799BC)
@@ -494,7 +554,11 @@ I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Dr
 I (..\APP\inc\cbm8580m_int.h)(0x693799BC)
 I (..\APP\inc\ra_value.h)(0x693799BC)
 F (..\APP\src\dataflash.c)(0x69436C88)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -fropi -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../APP/inc-I./RTE/Device/CBM8580_v2-I./RTE/_Target_1-IC:/Users/12267/AppData/Local/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/Core/Include-IC:/Users/12267/AppData/Local/Arm/Packs/Chipsea/CBM858x_v2_DFP/1.0.3/Device/Driver/crypto/inc-IC:/Users/12267/AppData/Local/Arm/Packs/Chipsea/CBM858x_v2_DFP/1.0.3/Device/Driver/inc-D__UVISION_VERSION="533" -D_RTE_ -D_RTE_ -DRELEASE_MODE-o ./objects/dataflash.o -MD)
+<<<<<<< HEAD
 I (..\APP\inc\dataflash.h)(0x6949F15D)
+=======
+I (..\APP\inc\dataflash.h)(0x69436AE4)
+>>>>>>> 4f574d1f727c8b694c5b15b56c39b4a862173d35
 I (..\APP\inc\main.h)(0x693799BC)
 I (D:\keil5\ARM\ARMCLANG\include\stdio.h)(0x5F36D0B4)
 I (D:\keil5\ARM\ARMCLANG\include\string.h)(0x5F36D0A4)
@@ -514,7 +578,11 @@ I (..\APP\inc\protect.h)(0x693799BC)
 I (..\APP\inc\Power_Modes.h)(0x693799BC)
 I (..\APP\inc\AdvancedChargeAlgorithm.h)(0x693799BC)
 I (..\APP\inc\soft_timer.h)(0x693799BC)
+<<<<<<< HEAD
 I (..\APP\inc\SBS_Commands.h)(0x69494C80)
+=======
+I (..\APP\inc\SBS_Commands.h)(0x6948FADA)
+>>>>>>> 4f574d1f727c8b694c5b15b56c39b4a862173d35
 I (..\APP\inc\mode.h)(0x6943A586)
 I (..\APP\inc\ram.h)(0x693799BC)
 I (..\APP\inc\hdp.h)(0x6948FA8E)
@@ -583,7 +651,11 @@ I (..\APP\inc\protect.h)(0x693799BC)
 I (..\APP\inc\Power_Modes.h)(0x693799BC)
 I (..\APP\inc\AdvancedChargeAlgorithm.h)(0x693799BC)
 I (..\APP\inc\soft_timer.h)(0x693799BC)
+<<<<<<< HEAD
 I (..\APP\inc\SBS_Commands.h)(0x69494C80)
+=======
+I (..\APP\inc\SBS_Commands.h)(0x6948FADA)
+>>>>>>> 4f574d1f727c8b694c5b15b56c39b4a862173d35
 I (..\APP\inc\mode.h)(0x6943A586)
 I (..\APP\inc\ram.h)(0x693799BC)
 I (..\APP\inc\hdp.h)(0x6948FA8E)
@@ -597,7 +669,11 @@ I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Dr
 I (..\APP\inc\lptm.h)(0x693799BC)
 I (..\APP\inc\tim.h)(0x693799BC)
 I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_tim.h)(0x66A7480A)
+<<<<<<< HEAD
 I (..\APP\inc\dataflash.h)(0x6949F15D)
+=======
+I (..\APP\inc\dataflash.h)(0x69436AE4)
+>>>>>>> 4f574d1f727c8b694c5b15b56c39b4a862173d35
 I (..\APP\inc\datcalc_spl.h)(0x693799BC)
 I (..\APP\inc\Calc_Attf.h)(0x693799BC)
 I (..\APP\inc\rtc.h)(0x693799BC)
@@ -633,7 +709,11 @@ I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Dr
 I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_fwdt.h)(0x66B0775A)
 I (..\APP\inc\cbm8580m_int.h)(0x693799BC)
 I (..\APP\inc\ra_value.h)(0x693799BC)
+<<<<<<< HEAD
 F (..\APP\src\hdp.c)(0x69495287)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -fropi -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../APP/inc-I./RTE/Device/CBM8580_v2-I./RTE/_Target_1-IC:/Users/12267/AppData/Local/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/Core/Include-IC:/Users/12267/AppData/Local/Arm/Packs/Chipsea/CBM858x_v2_DFP/1.0.3/Device/Driver/crypto/inc-IC:/Users/12267/AppData/Local/Arm/Packs/Chipsea/CBM858x_v2_DFP/1.0.3/Device/Driver/inc-D__UVISION_VERSION="533" -D_RTE_ -D_RTE_ -DRELEASE_MODE-o ./objects/hdp.o -MD)
+=======
+F (..\APP\src\hdp.c)(0x6948FA88)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -fropi -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../APP/inc-I./RTE/Device/CBM8580_v2-I./RTE/_Target_1-IC:/Users/12267/AppData/Local/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/Core/Include-IC:/Users/12267/AppData/Local/Arm/Packs/Chipsea/CBM858x_v2_DFP/1.0.3/Device/Driver/crypto/inc-IC:/Users/12267/AppData/Local/Arm/Packs/Chipsea/CBM858x_v2_DFP/1.0.3/Device/Driver/inc-D__UVISION_VERSION="533" -D_RTE_ -D_RTE_ -DRELEASE_MODE-o ./objects/hdp.o -MD)
+>>>>>>> 4f574d1f727c8b694c5b15b56c39b4a862173d35
 I (..\APP\inc\hdp.h)(0x6948FA8E)
 I (..\APP\inc\main.h)(0x693799BC)
 I (D:\keil5\ARM\ARMCLANG\include\stdio.h)(0x5F36D0B4)
@@ -654,7 +734,11 @@ I (..\APP\inc\protect.h)(0x693799BC)
 I (..\APP\inc\Power_Modes.h)(0x693799BC)
 I (..\APP\inc\AdvancedChargeAlgorithm.h)(0x693799BC)
 I (..\APP\inc\soft_timer.h)(0x693799BC)
+<<<<<<< HEAD
 I (..\APP\inc\SBS_Commands.h)(0x69494C80)
+=======
+I (..\APP\inc\SBS_Commands.h)(0x6948FADA)
+>>>>>>> 4f574d1f727c8b694c5b15b56c39b4a862173d35
 I (..\APP\inc\mode.h)(0x6943A586)
 I (..\APP\inc\ram.h)(0x693799BC)
 I (..\APP\inc\afe_cvt.h)(0x693799BC)
@@ -667,7 +751,11 @@ I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Dr
 I (..\APP\inc\lptm.h)(0x693799BC)
 I (..\APP\inc\tim.h)(0x693799BC)
 I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_tim.h)(0x66A7480A)
+<<<<<<< HEAD
 I (..\APP\inc\dataflash.h)(0x6949F15D)
+=======
+I (..\APP\inc\dataflash.h)(0x69436AE4)
+>>>>>>> 4f574d1f727c8b694c5b15b56c39b4a862173d35
 I (..\APP\inc\datcalc_spl.h)(0x693799BC)
 I (..\APP\inc\Calc_Attf.h)(0x693799BC)
 I (..\APP\inc\rtc.h)(0x693799BC)
@@ -726,7 +814,11 @@ I (..\APP\inc\protect.h)(0x693799BC)
 I (..\APP\inc\Power_Modes.h)(0x693799BC)
 I (..\APP\inc\AdvancedChargeAlgorithm.h)(0x693799BC)
 I (..\APP\inc\soft_timer.h)(0x693799BC)
+<<<<<<< HEAD
 I (..\APP\inc\SBS_Commands.h)(0x69494C80)
+=======
+I (..\APP\inc\SBS_Commands.h)(0x6948FADA)
+>>>>>>> 4f574d1f727c8b694c5b15b56c39b4a862173d35
 I (..\APP\inc\mode.h)(0x6943A586)
 I (..\APP\inc\ram.h)(0x693799BC)
 I (..\APP\inc\hdp.h)(0x6948FA8E)
@@ -740,7 +832,11 @@ I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Dr
 I (..\APP\inc\lptm.h)(0x693799BC)
 I (..\APP\inc\tim.h)(0x693799BC)
 I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_tim.h)(0x66A7480A)
+<<<<<<< HEAD
 I (..\APP\inc\dataflash.h)(0x6949F15D)
+=======
+I (..\APP\inc\dataflash.h)(0x69436AE4)
+>>>>>>> 4f574d1f727c8b694c5b15b56c39b4a862173d35
 I (..\APP\inc\datcalc_spl.h)(0x693799BC)
 I (..\APP\inc\Calc_Attf.h)(0x693799BC)
 I (..\APP\inc\rtc.h)(0x693799BC)
@@ -814,7 +910,11 @@ I (..\APP\inc\protect.h)(0x693799BC)
 I (..\APP\inc\Power_Modes.h)(0x693799BC)
 I (..\APP\inc\AdvancedChargeAlgorithm.h)(0x693799BC)
 I (..\APP\inc\soft_timer.h)(0x693799BC)
+<<<<<<< HEAD
 I (..\APP\inc\SBS_Commands.h)(0x69494C80)
+=======
+I (..\APP\inc\SBS_Commands.h)(0x6948FADA)
+>>>>>>> 4f574d1f727c8b694c5b15b56c39b4a862173d35
 I (..\APP\inc\mode.h)(0x6943A586)
 I (..\APP\inc\ram.h)(0x693799BC)
 I (..\APP\inc\hdp.h)(0x6948FA8E)
@@ -827,7 +927,11 @@ I (..\APP\inc\afetimer.h)(0x6948F98E)
 I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_flash.h)(0x680F1EF0)
 I (..\APP\inc\tim.h)(0x693799BC)
 I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_tim.h)(0x66A7480A)
+<<<<<<< HEAD
 I (..\APP\inc\dataflash.h)(0x6949F15D)
+=======
+I (..\APP\inc\dataflash.h)(0x69436AE4)
+>>>>>>> 4f574d1f727c8b694c5b15b56c39b4a862173d35
 I (..\APP\inc\datcalc_spl.h)(0x693799BC)
 I (..\APP\inc\Calc_Attf.h)(0x693799BC)
 I (..\APP\inc\rtc.h)(0x693799BC)
@@ -863,7 +967,11 @@ I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Dr
 I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_fwdt.h)(0x66B0775A)
 I (..\APP\inc\cbm8580m_int.h)(0x693799BC)
 I (..\APP\inc\ra_value.h)(0x693799BC)
+<<<<<<< HEAD
 F (..\APP\src\main.c)(0x69495F04)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -fropi -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../APP/inc-I./RTE/Device/CBM8580_v2-I./RTE/_Target_1-IC:/Users/12267/AppData/Local/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/Core/Include-IC:/Users/12267/AppData/Local/Arm/Packs/Chipsea/CBM858x_v2_DFP/1.0.3/Device/Driver/crypto/inc-IC:/Users/12267/AppData/Local/Arm/Packs/Chipsea/CBM858x_v2_DFP/1.0.3/Device/Driver/inc-D__UVISION_VERSION="533" -D_RTE_ -D_RTE_ -DRELEASE_MODE-o ./objects/main.o -MD)
+=======
+F (..\APP\src\main.c)(0x6948FA9C)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -fropi -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../APP/inc-I./RTE/Device/CBM8580_v2-I./RTE/_Target_1-IC:/Users/12267/AppData/Local/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/Core/Include-IC:/Users/12267/AppData/Local/Arm/Packs/Chipsea/CBM858x_v2_DFP/1.0.3/Device/Driver/crypto/inc-IC:/Users/12267/AppData/Local/Arm/Packs/Chipsea/CBM858x_v2_DFP/1.0.3/Device/Driver/inc-D__UVISION_VERSION="533" -D_RTE_ -D_RTE_ -DRELEASE_MODE-o ./objects/main.o -MD)
+>>>>>>> 4f574d1f727c8b694c5b15b56c39b4a862173d35
 I (..\APP\inc\main.h)(0x693799BC)
 I (D:\keil5\ARM\ARMCLANG\include\stdio.h)(0x5F36D0B4)
 I (D:\keil5\ARM\ARMCLANG\include\string.h)(0x5F36D0A4)
@@ -883,7 +991,11 @@ I (..\APP\inc\protect.h)(0x693799BC)
 I (..\APP\inc\Power_Modes.h)(0x693799BC)
 I (..\APP\inc\AdvancedChargeAlgorithm.h)(0x693799BC)
 I (..\APP\inc\soft_timer.h)(0x693799BC)
+<<<<<<< HEAD
 I (..\APP\inc\SBS_Commands.h)(0x69494C80)
+=======
+I (..\APP\inc\SBS_Commands.h)(0x6948FADA)
+>>>>>>> 4f574d1f727c8b694c5b15b56c39b4a862173d35
 I (..\APP\inc\mode.h)(0x6943A586)
 I (..\APP\inc\ram.h)(0x693799BC)
 I (..\APP\inc\hdp.h)(0x6948FA8E)
@@ -897,7 +1009,11 @@ I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Dr
 I (..\APP\inc\lptm.h)(0x693799BC)
 I (..\APP\inc\tim.h)(0x693799BC)
 I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_tim.h)(0x66A7480A)
+<<<<<<< HEAD
 I (..\APP\inc\dataflash.h)(0x6949F15D)
+=======
+I (..\APP\inc\dataflash.h)(0x69436AE4)
+>>>>>>> 4f574d1f727c8b694c5b15b56c39b4a862173d35
 I (..\APP\inc\datcalc_spl.h)(0x693799BC)
 I (..\APP\inc\Calc_Attf.h)(0x693799BC)
 I (..\APP\inc\rtc.h)(0x693799BC)
@@ -933,7 +1049,11 @@ I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Dr
 I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_fwdt.h)(0x66B0775A)
 I (..\APP\inc\cbm8580m_int.h)(0x693799BC)
 I (..\APP\inc\ra_value.h)(0x693799BC)
+<<<<<<< HEAD
 F (..\APP\src\mcu.c)(0x69496183)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -fropi -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../APP/inc-I./RTE/Device/CBM8580_v2-I./RTE/_Target_1-IC:/Users/12267/AppData/Local/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/Core/Include-IC:/Users/12267/AppData/Local/Arm/Packs/Chipsea/CBM858x_v2_DFP/1.0.3/Device/Driver/crypto/inc-IC:/Users/12267/AppData/Local/Arm/Packs/Chipsea/CBM858x_v2_DFP/1.0.3/Device/Driver/inc-D__UVISION_VERSION="533" -D_RTE_ -D_RTE_ -DRELEASE_MODE-o ./objects/mcu.o -MD)
+=======
+F (..\APP\src\mcu.c)(0x6948FA1A)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -fropi -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../APP/inc-I./RTE/Device/CBM8580_v2-I./RTE/_Target_1-IC:/Users/12267/AppData/Local/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/Core/Include-IC:/Users/12267/AppData/Local/Arm/Packs/Chipsea/CBM858x_v2_DFP/1.0.3/Device/Driver/crypto/inc-IC:/Users/12267/AppData/Local/Arm/Packs/Chipsea/CBM858x_v2_DFP/1.0.3/Device/Driver/inc-D__UVISION_VERSION="533" -D_RTE_ -D_RTE_ -DRELEASE_MODE-o ./objects/mcu.o -MD)
+>>>>>>> 4f574d1f727c8b694c5b15b56c39b4a862173d35
 I (..\APP\inc\mcu.h)(0x6948FA30)
 I (..\APP\inc\main.h)(0x693799BC)
 I (D:\keil5\ARM\ARMCLANG\include\stdio.h)(0x5F36D0B4)
@@ -954,7 +1074,11 @@ I (..\APP\inc\protect.h)(0x693799BC)
 I (..\APP\inc\Power_Modes.h)(0x693799BC)
 I (..\APP\inc\AdvancedChargeAlgorithm.h)(0x693799BC)
 I (..\APP\inc\soft_timer.h)(0x693799BC)
+<<<<<<< HEAD
 I (..\APP\inc\SBS_Commands.h)(0x69494C80)
+=======
+I (..\APP\inc\SBS_Commands.h)(0x6948FADA)
+>>>>>>> 4f574d1f727c8b694c5b15b56c39b4a862173d35
 I (..\APP\inc\mode.h)(0x6943A586)
 I (..\APP\inc\ram.h)(0x693799BC)
 I (..\APP\inc\hdp.h)(0x6948FA8E)
@@ -967,7 +1091,11 @@ I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Dr
 I (..\APP\inc\lptm.h)(0x693799BC)
 I (..\APP\inc\tim.h)(0x693799BC)
 I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_tim.h)(0x66A7480A)
+<<<<<<< HEAD
 I (..\APP\inc\dataflash.h)(0x6949F15D)
+=======
+I (..\APP\inc\dataflash.h)(0x69436AE4)
+>>>>>>> 4f574d1f727c8b694c5b15b56c39b4a862173d35
 I (..\APP\inc\datcalc_spl.h)(0x693799BC)
 I (..\APP\inc\Calc_Attf.h)(0x693799BC)
 I (..\APP\inc\rtc.h)(0x693799BC)
@@ -1024,7 +1152,11 @@ I (..\APP\inc\protect.h)(0x693799BC)
 I (..\APP\inc\Power_Modes.h)(0x693799BC)
 I (..\APP\inc\AdvancedChargeAlgorithm.h)(0x693799BC)
 I (..\APP\inc\soft_timer.h)(0x693799BC)
+<<<<<<< HEAD
 I (..\APP\inc\SBS_Commands.h)(0x69494C80)
+=======
+I (..\APP\inc\SBS_Commands.h)(0x6948FADA)
+>>>>>>> 4f574d1f727c8b694c5b15b56c39b4a862173d35
 I (..\APP\inc\ram.h)(0x693799BC)
 I (..\APP\inc\hdp.h)(0x6948FA8E)
 I (..\APP\inc\afe_cvt.h)(0x693799BC)
@@ -1037,7 +1169,11 @@ I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Dr
 I (..\APP\inc\lptm.h)(0x693799BC)
 I (..\APP\inc\tim.h)(0x693799BC)
 I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_tim.h)(0x66A7480A)
+<<<<<<< HEAD
 I (..\APP\inc\dataflash.h)(0x6949F15D)
+=======
+I (..\APP\inc\dataflash.h)(0x69436AE4)
+>>>>>>> 4f574d1f727c8b694c5b15b56c39b4a862173d35
 I (..\APP\inc\datcalc_spl.h)(0x693799BC)
 I (..\APP\inc\Calc_Attf.h)(0x693799BC)
 I (..\APP\inc\rtc.h)(0x693799BC)
@@ -1098,7 +1234,11 @@ I (..\APP\inc\protect.h)(0x693799BC)
 I (..\APP\inc\Power_Modes.h)(0x693799BC)
 I (..\APP\inc\AdvancedChargeAlgorithm.h)(0x693799BC)
 I (..\APP\inc\soft_timer.h)(0x693799BC)
+<<<<<<< HEAD
 I (..\APP\inc\SBS_Commands.h)(0x69494C80)
+=======
+I (..\APP\inc\SBS_Commands.h)(0x6948FADA)
+>>>>>>> 4f574d1f727c8b694c5b15b56c39b4a862173d35
 I (..\APP\inc\mode.h)(0x6943A586)
 I (..\APP\inc\ram.h)(0x693799BC)
 I (..\APP\inc\hdp.h)(0x6948FA8E)
@@ -1112,7 +1252,11 @@ I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Dr
 I (..\APP\inc\lptm.h)(0x693799BC)
 I (..\APP\inc\tim.h)(0x693799BC)
 I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_tim.h)(0x66A7480A)
+<<<<<<< HEAD
 I (..\APP\inc\dataflash.h)(0x6949F15D)
+=======
+I (..\APP\inc\dataflash.h)(0x69436AE4)
+>>>>>>> 4f574d1f727c8b694c5b15b56c39b4a862173d35
 I (..\APP\inc\datcalc_spl.h)(0x693799BC)
 I (..\APP\inc\Calc_Attf.h)(0x693799BC)
 I (..\APP\inc\rtc.h)(0x693799BC)
@@ -1147,7 +1291,11 @@ I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Dr
 I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_fwdt.h)(0x66B0775A)
 I (..\APP\inc\cbm8580m_int.h)(0x693799BC)
 I (..\APP\inc\ra_value.h)(0x693799BC)
+<<<<<<< HEAD
 F (..\APP\src\Power_Modes.c)(0x69495C24)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -fropi -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../APP/inc-I./RTE/Device/CBM8580_v2-I./RTE/_Target_1-IC:/Users/12267/AppData/Local/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/Core/Include-IC:/Users/12267/AppData/Local/Arm/Packs/Chipsea/CBM858x_v2_DFP/1.0.3/Device/Driver/crypto/inc-IC:/Users/12267/AppData/Local/Arm/Packs/Chipsea/CBM858x_v2_DFP/1.0.3/Device/Driver/inc-D__UVISION_VERSION="533" -D_RTE_ -D_RTE_ -DRELEASE_MODE-o ./objects/power_modes.o -MD)
+=======
+F (..\APP\src\Power_Modes.c)(0x69436D0A)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -fropi -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../APP/inc-I./RTE/Device/CBM8580_v2-I./RTE/_Target_1-IC:/Users/12267/AppData/Local/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/Core/Include-IC:/Users/12267/AppData/Local/Arm/Packs/Chipsea/CBM858x_v2_DFP/1.0.3/Device/Driver/crypto/inc-IC:/Users/12267/AppData/Local/Arm/Packs/Chipsea/CBM858x_v2_DFP/1.0.3/Device/Driver/inc-D__UVISION_VERSION="533" -D_RTE_ -D_RTE_ -DRELEASE_MODE-o ./objects/power_modes.o -MD)
+>>>>>>> 4f574d1f727c8b694c5b15b56c39b4a862173d35
 I (..\APP\inc\Power_Modes.h)(0x693799BC)
 I (..\APP\inc\main.h)(0x693799BC)
 I (D:\keil5\ARM\ARMCLANG\include\stdio.h)(0x5F36D0B4)
@@ -1167,7 +1315,11 @@ I (..\APP\inc\data_flash_value.h)(0x69424FFC)
 I (..\APP\inc\protect.h)(0x693799BC)
 I (..\APP\inc\AdvancedChargeAlgorithm.h)(0x693799BC)
 I (..\APP\inc\soft_timer.h)(0x693799BC)
+<<<<<<< HEAD
 I (..\APP\inc\SBS_Commands.h)(0x69494C80)
+=======
+I (..\APP\inc\SBS_Commands.h)(0x6948FADA)
+>>>>>>> 4f574d1f727c8b694c5b15b56c39b4a862173d35
 I (..\APP\inc\mode.h)(0x6943A586)
 I (..\APP\inc\ram.h)(0x693799BC)
 I (..\APP\inc\hdp.h)(0x6948FA8E)
@@ -1181,7 +1333,11 @@ I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Dr
 I (..\APP\inc\lptm.h)(0x693799BC)
 I (..\APP\inc\tim.h)(0x693799BC)
 I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_tim.h)(0x66A7480A)
+<<<<<<< HEAD
 I (..\APP\inc\dataflash.h)(0x6949F15D)
+=======
+I (..\APP\inc\dataflash.h)(0x69436AE4)
+>>>>>>> 4f574d1f727c8b694c5b15b56c39b4a862173d35
 I (..\APP\inc\datcalc_spl.h)(0x693799BC)
 I (..\APP\inc\Calc_Attf.h)(0x693799BC)
 I (..\APP\inc\rtc.h)(0x693799BC)
@@ -1237,7 +1393,11 @@ I (..\APP\inc\data_flash_value.h)(0x69424FFC)
 I (..\APP\inc\Power_Modes.h)(0x693799BC)
 I (..\APP\inc\AdvancedChargeAlgorithm.h)(0x693799BC)
 I (..\APP\inc\soft_timer.h)(0x693799BC)
+<<<<<<< HEAD
 I (..\APP\inc\SBS_Commands.h)(0x69494C80)
+=======
+I (..\APP\inc\SBS_Commands.h)(0x6948FADA)
+>>>>>>> 4f574d1f727c8b694c5b15b56c39b4a862173d35
 I (..\APP\inc\mode.h)(0x6943A586)
 I (..\APP\inc\ram.h)(0x693799BC)
 I (..\APP\inc\hdp.h)(0x6948FA8E)
@@ -1251,7 +1411,11 @@ I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Dr
 I (..\APP\inc\lptm.h)(0x693799BC)
 I (..\APP\inc\tim.h)(0x693799BC)
 I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_tim.h)(0x66A7480A)
+<<<<<<< HEAD
 I (..\APP\inc\dataflash.h)(0x6949F15D)
+=======
+I (..\APP\inc\dataflash.h)(0x69436AE4)
+>>>>>>> 4f574d1f727c8b694c5b15b56c39b4a862173d35
 I (..\APP\inc\datcalc_spl.h)(0x693799BC)
 I (..\APP\inc\Calc_Attf.h)(0x693799BC)
 I (..\APP\inc\rtc.h)(0x693799BC)
@@ -1308,7 +1472,11 @@ I (..\APP\inc\protect.h)(0x693799BC)
 I (..\APP\inc\Power_Modes.h)(0x693799BC)
 I (..\APP\inc\AdvancedChargeAlgorithm.h)(0x693799BC)
 I (..\APP\inc\soft_timer.h)(0x693799BC)
+<<<<<<< HEAD
 I (..\APP\inc\SBS_Commands.h)(0x69494C80)
+=======
+I (..\APP\inc\SBS_Commands.h)(0x6948FADA)
+>>>>>>> 4f574d1f727c8b694c5b15b56c39b4a862173d35
 I (..\APP\inc\mode.h)(0x6943A586)
 I (..\APP\inc\ram.h)(0x693799BC)
 I (..\APP\inc\hdp.h)(0x6948FA8E)
@@ -1322,7 +1490,11 @@ I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Dr
 I (..\APP\inc\lptm.h)(0x693799BC)
 I (..\APP\inc\tim.h)(0x693799BC)
 I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_tim.h)(0x66A7480A)
+<<<<<<< HEAD
 I (..\APP\inc\dataflash.h)(0x6949F15D)
+=======
+I (..\APP\inc\dataflash.h)(0x69436AE4)
+>>>>>>> 4f574d1f727c8b694c5b15b56c39b4a862173d35
 I (..\APP\inc\datcalc_spl.h)(0x693799BC)
 I (..\APP\inc\Calc_Attf.h)(0x693799BC)
 I (..\APP\inc\rtc.h)(0x693799BC)
@@ -1378,7 +1550,11 @@ I (..\APP\inc\protect.h)(0x693799BC)
 I (..\APP\inc\Power_Modes.h)(0x693799BC)
 I (..\APP\inc\AdvancedChargeAlgorithm.h)(0x693799BC)
 I (..\APP\inc\soft_timer.h)(0x693799BC)
+<<<<<<< HEAD
 I (..\APP\inc\SBS_Commands.h)(0x69494C80)
+=======
+I (..\APP\inc\SBS_Commands.h)(0x6948FADA)
+>>>>>>> 4f574d1f727c8b694c5b15b56c39b4a862173d35
 I (..\APP\inc\mode.h)(0x6943A586)
 I (..\APP\inc\hdp.h)(0x6948FA8E)
 I (..\APP\inc\afe_cvt.h)(0x693799BC)
@@ -1391,7 +1567,11 @@ I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Dr
 I (..\APP\inc\lptm.h)(0x693799BC)
 I (..\APP\inc\tim.h)(0x693799BC)
 I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_tim.h)(0x66A7480A)
+<<<<<<< HEAD
 I (..\APP\inc\dataflash.h)(0x6949F15D)
+=======
+I (..\APP\inc\dataflash.h)(0x69436AE4)
+>>>>>>> 4f574d1f727c8b694c5b15b56c39b4a862173d35
 I (..\APP\inc\datcalc_spl.h)(0x693799BC)
 I (..\APP\inc\Calc_Attf.h)(0x693799BC)
 I (..\APP\inc\rtc.h)(0x693799BC)
@@ -1448,7 +1628,11 @@ I (..\APP\inc\protect.h)(0x693799BC)
 I (..\APP\inc\Power_Modes.h)(0x693799BC)
 I (..\APP\inc\AdvancedChargeAlgorithm.h)(0x693799BC)
 I (..\APP\inc\soft_timer.h)(0x693799BC)
+<<<<<<< HEAD
 I (..\APP\inc\SBS_Commands.h)(0x69494C80)
+=======
+I (..\APP\inc\SBS_Commands.h)(0x6948FADA)
+>>>>>>> 4f574d1f727c8b694c5b15b56c39b4a862173d35
 I (..\APP\inc\mode.h)(0x6943A586)
 I (..\APP\inc\ram.h)(0x693799BC)
 I (..\APP\inc\hdp.h)(0x6948FA8E)
@@ -1462,7 +1646,11 @@ I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Dr
 I (..\APP\inc\lptm.h)(0x693799BC)
 I (..\APP\inc\tim.h)(0x693799BC)
 I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_tim.h)(0x66A7480A)
+<<<<<<< HEAD
 I (..\APP\inc\dataflash.h)(0x6949F15D)
+=======
+I (..\APP\inc\dataflash.h)(0x69436AE4)
+>>>>>>> 4f574d1f727c8b694c5b15b56c39b4a862173d35
 I (..\APP\inc\datcalc_spl.h)(0x693799BC)
 I (..\APP\inc\Calc_Attf.h)(0x693799BC)
 I (..\APP\inc\oscm.h)(0x693799BC)
@@ -1498,7 +1686,11 @@ I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Dr
 I (..\APP\inc\cbm8580m_int.h)(0x693799BC)
 I (..\APP\inc\ra_value.h)(0x693799BC)
 F (..\APP\src\SBS_Commands.c)(0x693799BC)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -fropi -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../APP/inc-I./RTE/Device/CBM8580_v2-I./RTE/_Target_1-IC:/Users/12267/AppData/Local/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/Core/Include-IC:/Users/12267/AppData/Local/Arm/Packs/Chipsea/CBM858x_v2_DFP/1.0.3/Device/Driver/crypto/inc-IC:/Users/12267/AppData/Local/Arm/Packs/Chipsea/CBM858x_v2_DFP/1.0.3/Device/Driver/inc-D__UVISION_VERSION="533" -D_RTE_ -D_RTE_ -DRELEASE_MODE-o ./objects/sbs_commands.o -MD)
+<<<<<<< HEAD
 I (..\APP\inc\SBS_Commands.h)(0x69494C80)
+=======
+I (..\APP\inc\SBS_Commands.h)(0x6948FADA)
+>>>>>>> 4f574d1f727c8b694c5b15b56c39b4a862173d35
 I (..\APP\inc\main.h)(0x693799BC)
 I (D:\keil5\ARM\ARMCLANG\include\stdio.h)(0x5F36D0B4)
 I (D:\keil5\ARM\ARMCLANG\include\string.h)(0x5F36D0A4)
@@ -1531,7 +1723,11 @@ I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Dr
 I (..\APP\inc\lptm.h)(0x693799BC)
 I (..\APP\inc\tim.h)(0x693799BC)
 I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_tim.h)(0x66A7480A)
+<<<<<<< HEAD
 I (..\APP\inc\dataflash.h)(0x6949F15D)
+=======
+I (..\APP\inc\dataflash.h)(0x69436AE4)
+>>>>>>> 4f574d1f727c8b694c5b15b56c39b4a862173d35
 I (..\APP\inc\datcalc_spl.h)(0x693799BC)
 I (..\APP\inc\Calc_Attf.h)(0x693799BC)
 I (..\APP\inc\rtc.h)(0x693799BC)
@@ -1588,7 +1784,11 @@ I (..\APP\inc\protect.h)(0x693799BC)
 I (..\APP\inc\Power_Modes.h)(0x693799BC)
 I (..\APP\inc\AdvancedChargeAlgorithm.h)(0x693799BC)
 I (..\APP\inc\soft_timer.h)(0x693799BC)
+<<<<<<< HEAD
 I (..\APP\inc\SBS_Commands.h)(0x69494C80)
+=======
+I (..\APP\inc\SBS_Commands.h)(0x6948FADA)
+>>>>>>> 4f574d1f727c8b694c5b15b56c39b4a862173d35
 I (..\APP\inc\mode.h)(0x6943A586)
 I (..\APP\inc\ram.h)(0x693799BC)
 I (..\APP\inc\hdp.h)(0x6948FA8E)
@@ -1601,7 +1801,11 @@ I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Dr
 I (..\APP\inc\lptm.h)(0x693799BC)
 I (..\APP\inc\tim.h)(0x693799BC)
 I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_tim.h)(0x66A7480A)
+<<<<<<< HEAD
 I (..\APP\inc\dataflash.h)(0x6949F15D)
+=======
+I (..\APP\inc\dataflash.h)(0x69436AE4)
+>>>>>>> 4f574d1f727c8b694c5b15b56c39b4a862173d35
 I (..\APP\inc\datcalc_spl.h)(0x693799BC)
 I (..\APP\inc\Calc_Attf.h)(0x693799BC)
 I (..\APP\inc\rtc.h)(0x693799BC)
@@ -1661,7 +1865,11 @@ I (..\APP\inc\data_flash_value.h)(0x69424FFC)
 I (..\APP\inc\protect.h)(0x693799BC)
 I (..\APP\inc\Power_Modes.h)(0x693799BC)
 I (..\APP\inc\AdvancedChargeAlgorithm.h)(0x693799BC)
+<<<<<<< HEAD
 I (..\APP\inc\SBS_Commands.h)(0x69494C80)
+=======
+I (..\APP\inc\SBS_Commands.h)(0x6948FADA)
+>>>>>>> 4f574d1f727c8b694c5b15b56c39b4a862173d35
 I (..\APP\inc\mode.h)(0x6943A586)
 I (..\APP\inc\ram.h)(0x693799BC)
 I (..\APP\inc\hdp.h)(0x6948FA8E)
@@ -1675,7 +1883,11 @@ I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Dr
 I (..\APP\inc\lptm.h)(0x693799BC)
 I (..\APP\inc\tim.h)(0x693799BC)
 I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_tim.h)(0x66A7480A)
+<<<<<<< HEAD
 I (..\APP\inc\dataflash.h)(0x6949F15D)
+=======
+I (..\APP\inc\dataflash.h)(0x69436AE4)
+>>>>>>> 4f574d1f727c8b694c5b15b56c39b4a862173d35
 I (..\APP\inc\datcalc_spl.h)(0x693799BC)
 I (..\APP\inc\Calc_Attf.h)(0x693799BC)
 I (..\APP\inc\rtc.h)(0x693799BC)
@@ -1732,7 +1944,11 @@ I (..\APP\inc\protect.h)(0x693799BC)
 I (..\APP\inc\Power_Modes.h)(0x693799BC)
 I (..\APP\inc\AdvancedChargeAlgorithm.h)(0x693799BC)
 I (..\APP\inc\soft_timer.h)(0x693799BC)
+<<<<<<< HEAD
 I (..\APP\inc\SBS_Commands.h)(0x69494C80)
+=======
+I (..\APP\inc\SBS_Commands.h)(0x6948FADA)
+>>>>>>> 4f574d1f727c8b694c5b15b56c39b4a862173d35
 I (..\APP\inc\mode.h)(0x6943A586)
 I (..\APP\inc\ram.h)(0x693799BC)
 I (..\APP\inc\hdp.h)(0x6948FA8E)
@@ -1744,7 +1960,11 @@ I (..\APP\inc\smbus_protocol.h)(0x6943A7EA)
 I (..\APP\inc\afetimer.h)(0x6948F98E)
 I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_flash.h)(0x680F1EF0)
 I (..\APP\inc\lptm.h)(0x693799BC)
+<<<<<<< HEAD
 I (..\APP\inc\dataflash.h)(0x6949F15D)
+=======
+I (..\APP\inc\dataflash.h)(0x69436AE4)
+>>>>>>> 4f574d1f727c8b694c5b15b56c39b4a862173d35
 I (..\APP\inc\datcalc_spl.h)(0x693799BC)
 I (..\APP\inc\Calc_Attf.h)(0x693799BC)
 I (..\APP\inc\rtc.h)(0x693799BC)
@@ -1801,7 +2021,11 @@ I (..\APP\inc\protect.h)(0x693799BC)
 I (..\APP\inc\Power_Modes.h)(0x693799BC)
 I (..\APP\inc\AdvancedChargeAlgorithm.h)(0x693799BC)
 I (..\APP\inc\soft_timer.h)(0x693799BC)
+<<<<<<< HEAD
 I (..\APP\inc\SBS_Commands.h)(0x69494C80)
+=======
+I (..\APP\inc\SBS_Commands.h)(0x6948FADA)
+>>>>>>> 4f574d1f727c8b694c5b15b56c39b4a862173d35
 I (..\APP\inc\mode.h)(0x6943A586)
 I (..\APP\inc\ram.h)(0x693799BC)
 I (..\APP\inc\hdp.h)(0x6948FA8E)
@@ -1815,7 +2039,11 @@ I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Dr
 I (..\APP\inc\lptm.h)(0x693799BC)
 I (..\APP\inc\tim.h)(0x693799BC)
 I (C:\Users\12267\AppData\Local\Arm\Packs\Chipsea\CBM858x_v2_DFP\1.0.3\Device\Driver\inc\cbm858xm_tim.h)(0x66A7480A)
+<<<<<<< HEAD
 I (..\APP\inc\dataflash.h)(0x6949F15D)
+=======
+I (..\APP\inc\dataflash.h)(0x69436AE4)
+>>>>>>> 4f574d1f727c8b694c5b15b56c39b4a862173d35
 I (..\APP\inc\datcalc_spl.h)(0x693799BC)
 I (..\APP\inc\Calc_Attf.h)(0x693799BC)
 I (..\APP\inc\rtc.h)(0x693799BC)

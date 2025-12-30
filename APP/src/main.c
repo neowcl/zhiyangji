@@ -69,17 +69,6 @@ int main(void)
 			CellBalance_Chk();
 			plugged_IN();
 			led_control();
-			// if(ff)
-			// {
-			// 	afe_gpio_output_data_bit_set(GPIO_PB0_PIN);
-			// 	ff=0;
-			// }
-			// else
-			// {
-			// 	afe_gpio_output_data_bit_reset(GPIO_PB0_PIN);
-			// 	ff=1;
-			// }
-			
 		}
 		
 		SmbusTimeout_Chk(); // Check IIC communication Timeout
