@@ -11,9 +11,9 @@
 #define BIT(reg, bit) (reg.bits.bit)
 #define REG(reg) (reg.value)
 
-#define OCV_SOC     Ptr16u(flashdata.b_OCV_SOC_table.s_OCV_table)
-#define SOC_R1     Ptr16u(flashdata.b_OCV_SOC_table.s_SOC_R1_table)
-#define SOC_R2     Ptr16u(flashdata.b_OCV_SOC_table.s_SOC_R2_table)
+#define OCV_SOC     Ptr16u(flashdata.t_OCV_SOC_table.t_OCV_table)
+#define SOC_R1     Ptr16u(flashdata.t_SOC_RA.t_RA1)
+#define SOC_R2     Ptr16u(flashdata.t_SOC_RA.t_RA2)
 #define INREG_CYCLE Ptr16u(D_CEDV_Internal_impedance_cycle1)
 #define INREG_TBL   Ptr8u(D_CEDV_Internal_impedance_table1)
 #define D_CRATE_TBL Ptr8u(D_CP_table_C_rate_1)

@@ -18,7 +18,7 @@ void Protect_CUV()
     {
         if (D_Protection_Configuration_CUV_RECOV_CHG)
         {
-            if (PackVoltage() > D_CUV_Charge_Presen_Threshol)
+            if (PackVoltage() > D_CUV_Charger_Present_Threshold)
             {
                 if (V_min > D_CUV_Recovery)
                 {
@@ -67,7 +67,7 @@ void Protect_CUVC()
     {
         if (D_Protection_Configuration_CUV_RECOV_CHG)
         {
-            if (PackVoltage() > D_CUVC_CUV_Charge_Presen_Threshol) // charge status
+            if (PackVoltage() > D_CUVC_Charger_Present_Threshold) // charge status
             {
                 if ((V_min - I_abs * D_CUVC_CellResistance / 1000) > D_CUVC_Recovery)
                 {
@@ -298,7 +298,7 @@ void Protect_COV()
             if (covl_counter > 0)
             {
                 dec_delay += Periodtime;
-                if (dec_delay / 1000 >= D_COV_Cel_Overvolt_Coun_Decrem_Del) // 电压计数器减量延迟
+                if (dec_delay / 1000 >= D_COV_Cell_Overvoltage_Counter_Decrement_Delay) // 电压计数器减量延迟
                 {
                     dec_delay = 0;
                     covl_counter--;
@@ -2166,7 +2166,7 @@ void PF_TCO()
     {
         if(!f_pf_tco_p)
         {
-            if ((V_max - V_min) >= D_TCO_Change_Voltage && V_min > D_TCO_Min_Voltage  && Ts_max >=D_TCO_Max_Temperature)
+            if ((V_max - V_min) >= D_TCO_Change_Voltage && V_min > D_TCO_Min_Voltage  && Ts_max >=D_TCO_Max_Temp)
             {
                 f_pf_tco_a = ON;
                 delay += Periodtime;
@@ -2266,12 +2266,12 @@ void Judgment_Temp_Change()
         }
         if ((CellTemp >= 5) && (CellTemp < 10))
         {
-           Temp_Change= D_5_10_LIMIT; // D_0PVOLT5_Tempera_10   多串还是单串  ？   电压
+           Temp_Change= D_Voltage_5_10CLimit; // D_0PVOLT5_Tempera_10   多串还是单串  ？   电压
         }
         else if (CellTemp < 5)
         {
             // D_0PVOLT= D_0PVOLT_Tempera_less_than_5 ;
-            Temp_Change=D_5_LIMIT;
+            Temp_Change=D_Voltage_5CLimt;
         }
     }
     else
@@ -2354,7 +2354,7 @@ void DBPT_test(void)
             I_sim = 0.2*_DesignCapacity;
         }
         
-        if(Ts_max >=D_DBPT_DBPT_min_temp && Ts_max<=D_DBPT_DBPT_max_temp)
+        if(Ts_max >=D_DBPT_min_temp && Ts_max<=D_DBPT_max_temp)
         {
             uint16_t soc_ocv=Soc_OCV_Calibration(t_com0d,OCV_SOC);
             uint16_t soc_r1=Soc_OCV_Calibration(t_com0d,SOC_R1);
@@ -2447,12 +2447,12 @@ void plugged_IN(void)
                pi_test = 1;
            }
             
-           if (PackVoltage() > D_Shutdown_Charger_Present_Threshold && t_com0d > D_PI_MODE_PI_RSOC_Threshold)
+           if (PackVoltage() > D_Shutdown_Charger_Present_Threshold && t_com0d > D_PI_RSOC_Threshold)
            {
                socdelay +=(pi_test * Periodtime);
                
              
-               if ((_DAStatus2.CellTemperature-2731)/10 > D_PI_MODE_PI_HI_Temp_Threshold)
+               if ((_DAStatus2.CellTemperature-2731)/10 > D_PI_HI_Temp_Threshold)
                {
                    daydelay +=(pi_test * Periodtime);
                   
@@ -2466,9 +2466,9 @@ void plugged_IN(void)
                    one_day = 0;
                }
 
-               if ((socdelay /TIME_TO_HOUR >= D_PI_MODE_PI_HT_Temp_Time) && ((socdelay/TIME_TO_HOUR) % 24 == 0 ))
+               if ((socdelay /TIME_TO_HOUR >= D_PI_HT_Temp_Time) && ((socdelay/TIME_TO_HOUR) % 24 == 0 ))
                {
-                   if (daydelay/TIME_TO_HOUR  >= D_PI_MODE_PI_HT_Temp_Threshold )
+                   if (daydelay/TIME_TO_HOUR  >= D_PI_HT_Temp_Threshold )
                    {
                        
                        f_pi_mode = 1;
@@ -2478,7 +2478,7 @@ void plugged_IN(void)
                        daydelay -= data_tt[sevendex++];
                    }
                }
-               if (socdelay /TIME_TO_HOUR >= D_PI_MODE_PI_Time_Window)
+               if (socdelay /TIME_TO_HOUR >= D_PI_Time_Window)
                {
                    f_pi_mode = 1;
                }
@@ -2493,7 +2493,7 @@ void plugged_IN(void)
        }
        else
        {
-           if (V_max < D_PI_MODE_Dsg_to_Voltage)
+           if (V_max < D_PI_Dsg_to_Voltage)
            {
                pi_blance_disable();
                f_pi_mode = 0;
@@ -2501,9 +2501,9 @@ void plugged_IN(void)
            else
            {
                pi_blance_enable();
-               if (_ChargingVoltage >= D_PI_MODE_PI_Delte_Voltage)
+               if (_ChargingVoltage >= D_PI_Delte_Voltage)
                {
-                   _ChargingVoltage -= D_PI_MODE_PI_Delte_Voltage;
+                   _ChargingVoltage -= D_PI_Delte_Voltage;
                }
                else
                {

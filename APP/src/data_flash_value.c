@@ -1,7 +1,7 @@
 #include "data_flash_value.h"
 
 volatile Record t_record = { 0 };
-volatile LifeTimes l_lifetimes = { 0 };
+volatile LifeTimes t_lifetimes = { 0 };
 const volatile FlashData flashdata __attribute__((used)) __attribute__((section(".ARM.__at_0x08032000"))) =
 	{
 		16384,																							/*d_Cell1 vol  Gain    */
@@ -621,7 +621,7 @@ const volatile FlashData flashdata __attribute__((used)) __attribute__((section(
 		0,																								/* VSF Med                            	*                                  	*                                  	*/
 		0,																								/* VSF Low                            	*                                  	*                                  	*/
 		0x00,																							/* VSF Default                        	*                                  	*                                  	*/
-		.b_System_Data.s_Manufacturer_Data.m_ManufacturerInfo = {7, 'S', 'U', 'N', 'W', 'O', 'D', 'A'}, /* ManufacturerInfo                   	Manufacturer Data                  	System Data               	*/
+		.t_System_Data.t_Manufacturer_Data.m_ManufacturerInfo = {7, 'S', 'U', 'N', 'W', 'O', 'D', 'A'}, /* ManufacturerInfo                   	Manufacturer Data                  	System Data               	*/
 		34,																								/*d_Manufacturer Info B Length    */
 		0x42,																							/*d_Manufacturer Info B01    */
 		0x4c,																							/*d_Manufacturer Info B02    */
@@ -713,7 +713,12 @@ const volatile FlashData flashdata __attribute__((used)) __attribute__((section(
 		2600,																							/*d_Chg_current_high    */
 		780,																								/*d_Chg_current_time    */
 		400,																								/*d_Chg_current_range    */
-		1300,																							/*d_Chg_smooth_cap    */
+		10,																							/*d_Chg_smooth_cap    */
+		308,
+		980,
+		40,
+		3,
+		29,
 		0,																								/*d_Dsg_smooth_mul    */
 		0,																								/*d_Dsg_smooth_div    */
 		10,																								/*d_K_UPDATE_FAC     */

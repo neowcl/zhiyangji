@@ -722,7 +722,7 @@ void LifeTimeData_ReadDF(void)
 	LTR_Index();
 	if ((G_pFlashAddr != NULL) && (*G_pFlashAddr != 0xFF))
 	{
-		memcpy(&l_lifetimes,G_pFlashAddr,sizeof(LifeTimes));
+		memcpy(&t_lifetimes,G_pFlashAddr,sizeof(LifeTimes));
 	}
 	else
 	{ // DataFlash is empty
@@ -764,7 +764,7 @@ uint8_t LifeTimeData_WriteDF(void)
 	flash_unlock();
 	for (al1 = 0; al1 < sizeof(LifeTimes); al1 += 4)
 	{
-		memcpy(&data,(uint8_t*)(&l_lifetimes) + al1,4);
+		memcpy(&data,(uint8_t*)(&t_lifetimes) + al1,4);
 		aret = flash_word_program((uint32_t)(apwork2 + al1), data);
 		if (aret != FLASH_STATUS_COMPLETE)
 		{
@@ -826,7 +826,7 @@ void DF_Erase_Record(void)
 
 void lifetime_init(void)
 {
-	memset(&l_lifetimes,0,sizeof(LifeTimes));
+	memset(&t_lifetimes,0,sizeof(LifeTimes));
 		LifeTimes_Cell_1_Min_Voltage = 0xFFFF;
 		LifeTimes_Cell_2_Min_Voltage = 0xFFFF;
 		LifeTimes_Cell_3_Min_Voltage = 0xFFFF;

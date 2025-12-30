@@ -257,6 +257,13 @@ void EXTI4_15_IRQHandler(void)
 
   }
 
+    if (__EXTI_FLAG_STATUS_GET(EXTI_LINE_9) != RESET)
+  {
+    __EXTI_FLAG_CLEAR(EXTI_LINE_9);
+    f_key_down = 1;
+    f_no_smbus = OFF;
+  }
+
 
   if ((__EXTI_FLAG_STATUS_GET(EXTI_LINE_11) != RESET))
   {
@@ -264,8 +271,8 @@ void EXTI4_15_IRQHandler(void)
     __EXTI_FLAG_CLEAR(EXTI_LINE_11);
     NVIC->ICER[0] = 0x800;
     __EXTI_INTR_DISABLE(EXTI_LINE_11);
-    __GPIO_PIN_SET(GPIOA, GPIO_PIN_8);
-    __GPIO_PIN_RESET(GPIOA, GPIO_PIN_8);
+    // __GPIO_PIN_SET(GPIOA, GPIO_PIN_8);
+    // __GPIO_PIN_RESET(GPIOA, GPIO_PIN_8);
     // NVIC->ICER[0] =0x800;
     // NVIC->ICPR[0] =0x800;
   }

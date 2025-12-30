@@ -13,7 +13,8 @@ void AlarmWarning_Check(void);
 void QMax_Calc(void);
 void QMax_Calc_CEDV(void);
 void Calc_FCC_CEDV(void);
-void Chg_Pinghua_CEDV(void);
+void Chg_Pinghua_COV_CEDV(void);
+void chg_pinghua_VCT_CEDV(void);
 void Calc_k_CEDV(void);
 void FUSE_Contrl(void);
 void FET_Contrl(void);
@@ -55,7 +56,8 @@ extern uint16_t calc_k_res_jisuan;
 
 extern uint8_t bit_chg_smooth_CE;
 #define f_pinghua_conditon_CE     	DEF_BIT0(&bit_chg_smooth_CE)
-#define f_pinghua_work_CE   		 DEF_BIT1(&bit_chg_smooth_CE)
+#define f_pinghua_COV_CE   		 DEF_BIT1(&bit_chg_smooth_CE)
+#define f_pinghua_VCT_CE  	 DEF_BIT2(&bit_chg_smooth_CE)
 
 #define f_Qmax_start   DEF_BIT0(&QmaxControl) // Qmax start SOC
 #define f_Qmax_end     DEF_BIT1(&QmaxControl) // Qmax end SOC

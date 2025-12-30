@@ -39,6 +39,9 @@ extern uint16_t amodeflag;
 #define f_sdvDFET   DEF_BIT14(&amodeflag)			//  Turn DSG FET off(shutdown)
 #define f_sdmCFET   DEF_BIT15(&amodeflag)			//  Turn DSG FET off(shutdown)
 
+extern uint16_t key_led;
+#define f_key_down   DEF_BIT0(&key_led)      //key short press
+
 extern volatile uint32_t prehiegdelay;
 extern volatile uint32_t prelowdelay;
 
@@ -62,6 +65,5 @@ void PresToggle(void);
 
 
 uint8_t sha256_hmac_calc(uint8_t* message, uint16_t msglen, uint8_t* key, uint16_t key_len, uint8_t* mac);
+void led_control(void);
 #endif
-
-

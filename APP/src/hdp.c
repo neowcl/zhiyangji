@@ -4,6 +4,7 @@
 uint16_t amodeflag;
 volatile uint32_t prehiegdelay = 0;
 volatile uint32_t prelowdelay = 0;
+uint16_t key_led;
 
 volatile AFE_HDP_SETTING afe_hdp_setting = {.enable_flag = 0x3C};
 
@@ -742,4 +743,111 @@ uint8_t sha256_hmac_calc(uint8_t* message, uint16_t msglen, uint8_t* key, uint16
     __RCU_AHB_CLK_DISABLE(RCU_AHB_PERI_HASH);
     
     return ret;
+}
+
+
+
+void led_control(void)
+{
+    static uint32_t led_delay = 0;
+    static uint32_t led_delay_2 = 0;
+    static uint8_t led_status = 0;
+    uint8_t led = 0;
+    if (f_key_down)
+    {
+        if (!f_charge)
+        {
+            led_delay += Periodtime;
+            if (led_delay >= 5000)
+            {
+                f_key_down = 0;
+                led_delay = 0;
+                LED_1_Control(0);
+                LED_2_Control(0);
+                LED_3_Control(0);
+                LED_4_Control(0);
+            }
+
+            if (t_com0d >= 0 && t_com0d <= 25)
+            {
+                LED_1_Control(1);
+            }
+            else if (t_com0d > 25 && t_com0d <= 50)
+            {
+                LED_1_Control(1);
+                LED_2_Control(1);
+            }
+            else if (t_com0d > 50 && t_com0d <= 75)
+            {
+                LED_1_Control(1);
+                LED_2_Control(1);
+                LED_3_Control(1);
+            }
+            else if (t_com0d > 75 && t_com0d <= 100)
+            {
+                LED_1_Control(1);
+                LED_2_Control(1);
+                LED_3_Control(1);
+                LED_4_Control(1);
+            }
+        }
+    }
+    else
+    {
+        if (!f_charge)
+        {
+        LED_1_Control(0);
+        LED_2_Control(0);
+        LED_3_Control(0);
+        LED_4_Control(0);   
+        }
+    }
+    if (f_charge)
+    {
+        f_key_down = 0;
+        led_delay = 0;
+        led_delay_2 += Periodtime;
+        if (led_delay_2 >= 1000)
+        {
+            led_status = !led_status;
+            led_delay_2 = 0;
+        }
+        if (led_status)
+        {
+            led = 1;
+        }
+        else
+        {
+            led = 0;
+        }
+        if (t_com0d >= 0 && t_com0d <= 25)
+        {
+            LED_1_Control(led);
+        }
+        else if (t_com0d > 25 && t_com0d <= 50)
+        {
+            LED_1_Control(1);
+            LED_2_Control(led);
+        }
+        else if (t_com0d > 50 && t_com0d <= 75)
+        {
+            LED_1_Control(1);
+            LED_2_Control(1);
+            LED_3_Control(led);
+        }
+        else if (t_com0d > 75 && t_com0d < 100)
+        {
+            LED_1_Control(1);
+            LED_2_Control(1);
+            LED_3_Control(1);
+            LED_4_Control(led);
+        }
+        else
+        {
+            LED_1_Control(1);
+            LED_2_Control(1);
+            LED_3_Control(1);
+            LED_4_Control(1);
+        }
+    }
 }
