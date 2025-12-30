@@ -62,12 +62,13 @@ int main(void)
 			AlarmWarning_Check();
 			FullCharge_Chk_CEDV() ;
 			LifeTime();
-			if (!(D_Manufacturing_Status_Init_LDO_EN && D_DA_Configuration_NR))
-			{
-				PresToggle();
-			}
+			// if (!(D_Manufacturing_Status_Init_LDO_EN && D_DA_Configuration_NR))
+			// {
+			// 	PresToggle();
+			// }
 			CellBalance_Chk();
 			plugged_IN();
+			led_control();
 		}
 		
 		SmbusTimeout_Chk(); // Check IIC communication Timeout

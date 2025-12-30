@@ -1,5 +1,6 @@
 
 #include "main.h"
+#include "afetimer.h"
 
 uint8_t  Ex_Flag;
  
@@ -50,6 +51,27 @@ void delay_us(uint32_t us)
             }
         }
     }
+}
+
+void exti4_15_PA9_config(void)
+{
+    nvic_config_t nvic_config_struct;
+
+    __RCU_AHB_CLK_ENABLE(RCU_AHB_PERI_GPIOA);
+    __RCU_APB2_CLK_ENABLE(RCU_APB2_PERI_SYSCFG);
+    gpio_pa8_pa9_pulldown_ctrl(DISABLE);
+    gpio_mode_set(GPIOA, GPIO_PIN_9, GPIO_MODE_IN_PU);
+    /* Connect EXTI9 Line to PA9 pin. */
+    syscfg_exti_line_config(SYSCFG_EXTI_PORT_PA, SYSCFG_EXTI_PIN_9); 
+
+    __EXTI_INTR_ENABLE(EXTI_LINE_9);
+    __EXTI_EDGE_ENABLE(EXTI_EDGE_FALLING, EXTI_LINE_9);
+
+    /* Enable and set EXTI4_15 interrupt. */
+    nvic_config_struct.IRQn = IRQn_EXTI4_15;
+    nvic_config_struct.priority = 0x01;
+    nvic_config_struct.enable_flag = ENABLE;
+    nvic_init(&nvic_config_struct);
 }
 
 

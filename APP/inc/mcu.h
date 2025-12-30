@@ -21,4 +21,12 @@ void FlashDataHandle(void);
 
 void DFDataSave(void);
 
+void LED_1_Control(uint8_t led);
+
+void LED_2_Control(uint8_t led);
+
+void LED_3_Control(uint8_t led);
+
+void LED_4_Control(uint8_t led);
+
 #endif

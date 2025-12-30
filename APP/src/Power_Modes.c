@@ -13,9 +13,8 @@ void Power_Modes_Fun()
     ship_mode();       // ship mode
     ShutdownMode();
 	SmbusTimeout_Chk(); 
-	#ifndef DEBUG_MODE
 	DeepSleep_Enter();
-	#endif
+	
 	
 }
 void DeepSleep_Enter(void)
@@ -206,10 +205,10 @@ void SleepMode_Check(void)
 	if (f_curr_en)
 	{
 		f_curr_en = OFF;
-		if (!(D_Manufacturing_Status_Init_LDO_EN && D_DA_Configuration_NR))
-		{
-			PresInit();
-		}
+		// if (!(D_Manufacturing_Status_Init_LDO_EN && D_DA_Configuration_NR))
+		// {
+		// 	PresInit();
+		// }
 		Enable_CVT();
 		if(f_sleep)
 		{
