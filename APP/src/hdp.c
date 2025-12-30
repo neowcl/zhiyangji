@@ -768,22 +768,52 @@ void led_control(void)
                 LED_4_Control(0);
             }
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> bff363fb8fc99b4a686864b311eee1856fd5ed4f
             if (t_com0d >= 0 && t_com0d <= 25)
             {
                 LED_1_Control(1);
             }
             else if (t_com0d > 25 && t_com0d <= 50)
+<<<<<<< HEAD
+=======
+=======
+            if (t_com0d >= 0 && t_com0d < 25)
+            {
+                LED_1_Control(1);
+            }
+            else if (t_com0d >= 25 && t_com0d < 50)
+>>>>>>> 3f73b3946b24144fe505e47bf4af74ee319ad222
+>>>>>>> bff363fb8fc99b4a686864b311eee1856fd5ed4f
             {
                 LED_1_Control(1);
                 LED_2_Control(1);
             }
+<<<<<<< HEAD
             else if (t_com0d > 50 && t_com0d <= 75)
+=======
+<<<<<<< HEAD
+            else if (t_com0d > 50 && t_com0d <= 75)
+=======
+            else if (t_com0d >= 50 && t_com0d < 75)
+>>>>>>> 3f73b3946b24144fe505e47bf4af74ee319ad222
+>>>>>>> bff363fb8fc99b4a686864b311eee1856fd5ed4f
             {
                 LED_1_Control(1);
                 LED_2_Control(1);
                 LED_3_Control(1);
             }
+<<<<<<< HEAD
             else if (t_com0d > 75 && t_com0d <= 100)
+=======
+<<<<<<< HEAD
+            else if (t_com0d > 75 && t_com0d <= 100)
+=======
+            else if (t_com0d >= 75 && t_com0d < 100)
+>>>>>>> 3f73b3946b24144fe505e47bf4af74ee319ad222
+>>>>>>> bff363fb8fc99b4a686864b311eee1856fd5ed4f
             {
                 LED_1_Control(1);
                 LED_2_Control(1);
@@ -820,22 +850,52 @@ void led_control(void)
         {
             led = 0;
         }
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> bff363fb8fc99b4a686864b311eee1856fd5ed4f
         if (t_com0d >= 0 && t_com0d <= 25)
         {
             LED_1_Control(led);
         }
         else if (t_com0d > 25 && t_com0d <= 50)
+<<<<<<< HEAD
+=======
+=======
+        if (t_com0d >= 0 && t_com0d < 25)
+        {
+            LED_1_Control(led);
+        }
+        else if (t_com0d >= 25 && t_com0d < 50)
+>>>>>>> 3f73b3946b24144fe505e47bf4af74ee319ad222
+>>>>>>> bff363fb8fc99b4a686864b311eee1856fd5ed4f
         {
             LED_1_Control(1);
             LED_2_Control(led);
         }
+<<<<<<< HEAD
         else if (t_com0d > 50 && t_com0d <= 75)
+=======
+<<<<<<< HEAD
+        else if (t_com0d > 50 && t_com0d <= 75)
+=======
+        else if (t_com0d >= 50 && t_com0d < 75)
+>>>>>>> 3f73b3946b24144fe505e47bf4af74ee319ad222
+>>>>>>> bff363fb8fc99b4a686864b311eee1856fd5ed4f
         {
             LED_1_Control(1);
             LED_2_Control(1);
             LED_3_Control(led);
         }
+<<<<<<< HEAD
         else if (t_com0d > 75 && t_com0d < 100)
+=======
+<<<<<<< HEAD
+        else if (t_com0d > 75 && t_com0d < 100)
+=======
+        else if (t_com0d >= 75 && t_com0d < 100)
+>>>>>>> 3f73b3946b24144fe505e47bf4af74ee319ad222
+>>>>>>> bff363fb8fc99b4a686864b311eee1856fd5ed4f
         {
             LED_1_Control(1);
             LED_2_Control(1);

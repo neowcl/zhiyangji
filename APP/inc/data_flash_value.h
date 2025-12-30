@@ -42,8 +42,12 @@ uint16_t RTORFCC               :1;
 uint16_t TAPER_VOLT               :1;
 uint16_t HIBAT_CHG               :1;
 uint16_t HT_INIHIB_DIS               :1;
+<<<<<<< HEAD
 uint16_t COV_FULL               :1;
 uint16_t                 :2;
+=======
+uint16_t                 :3;
+>>>>>>> bff363fb8fc99b4a686864b311eee1856fd5ed4f
 }bits;
 }U_Charging_Config;
 
@@ -60,7 +64,10 @@ uint16_t                 :2;
 #define D_Charging_Config_TAPER_VOLT               flashdata.t_Setting.t_Configuration.u_Charging_Config.bits.TAPER_VOLT
 #define D_Charging_Config_HIBAT_CHG               flashdata.t_Setting.t_Configuration.u_Charging_Config.bits.HIBAT_CHG
 #define D_Charging_Config_HT_INIHIB_DIS               flashdata.t_Setting.t_Configuration.u_Charging_Config.bits.HT_INIHIB_DIS
+<<<<<<< HEAD
 #define D_Charging_Config_COV_FULL               flashdata.t_Setting.t_Configuration.u_Charging_Config.bits.COV_FULL
+=======
+>>>>>>> bff363fb8fc99b4a686864b311eee1856fd5ed4f
 #define D_Charging_Config               flashdata.t_Setting.t_Configuration.u_Charging_Config.value
 
 typedef union{
@@ -3052,10 +3059,17 @@ uint16_t               m_Dsg_smooth_div;
 #define D_Dsg_smooth_div               flashdata.t_SMOOTH.t_Dsg_Smooth.m_Dsg_smooth_div
 
 typedef struct{
+<<<<<<< HEAD
 uint16_t               m_Charge_COV_Term_Current;
 }T_Charge_COV_FULL_Para;
 
 #define D_Charge_COV_Term_Current               flashdata.t_Charge_COV_FULL.t_Charge_COV_FULL_Para.m_Charge_COV_Term_Current
+=======
+uint8_t               m_K_UPDATE_FAC;
+}T_DSG_UPD_CPL_TEM_FAC;
+
+#define D_DSG_K_UPDATE_FAC               flashdata.t_DSG_UPD_CPL_TEM.t_DSG_UPD_CPL_TEM_FAC.m_K_UPDATE_FAC
+>>>>>>> bff363fb8fc99b4a686864b311eee1856fd5ed4f
 
 typedef struct{
 T_Calibdata               t_Calibdata;
@@ -3243,8 +3257,13 @@ T_Dsg_Smooth               t_Dsg_Smooth;
 
 
 typedef struct{
+<<<<<<< HEAD
 T_Charge_COV_FULL_Para               t_Charge_COV_FULL_Para;
 }T_Charge_COV_FULL;
+=======
+T_DSG_UPD_CPL_TEM_FAC               t_DSG_UPD_CPL_TEM_FAC;
+}T_DSG_UPD_CPL_TEM;
+>>>>>>> bff363fb8fc99b4a686864b311eee1856fd5ed4f
 
 
 
@@ -3266,7 +3285,11 @@ T_UNSeal               t_UNSeal;
 T_Control               t_Control;
 T_Algorithm_LIMIT               t_Algorithm_LIMIT;
 T_SMOOTH               t_SMOOTH;
+<<<<<<< HEAD
 T_Charge_COV_FULL               t_Charge_COV_FULL;
+=======
+T_DSG_UPD_CPL_TEM               t_DSG_UPD_CPL_TEM;
+>>>>>>> bff363fb8fc99b4a686864b311eee1856fd5ed4f
 }FlashData;
 
 

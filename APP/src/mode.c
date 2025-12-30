@@ -1938,7 +1938,11 @@ void FullCharge_Chk_CEDV(void)
                     }
                 }
             }
+<<<<<<< HEAD
             else if (D_Charging_Config_COV_FULL)
+=======
+            else if (SafetyStatus(COV))
+>>>>>>> bff363fb8fc99b4a686864b311eee1856fd5ed4f
             {
                 if (SafetyStatus(COV) && (Current() < D_Charge_COV_Term_Current))
                 {

@@ -57,6 +57,19 @@ void mcu_gpio_config(void)
 	LED_2_Control(0);
 	LED_3_Control(0);
 	LED_4_Control(0);
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+
+	gpio_mode_set(GPIOA,GPIO_PIN_6| GPIO_PIN_7|GPIO_PIN_8, GPIO_MODE_OUT_PP_PU(GPIO_SPEED_MEDIUM));
+	afe_gpio_mode_config(GPIO_PB0_PIN, GPIO_PB_MODE_OUTPUT_PP);
+		LED_1_Control(0);
+	LED_2_Control(0);
+	LED_3_Control(0);
+	LED_4_Control(0);
+>>>>>>> 3f73b3946b24144fe505e47bf4af74ee319ad222
+>>>>>>> bff363fb8fc99b4a686864b311eee1856fd5ed4f
 
 	if(0)
 	{
