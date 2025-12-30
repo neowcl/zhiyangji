@@ -68,6 +68,7 @@ int main(void)
 			}
 			CellBalance_Chk();
 			plugged_IN();
+			led_control();
 		}
 		
 		SmbusTimeout_Chk(); // Check IIC communication Timeout

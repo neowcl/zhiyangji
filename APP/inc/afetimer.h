@@ -12,6 +12,7 @@
 
 void delay_ms(volatile uint32_t value);
 void delay_us(uint32_t us);
+void exti4_15_PA9_config(void);
 void exti4_15_PA13_config(void);
 void exti4_15_PA11_config(void);
 void EXTI4_15_IRQHandler(void);

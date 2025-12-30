@@ -49,6 +49,13 @@ void mcu_gpio_config(void)
 	__RCU_AHB_CLK_ENABLE(RCU_AHB_PERI_GPIOA);    /* Clock Config. */
     gpio_mode_set(GPIOA, GPIO_PIN_8 | GPIO_PIN_9, GPIO_MODE_ANALOG);
 
+	gpio_mode_set(GPIOA,GPIO_PIN_6| GPIO_PIN_7|GPIO_PIN_8, GPIO_MODE_OUT_PP_PU(GPIO_SPEED_MEDIUM));
+	afe_gpio_mode_config(GPIO_PB0_PIN, GPIO_PB_MODE_OUTPUT_PP);
+		LED_1_Control(0);
+	LED_2_Control(0);
+	LED_3_Control(0);
+	LED_4_Control(0);
+
 	if(0)
 	{
 	 	gpio_mode_set(GPIOA, GPIO_PIN_0 | GPIO_PIN_1, GPIO_MODE_ANALOG);
@@ -147,13 +154,14 @@ void McuDrvInit(void)
 
 	I2C_init();
 	SBS_init();
-	#ifndef DEBUG_MODE
-	log_init();
-	#endif
+	// #ifndef DEBUG_MODE
+	// log_init();
+	// #endif
 
 	lptime_config(); // LPT timer init
 	exti4_15_PA13_config();
 	exti4_15_PA11_config();
+	exti4_15_PA9_config();
 	trng_disable();
 
 	spi1_master_config();
@@ -231,4 +239,51 @@ void DFDataSave(void)
 									 //  Record_SLEEPTIME =;//SleepTime
 	Record_FlashWriteTimes++;					 // FlashWriteTimes
 	//  Record_RSTT =;//ResetTimes
+}
+
+void LED_1_Control(uint8_t led)
+{
+    if(led)
+    {
+        __GPIO_PIN_SET(GPIOA, GPIO_PIN_8);
+    }
+    else
+    {
+        __GPIO_PIN_RESET(GPIOA, GPIO_PIN_8);
+    }
+}
+
+void LED_2_Control(uint8_t led)
+{
+	if(led)
+	{
+		afe_gpio_output_data_bit_set(GPIO_PB0_PIN);
+	}
+	else
+	{
+		afe_gpio_output_data_bit_reset(GPIO_PB0_PIN);
+	}
+}
+
+void LED_3_Control(uint8_t led)
+{
+    if(led)
+    {
+        __GPIO_PIN_SET(GPIOA, GPIO_PIN_7);
+    }
+    else
+    {
+        __GPIO_PIN_RESET(GPIOA, GPIO_PIN_7);
+    }
+}
+void LED_4_Control(uint8_t led)
+{
+    if(led)
+    {
+        __GPIO_PIN_SET(GPIOA, GPIO_PIN_6);
+    }
+    else
+    {
+        __GPIO_PIN_RESET(GPIOA, GPIO_PIN_6);
+    }
 }

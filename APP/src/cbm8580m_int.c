@@ -257,6 +257,13 @@ void EXTI4_15_IRQHandler(void)
 
   }
 
+    if (__EXTI_FLAG_STATUS_GET(EXTI_LINE_9) != RESET)
+  {
+    __EXTI_FLAG_CLEAR(EXTI_LINE_9);
+    f_key_down = 1;
+    f_no_smbus = OFF;
+  }
+
 
   if ((__EXTI_FLAG_STATUS_GET(EXTI_LINE_11) != RESET))
   {
